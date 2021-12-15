@@ -1,1 +1,15 @@
-<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M15.295 7.295a.998.998 0 0 0-1.41 0L9 12.17V1a1 1 0 1 0-2 0v11.17L2.116 7.294A.998.998 0 0 0 .705 8.705L8 16l7.295-7.295a.997.997 0 0 0 0-1.41z" fill="#009CDE" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Careers" transform="translate(-463.000000, -3487.000000)" fill="#009CDE">
+            <g id="Group-18" transform="translate(361.000000, 3088.000000)">
+                <g id="Group-17" transform="translate(1.000000, 0.000000)">
+                    <path d="M108.295,399.705 C107.905537,400.094463 107.905255,400.72582 108.294369,401.115631 L113.17,406 L102,406 C101.447715,406 101,406.447715 101,407 C101,407.552285 101.447715,408 102,408 L113.17,408 L108.294369,412.884369 C107.905255,413.27418 107.905537,413.905537 108.295,414.295 C108.684361,414.684361 109.315639,414.684361 109.705,414.295 L117,407 L109.705,399.705 C109.315639,399.315639 108.684361,399.315639 108.295,399.705 Z" id="Mask" transform="translate(109.000000, 407.000000) rotate(-270.000000) translate(-109.000000, -407.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
