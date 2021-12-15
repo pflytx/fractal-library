@@ -1,0 +1,194 @@
+form,
+.form-wrapper {
+  &.form--inline {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    width: 100%;
+
+    @media (--medium-large) {
+      grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    }
+
+    @media (--large) {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    @media (--extra-large) {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    & fieldset + fieldset {
+      margin-top: 1rem;
+
+      @media (--medium-large) {
+        margin-top: 0;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: 0.875rem;
+    }
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="number"],
+  select {
+    background: var(--color-white);
+    border: 1px solid var(--color-white);
+    font-family: var(--font-stack--heading);
+    height: 2.5rem;
+    max-width: 410px;
+    padding: 0 1.5rem;
+    width: 100%;
+    font-size: 16px;
+
+    &:focus {
+      outline-color: var(--color-focus);
+    }
+
+    &.transparent {
+      background-color: transparent;
+      color: var(--color-white);
+
+      &::placeholder {
+        color: var(--color-white);
+      }
+    }
+  }
+
+   select {
+    appearance: none;
+    border-radius: 0;
+    max-width: none;
+    padding: 0 0.875rem;
+  }
+
+  .input--select {
+    position: relative;
+
+    &::before {
+      content: '\0020';
+      background-image: url(./images/icon-arrow-down.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      margin-top: -0.4em;
+      height: 0.8em;
+      width: 0.8em;
+      pointer-events: none;
+    }
+
+    &.transparent {
+      &::before {
+        background-image: url(./images/icon-arrow-down-white.svg);
+      }
+
+      & > select.bg--text {
+        background-color: var(--color-text) !important;
+      }
+    }
+  }
+
+  &.theme--primary {
+    width: 100%;
+
+    [type="text"],
+    [type="email"],
+    [type="number"] {
+      border-color: var(--color-action);
+      color: var(--color-action);
+      font-size: 1.25rem;
+      height: auto;
+      max-width: 100%;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+
+    & .input-group--inline {
+      border-color: var(--color-action);
+    }
+  }
+
+  fieldset {
+    & + fieldset {
+      margin-top: 1em;
+    }
+  }
+}
+
+.input-group {
+  &--inline {
+    align-items: stretch;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+
+    [type="text"],
+    [type="email"],
+    [type="number"] {
+      border: 0;
+    }
+  }
+
+  &__prefix,
+  &__suffix {
+    display: flex;
+  }
+
+  &__prefix {
+    position: relative;
+
+    &::after {
+      width: 1px;
+      height: 70%;
+      position: absolute;
+      right: 0;
+      top: 15%;
+      background-color: var(--color-gray-3);
+    }
+  }
+
+  &__icon {
+    align-items: center;
+    color: var(--color-action);
+    display: flex;
+    font-size: 3rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    white-space: nowrap;
+
+    & > svg {
+      height: auto;
+      width: 2rem;
+
+      path {
+        fill: #99a2ab;
+      }
+    }
+
+    & .button--plain {
+      border: 0;
+      cursor: pointer;
+      font-size: 3rem;
+      line-height: 1rem;
+      color: var(--color-action);
+      position: relative;
+      top: -2px;
+
+      &:--haf {
+        color: #99a2ab;
+      }
+    }
+  }
+
+}

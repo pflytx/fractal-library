@@ -1,0 +1,14 @@
+<div class="full-width-video-wrapper rhythm--small">
+  {{>@header-decorator}}
+  {{#>@heading variant="h1"}}The power of video telematics{{/@heading}}
+  <p><strong>Gain visibility into what’s really happening with your fleet to help improve safety, efficiency, and customer service. See how our clients use video telematics to transform their companies.</strong></p>
+  {{#if image}}
+    <div class="full-width-video u-aspect--16by9">
+      <img srcset="//fpoimg.com/990x557, //fpoimg.com/1980x1114 2x" src="//fpoimg.com/990x557" alt="lorem ipsum">
+    </div>
+  {{else}}
+  <div class="full-width-video">
+    {{>@wistia-embed-inline}}
+  </div><!--/ full-width-video -->
+  {{/if}}
+</div><!--/ full-width-video-wrapper -->

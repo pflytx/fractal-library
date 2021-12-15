@@ -1,0 +1,101 @@
+.bg {
+  /* grayscale alias */
+  &--white {
+      background-color: var(--color-white);
+  }
+
+  &--gray-0 {
+      background-color: var(--color-gray-0);
+  }
+
+  &--gray-1 {
+      background-color: var(--color-gray-1);
+  }
+
+  &--gray-2 {
+      background-color: var(--color-gray-2);
+  }
+
+  &--gray-3 {
+      background-color: var(--color-gray-3);
+  }
+
+  &--gray-4 {
+      background-color: var(--color-gray-4);
+  }
+
+  /* general colors */
+  &--blue {
+      background-color: var(--color-blue);
+  }
+
+  &--dark-purple {
+      background-color: var(--color-dark-purple);
+  }
+
+  &--turquoise {
+      background-color: var(--color-turquoise);
+  }
+
+  &--green {
+      background-color: var(--color-green);
+  }
+
+  &--terra-cotta {
+      background-color: var(--color-terra-cotta);
+  }
+
+  &--blue-alt {
+      background-color: var(--color-blue-alt);
+  }
+
+  &--orange {
+      background-color: var(--color-orange);
+  }
+
+  &--purple {
+      background-color: var(--color-purple);
+  }
+
+  /* aliases */
+  &--text {
+      background-color: var(--color-text);
+  }
+
+  &--action {
+      background-color: var(--color-action);
+  }
+
+  &--dark {
+      background-color: var(--color-dark);
+  }
+
+  /* gradients */
+  &--gradient-action {
+    background-color: var(--color-action);
+    background-image: none;
+    transition: background 0.2s linear;
+
+    @media (--medium-large) {
+      background-image: linear-gradient(to bottom, var(--color-white), var(--color-white) 33%, var(--color-action) 33%);
+    }
+
+    @media (--extra-large) {
+      background-image: linear-gradient(to bottom, var(--color-white), var(--color-white) 40%, var(--color-action) 40%);
+    }
+  }
+
+  &--gradient-gray {
+    background-color: var(--color-gray-4);
+    background-image: none;
+    transition: background 0.2s linear;
+
+    @media (--medium-large) {
+      background-image: linear-gradient(to bottom, var(--color-white), var(--color-white) 20%, var(--color-gray-4) 20%);
+    }
+
+    @media (--extra-large) {
+      background-image: linear-gradient(to bottom, var(--color-white), var(--color-white) 22.5%, var(--color-gray-4) 22.5%);
+    }
+  }
+}

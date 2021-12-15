@@ -1,0 +1,60 @@
+.event-pr-tabs {
+  .form--inline label {
+    text-transform: none;
+  }
+
+  &__secondary-head {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    /* to balance the icons/heading font*/
+    position: relative;
+    top: 4px;
+
+    @media (--medium-large) {
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+
+    & > * {
+      margin-right: 2ch;
+    }
+
+    &-label {
+      position: relative;
+      /* to balance the icons/heading font*/
+      top: -2px;
+    }
+
+    &-link {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+
+      &:--haf {
+        color: var(--color-white);
+
+        & [class*="icon--"] {
+           path {
+            fill: var(--color-white);
+          }
+        }
+      }
+    }
+
+    & [class*="icon--"] {
+      height: 1rem;
+      margin-right: 1ch;
+      position: relative;
+      /* to balance the icons/heading font*/
+      top: -2px;
+      width: auto;
+
+      path {
+        fill: var(--color-action);
+      }
+    }
+  }
+}

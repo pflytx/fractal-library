@@ -1,0 +1,44 @@
+{{#if leadership}}
+    {{#>@modal--trigger-leadership
+      modalId=(default id 'xyz-modal')
+      triggerClass=(default triggerClass 'button--primary')
+      name='Brendan Nixon'
+      title='Chairman & CEO'
+    }}{{/@modal--trigger-leadership}}
+{{else if director}}
+    {{#>@modal--trigger-directors
+      modalId=(default id 'xyz-modal')
+      triggerClass=(default triggerClass 'button--primary')
+      name='Brendan Nixon'
+      title='Chairman & CEO'
+      body='<p>Brandon Nixon has led Lytx since 2008, drawing upon an entrepreneurial background leading high-growth communications and technology businesses. He joined the company from ViaSat…</p>'
+      moreLink='Read more'
+    }}{{/@modal--trigger-directors}}
+{{else}}
+  {{#>@modal--trigger
+    modalId=(default id 'xyz-modal')
+    triggerClass=(default triggerClass 'button--primary')
+    triggerText=(default triggerText 'Click Me!')
+  }}{{/@modal--trigger}}
+{{/if}}
+
+<div {{classlist "modal" className}} id={{default id 'xyz-modal'}}>
+
+  {{#>@modal--overlay hideOnClick="true"}}{{/@modal--overlay}}
+
+  <div role="dialog" class="modal__content" aria-labelledby={{default headingId 'xyz-modal-heading'}} aria-describedby={{default contentId 'xyz-modal-content'}}>
+    <div class="modal__inner rhythm--large">
+      {{#>@modal--close-button}}{{/@modal--close-button}}
+
+      {{#if modalHeading}}
+      <h1 class="heading heading--h3" id={{default headingId 'xyz-modal-heading'}}>
+        {{ modalHeading }}
+      </h1>
+      {{/if}}
+
+      <div class="modal__inner-content" id={{default contentId 'xyz-modal-content'}}>
+         {{#>@partial-block}}{{/@partial-block}}
+      </div>
+    </div>
+  </div>
+</div>

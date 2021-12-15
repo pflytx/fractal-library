@@ -1,0 +1,94 @@
+body.InternetExplorer {
+    .media {
+        .media__body {
+            width: calc(50% - 2rem);
+        }
+        .media__figure {
+          width: 50%;
+          padding: 0;
+}
+        .media__figure.animated {
+            opacity: 1;
+        }
+    }
+    table, .table {
+        .table__row {
+            display: -ms-grid;
+            -ms-grid-columns: 40% 30% 20%;
+            -ms-grid-rows: 1fr;
+
+            .table__cell:nth-of-type(1) {
+                -ms-grid-column: 1;
+            }
+            .table__cell:nth-of-type(2) {
+                -ms-grid-column: 2;
+            }
+            .table__cell:nth-of-type(3) {
+                -ms-grid-column: 3;
+            }
+        }
+    }
+    .layout--4up {
+        display: -ms-grid;
+        -ms-grid-columns: 33% 33% 33%;
+
+        .media:nth-of-type(1) {
+            -ms-grid-column: 1;
+        }
+        .media:nth-of-type(2) {
+            -ms-grid-column: 2;
+        }
+        .media:nth-of-type(3) {
+            -ms-grid-column: 3;
+        }
+
+        .media {
+            .media__figure {
+                flex: none;
+                width: 15%;
+            }
+        }
+
+        > div.card {
+          &:nth-of-type(1) {
+            -ms-grid-column: 1;
+          }
+          &:nth-of-type(2) {
+            -ms-grid-column: 2;
+          }
+          &:nth-of-type(1) {
+            -ms-grid-column: 3;
+          }
+        }
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    .jump-links__anchors {
+        display: block;
+        position: relative;
+
+        .jump-links__anchor {
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            vertical-align: top;
+
+            svg {
+                width: 33%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+  .js-cs--filterable {
+    .layout--4up {
+      display: block !important;
+      .card--cs.filtered--show {
+        display: inline-block !important;
+        vertical-align: middle;
+        margin: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+/* Get the variables in early so they're available */
+/*
+  The breakpoints for all resolutions represented as pairs with the breakpoint name and its associated pixel width.
+  Note custom-media variables do not conflict with custom-properties
+  http://cssnext.io/features/#custom-media-queries
+  @media (--medium) { ...styles... }
+*/
+/*
+  Allows you to create your own selectors
+  http://cssnext.io/features/#custom-selectors
+  .MyModule:--enter {
+    ...
+  }
+*/
+/*
+  The z-indexes for the project.
+  z-index: var(--zindex--nav);
+*/
+.wheel-swatch {
+  color: white;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 64px 32px !important;
+  padding: 4rem 2rem !important;
+  text-align: center;
+  text-shadow: 0 1px 1px black;
+  width: 10em;
+}
+.wheel-swatch--rev {
+    color: #415365;
+    text-shadow: 0 1px 1px white;
+  }
+.wheel-stubber {
+  border: 1px solid #e8e9eb;
+  margin: 0 auto;
+  max-width: 1200px;
+  max-width: 75rem;
+  min-height: 50vh;
+  padding: 16px;
+  padding: 1rem;
+}
+.wheel-box {
+  border: 1px solid #eee;
+}
+.wheel-box--dark {
+  background-color: #27343c;
+}
+.wheel-padding {
+  padding: 16px;
+  padding: 1rem;
+}
+.wheel-placeholder {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 64px 16px;
+  padding: 4rem 1rem;
+}
+.wheel-placeholder::before {
+    content: 'component';
+  }
+.wheel-form-placeholder {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eee;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 48px;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 64px 16px;
+  padding: 4rem 1rem;
+}
+.wheel-form-placeholder::before {
+    content: 'MARKETO FORM HERE';
+  }
+/* previews */
+.wheel-preview {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+.wheel-preview__title {
+    margin-bottom: 1em;
+    margin-top: 16px;
+    margin-top: 1rem;
+  }
+.wheel-preview__title > span {
+      background-color: #f1f1f1;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      display: inline-block;
+      font-family: monospace;
+      font-size: 1em;
+      padding: 0.25em 0.75em;
+    }
+.wheel-preview__title, .wheel-preview__markup {
+    padding: 0 16px;
+    padding: 0 1rem;
+  }
+.wheel-preview--single {
+    padding: 16px;
+    padding: 1rem;
+  }
+.wheel-preview--collated > * + * {
+      border-top: 1px solid #eee;
+      margin-top: 16px;
+      margin-top: 1rem;
+    }
+.wheel-preview--no-padding {
+    margin-bottom: 0;
+  }
+.wheel-preview--no-padding .wheel-preview__markup {
+      padding: 0 !important;
+    }
+@media only screen and (min-width: 768px) {
+.wheel-preview {
+    margin-bottom: 2rem
+}
+.wheel-preview__title {
+      margin-top: 2rem
+  }
+.wheel-preview__title, .wheel-preview__markup {
+      padding: 0 2rem
+  }
+.wheel-preview--single {
+      padding: 2rem
+  }
+.wheel-preview--collated > * + * {
+        margin-top: 2rem
+    }
+.wheel-preview--no-padding {
+      margin-bottom: 0
+  }
+  }

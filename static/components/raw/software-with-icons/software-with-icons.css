@@ -1,0 +1,66 @@
+.software-with-icons {
+  .media {
+    &--software-icons {
+      /* !importants in here to ensure we override base styles elsewhere */
+      & .media__body {
+        flex: 0 0 34%;
+        margin-right: 0 !important;
+        margin-top: 0;
+        padding: 1rem 2rem !important;
+
+        @media (--large) {
+          margin-right: 0 !important;
+          padding: 3.5rem 0 3.5rem !important;
+        }
+
+        @media (--extra-large) {
+          margin-right: 0 !important;
+          padding: 3.5rem 0 3.5rem 7rem !important;
+        }
+      }
+
+      & .media__figure {
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media (--medium-large) {
+          order: 10 !important;
+        }
+
+        @media (--large) {
+          align-self: flex-end;
+          flex: 0 0 55%;
+          margin-top: inherit;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+
+  .media__body.media__body--padded {
+    @media (--medium-large) {
+      & > * {
+        margin: auto;
+
+        & + * {
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+
+  .layout--4up {
+    &.layout--4up-fit {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      @media (--medium) {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+    .media__body {
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}

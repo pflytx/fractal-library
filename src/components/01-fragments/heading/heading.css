@@ -1,0 +1,54 @@
+.heading {
+  font-family: var(--font-stack--heading);
+  font-range: 320px 1280px; /* viewport widths between which font-size is fluid */
+  font-size: 2em;
+  font-weight: var(--font-weight--bold);
+  line-height: 1.2em;
+
+  &--h1 {
+    font-size: responsive 2.5714285714rem 3.571428571428571rem; /* min-size, max-size */
+  }
+
+  &--h1-lg {
+    font-size: responsive 1.65rem 4.6428571429rem;
+  }
+
+  &--h2 {
+    font-size: responsive 1.4rem 2.571428571428571rem;
+  }
+
+  &--h3 {
+    font-size: responsive 1rem 1.714285714285714rem;
+  }
+
+  &--h4,
+  &--label {
+    font-size: responsive 0.875rem 1rem;
+    text-transform: uppercase;
+  }
+
+  &--h5 {
+    font-size: 1.075em;
+  }
+
+  &--h6 {
+    font-size: 1em;
+  }
+
+  &--icon {
+    align-items: center;
+    border-bottom: 1px solid var(--color-gray-4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 2rem;
+    padding-bottom: .5rem;
+    width: 100%;
+
+    &__icon {
+      height: auto;
+      max-height: 1.5rem;
+      width: 1rem;
+    }
+  }
+}

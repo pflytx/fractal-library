@@ -1,0 +1,50 @@
+.list {
+  &--blank {
+    list-style: none;
+  }
+
+  &--unordered {
+    list-style-type: disc;
+    padding-left: 1em;
+  }
+
+  &--ordered {
+    list-style-type: decimal;
+    padding-left: 1em;
+  }
+
+  &--inline {
+    display: flex;
+
+    & > * + * {
+      &::before {
+        content: '\0020';
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin: -2px 0.5em auto;
+        height: 1.2em;
+        width: 1px;
+        background-color: gray;
+      }
+    }
+  }
+
+  &.has-border--top {
+    & > li {
+      border-top: 1px solid var(--color-gray-2);
+      padding: 1.5rem 0;
+
+      & .list.has-border--top {
+        list-style-type: disc;
+        padding-left: 1ch;
+
+        & > li {
+          border-top: 0;
+          list-style-type: disc;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

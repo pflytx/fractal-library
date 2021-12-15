@@ -1,0 +1,33 @@
+{{#>@full-width-wrapper color="white" rhythm="extra-large"}}
+  {{#if heading}}
+    {{#>@heading variant="h4" className="text--align-center"}}
+      {{default heading "A powerful solution for full fleet visibility"}}
+    {{/@heading}}
+  {{/if}}
+
+  {{#>@media-object variant="split-bordered"}}
+    {{#>@media-figure}}
+      {{#>@feature
+        noImg=noImg1
+        video=video1
+        subhead=(terinary subhead1 subhead1 )
+        heading=(default heading1 "Lytx Video Platform")
+        text=(default text1 "The Lytx Video Platform gives you access to reliable, continually recorded video and a quick and easy way to find the exact video clips you’re looking for when you need to understand what happened, all within minutes of capture.")
+        cta=(terinary cta1 cta1 )
+      }}
+      {{/@feature}}
+    {{/@media-figure}}
+
+    {{#>@media-figure}}
+      {{#>@feature
+        noImg=noImg2
+        video=video2
+        subhead=(terinary subhead2 subhead2 )
+        heading=(default heading2 "DriveCam Event Recorders")
+        text=(default text2 "Make sure that no critical details go unrecorded. The Lytx DriveCam Event Recorder enables all of our services by capturing video, processing data and analyzing what’s happening on the road. Build even more visibility into your program by adding side and back-up cameras to cover multiple views.")
+        cta=(terinary cta2 cta2 )
+      }}
+      {{/@feature}}
+    {{/@media-figure}}
+  {{/@media-object}}
+{{/@full-width-wrapper}}

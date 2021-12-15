@@ -1,0 +1,74 @@
+{{#>@section-heading
+  text="Comprehensive, customizable solutions"
+  subheading="Our cutting-edge vehicle technologies help fleet managers improve driver safety, efficiency, and DOT compliance."
+}}{{/@section-heading}}
+
+{{#>@full-width-wrapper color="white" flushTop="true"}}
+  <div class="carousel--rotator rhythm--extra-large">
+    <div class="carousel__container">
+      <div class="carousel__cell">
+        {{>@wistia-embed}}
+      </div>
+      <div class="carousel__cell">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QHiyLtCqu1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="carousel__cell">
+        <div class="video-wrapper">
+          <iframe src="https://player.vimeo.com/video/148683340?title=0&byline=0&portrait=0" width="1000" height="563" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="carousel__cell">
+        <img srcset="//fpoimg.com/983x574?text=4&bg_color=ababab&text_color=ffffff, //fpoimg.com/1966x1148?text=4&bg_color=ababab&text_color=ffffff 2x" src="//fpoimg.com/983x574?text=4&bg_color=ababab&text_color=ffffff" alt="lorem ipsum">
+      </div>
+    </div>
+
+    <div class="carousel__tabs rhythm--extra-large">
+      {{#>@list variant="blank" className="layout--4up layout--4up-fit"}}
+        {{#each tabs}}
+          <li class="carousel__tab">
+            <div class="rhythm--small">
+              {{#>@heading variant="h4"}}
+                {{ subHeading }}
+              {{/@heading}}
+
+              {{#>@heading variant="h3"}}
+                <a href="#">
+                  {{ heading }}
+                </a>
+              {{/@heading}}
+
+              <p>
+                {{ body }}
+              </p>
+            </div>
+          </li>
+        {{else}}
+          <li class="carousel__tab">
+            <div class="rhythm--small">
+              {{#>@heading variant="h4"}}
+                {{default subHeading "Fleet Dash Cams"}}
+              {{/@heading}}
+
+              {{#>@heading variant="h3"}}
+                <a href="#">
+                  {{default heading "Protect against the unexpected"}}
+                </a>
+              {{/@heading}}
+
+              <p>
+                {{default body "Cloud-connected cameras provide up to 100 hours of reliable, continually recorded video evidence."}}
+              </p>
+            </div>
+          </li>
+        {{/each}}
+      {{/@list}}
+    </div>
+
+    <div class="text--align-center">
+      {{#>@button size="large" href="#"}}See all solutions{{/@button}}
+    </div>
+  </div>
+
+{{/@full-width-wrapper}}

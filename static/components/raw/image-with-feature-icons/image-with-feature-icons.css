@@ -1,0 +1,39 @@
+.img-with-feature-icons {
+  &__inner-wrap {
+    @media (--medium-large) {
+      max-width: 90%;
+    }
+
+    & ul {
+      list-style: none;
+      padding-left: 0;
+
+      & > li {
+        list-style-type: none;
+      }
+    }
+
+    .media__figure {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__feature-icon,
+  svg {
+    height: auto;
+    max-height: 5rem;
+    width: 5rem;
+  }
+
+  &__body {
+    width: 100%;
+  }
+}
+
+html.no-flexboxlegacy {
+  .img-with-feature-icons__inner-wrap .media__figure {
+    width: auto !important;
+    flex: 0 1 auto;
+  }
+}
+

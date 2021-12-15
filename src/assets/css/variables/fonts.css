@@ -1,0 +1,16 @@
+:root {
+  /* Individual font names */
+  --font-name--default: 'Open Sans';
+  --font-name--heading: 'DINNextLTPro-Bold';
+
+  /* font stacks */
+  --font-stack--default: var(--font-name--default), sans-serif;
+  --font-stack--heading: var(--font-name--heading), sans-serif;
+
+  /* property-set defining the light font-face */
+  --font-weight--normal: 500;
+  --font-weight--bold: 700;
+
+  /* relative path to font source files */
+  --font-directory: fonts;
+}

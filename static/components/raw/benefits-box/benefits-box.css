@@ -1,0 +1,59 @@
+.benefits-box {
+  display: block;
+
+  & + .benefits-box {
+    margin-top: 4rem;
+  }
+
+  &__header {
+    background-color: var(--color-gray-3);
+    color: var(--color-white);
+    display: flex;
+    font-family: var(--font-stack--heading);
+    font-size: responsive 1.75rem 2rem;
+
+    &--blue {
+      background-color: var(--color-blue);
+    }
+
+    &--green {
+      background-color: var(--color-green);
+    }
+
+    &--purple {
+      background-color: var(--color-purple);
+    }
+  }
+
+  &__number {
+    background-color: rgba(255, 255, 255, 0.2);
+    flex: 0 1 auto;
+    padding: 1.5rem 2rem;
+
+    @media (--medium) {
+      padding: 1.5rem 3rem;
+    }
+  }
+
+  &__heading {
+    padding: 1.5rem 2rem;
+
+    @media (--medium) {
+      padding: 1.5rem 3rem;
+    }
+  }
+
+  &__body,
+  &__usecase {
+    background-color: var(--color-gray-4);
+    padding: 2rem;
+
+    @media (--medium) {
+      padding: 3rem;
+    }
+  }
+
+  &__usecase {
+    border-top: 1px solid var(--color-white);
+  }
+}

@@ -1,0 +1,19 @@
+<section
+  {{
+    classlist "layout--full-width"
+    (classname "bg--" (default color "white"))
+    (terinary flushBottom 'flush-bottom')
+    (terinary flushTop 'flush-top')
+    className
+  }}
+  {{#if bgImg}}style="background-image:url({{bgImg}});"{{/if}}
+  {{#if id}}id="{{ id }}"{{/if}}
+>
+  <div {{
+    classlist
+    (default wrapperClass "wrapper")
+    (classname "rhythm--" (default rhythm "default"))
+  }}>
+    {{#>@partial-block}}{{/@partial-block}}
+  </div>
+</section>

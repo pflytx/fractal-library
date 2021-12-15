@@ -1,0 +1,43 @@
+<details class="spec-sheet">
+  <summary class="spec-sheet__summary">
+    <div class="wrapper">
+      <p class="text--align-center">
+        <span class="spec-sheet__show">Show Specifications</span>
+        <span class="spec-sheet__hide">Hide Specifications</span>
+      </p>
+    </div>
+  </summary>
+  <div class="wrapper rhythm--extra-large spec-sheet__body">
+    <h2 class="heading heading--h2 text--align-center">
+      Device Specifications
+    </h2>
+
+    <section class="layout layout--2col">
+      {{#>@table--specs}}{{/@table--specs}}
+    </section>
+
+    {{#>@media-object variant="3-2" align="top" classname="spec-sheet__media-obj"}}
+
+      {{#>@media-body classname="rhythm"}}
+        <h3 class="heading heading--h2">
+          Accessories
+        </h3>
+
+        {{#>@list variant="unordered"}}
+          <li>Security Cover - Covers both lenses (OPT-PER-0501)</li>
+          <li>Driver Privacy Cover - Covers inside lens (OPT-PER-0504)</li>
+          <li>Remote Push Button Kit (PER-CAT-0063)</li>
+          <li>Lytx Hub Adapter Kit (PER-CAT-0524)</li>
+        {{/@list}}
+
+        <p class="text--small">
+          DISCLAIMER: Lytx® event recorders are intended as a driver aid only and are not a substitute for a safe, conscientious driver. Lytx event recorders cannot compensate for a driver that is distracted, inattentive, or impaired by fatigue, drugs, or alcohol. It is always the responsibility of the driver to take appropriate corrective action. Never wait for the Lytx event recorder to provide a warning before taking measures to avoid an accident. Failure to do so can result in serious personal injury or death, or severe property damage.
+        </p>
+      {{/@media-body}}
+
+      {{#>@media-figure}}
+        <img srcset="{{path (default logo '/images/sf-series-diagrams.png')}}, {{path (default logo-2x '/images/sf-series-diagrams@2x.png')}} 2x" src="{{path (default logo '/images/sf-series-diagrams.png')}}" alt="diagram of lytx event recorder">
+      {{/@media-figure}}
+    {{/@media-object}}
+  </div>
+</details>

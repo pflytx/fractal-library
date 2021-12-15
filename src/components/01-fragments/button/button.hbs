@@ -1,0 +1,6 @@
+<{{terinary href "a" "button"}}{{#if href}} href="{{href}}"{{/if}} {{classlist "button" (terinary href "button--link") (classname "button--" (default variant "primary")) (classname "button--size-" (default size "default")) (terinary icon "button--icon") className}}{{attributes}} {{#if disabled}} disabled="true"{{/if}}>
+  {{#>@partial-block}}{{/@partial-block}}
+  {{#if icon}}
+  {{>@arrow-right}}
+  {{/if}}
+</{{terinary href "a" "button"}}>

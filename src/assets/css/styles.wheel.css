@@ -1,0 +1,137 @@
+/* Get the variables in early so they're available */
+@import './variables/**/*.css';
+
+.wheel-swatch {
+  color: white;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4rem 2rem !important;
+  text-align: center;
+  text-shadow: 0 1px 1px black;
+  width: 10em;
+
+  &--rev {
+    color: var(--color-gray-1);
+    text-shadow: 0 1px 1px white;
+  }
+}
+
+.wheel-stubber {
+  border: 1px solid var(--color-gray-4);
+  margin: 0 auto;
+  max-width: 75rem;
+  min-height: 50vh;
+  padding: 1rem;
+}
+
+.wheel-box {
+  box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wheel-box--dark {
+  background-color: var(--color-gray-0);
+}
+
+.wheel-box .card--padding > p {
+  margin: 1em 0;
+}
+
+.wheel-padding {
+  padding: 1rem;
+}
+
+.wheel-placeholder {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+
+  &::before {
+    content: 'component';
+  }
+}
+
+.wheel-form-placeholder {
+  align-items: center;
+  background-color: #eee;
+  color: #222;
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 80vh;
+  justify-content: center;
+  padding: 4rem 1rem;
+
+  &::before {
+    content: 'MARKETO FORM HERE';
+  }
+}
+
+/* previews */
+.wheel-preview {
+  margin-bottom: 1rem;
+
+  @media (--medium) {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+    margin-top: 1rem;
+
+    @media (--medium) {
+      margin-top: 2rem;
+    }
+
+    & > span {
+      background-color: #f1f1f1;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      display: inline-block;
+      font-family: monospace;
+      font-size: 1em;
+      padding: 0.25em 0.75em;
+    }
+  }
+
+  &__title,
+  &__markup {
+    padding: 0 1rem;
+
+    @media (--medium) {
+      padding: 0 2rem;
+    }
+  }
+
+  &--single {
+    padding: 1rem;
+
+    @media (--medium) {
+      padding: 2rem;
+    }
+  }
+
+  &--collated {
+    & > * + * {
+      border-top: 1px solid #eee;
+      margin-top: 1rem;
+
+      @media (--medium) {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &--no-padding {
+    margin-bottom: 0;
+
+    @media (--medium) {
+      margin-bottom: 0;
+    }
+
+    .wheel-preview__markup {
+      padding: 0 !important;
+    }
+  }
+}

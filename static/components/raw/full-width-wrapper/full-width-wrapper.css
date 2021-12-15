@@ -1,0 +1,29 @@
+.layout--full-width {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  @media (--medium) {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+
+    &> .wrapper.rhythm--large {
+        &> .media--split {
+            margin-top: -3rem;
+            margin-bottom: -3rem;
+        }
+    }
+  }
+
+  &.flush-bottom {
+    padding-bottom: 0;
+  }
+
+  &.flush-top {
+    padding-top: 0;
+  }
+
+  &.is-condensed {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

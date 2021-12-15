@@ -1,0 +1,15 @@
+.card--icon-tile {
+  .card--padding {
+    padding-top: 1rem;
+  }
+
+  &__icon,
+  & svg {
+    height: 100px;
+    width: auto;
+  }
+
+  &__link-text {
+    display: block;
+  }
+}

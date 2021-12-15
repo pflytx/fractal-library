@@ -1,0 +1,27 @@
+<figure class="feature rhythm">
+  {{#unless noImg}}
+    <img src="//fpoimg.com/460x258" alt="lorem ipsum">
+  {{/unless}}
+
+  {{#if video}}
+    {{>@wistia-embed}}
+  {{/if}}
+  <figcaption class="feature__content rhythm">
+    <div>
+      {{#if subhead}}
+        {{#>@heading variant="h4"}}{{subhead}}{{/@heading}}
+        <br>
+      {{/if}}
+      {{#if heading}}
+        {{#>@heading variant="h2"}}{{heading}}{{/@heading}}
+      {{/if}}
+    </div>
+    {{#if text}}
+      <p>{{text}}</p>
+    {{/if}}
+    {{#if cta}}
+      <br>
+      <a href="#" class="button button--primary button--size-default">{{cta}}</a>
+    {{/if}}
+  </figcaption>
+</figure>

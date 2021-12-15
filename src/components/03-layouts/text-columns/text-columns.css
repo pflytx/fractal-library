@@ -1,0 +1,11 @@
+.text-columns {
+  &--two-col {
+    columns: 2 20rem;
+    column-fill: balance;
+    column-gap: 4rem;
+
+    & > * {
+      break-inside: avoid;
+    }
+  }
+}

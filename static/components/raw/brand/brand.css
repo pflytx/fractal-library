@@ -1,0 +1,43 @@
+.brand {
+  max-width: 120px;
+  padding: 0.75rem 0;
+  width: 50%;
+
+  @media (--medium) {
+    width: 25%;
+  }
+}
+
+.brand__anchor {
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.2s linear;
+
+  &:--haf {
+    opacity: .8;
+  }
+}
+
+.brand__logo,
+.brand__logo--white {
+  height: 48px;
+  width: auto;
+}
+
+.brand__logo {
+  display: none;
+
+  .has-scrolled &,
+  .nav-active  .global-header--transparent &,
+  .subnav-active  .global-header--transparent & {
+    display: block;
+  }
+}
+
+.brand__logo--white {
+  .has-scrolled &,
+  .nav-active  .global-header--transparent &,
+  .subnav-active  .global-header--transparent & {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+{{#>@full-width-wrapper color="white" rhythm="large"}}
+    {{#>@media-object variant="2-1" align="top" flipLarge="true" flipSmall="true" classname="news-feature-intro"}}
+        {{#>@media-figure}}
+            <div class="layout--2up">
+                {{#>@card--news
+                    logo="/images/logo-techcrunch.png"
+                    logo-2x="/images/logo-techcrunch@2x.png"
+                    altText="Tech Crunch logo"
+                    source="Tech Crunch"
+                    date="April 11, 2019"
+                    title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    excerpt="Fusce pharetra libero a tortor convallis, a pharetra urna convallis. Vestibulum odio erat, ultrices ac malesuada et, semper ac mauris. "
+                }}{{/@card--news}}
+
+                {{#>@card--news
+                    logo="/images/logo-fleetowner.png"
+                    logo-2x="/images/logo-fleetowner@2x.png"
+                    altText="Fleet Owner logo"
+                    source="Fleet Owner"
+                    date="April 11, 2019"
+                    title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    excerpt="Fusce pharetra libero a tortor convallis, a pharetra urna convallis. Vestibulum odio erat, ultrices ac malesuada et, semper ac mauris. "
+                }}{{/@card--news}}
+            </div>
+        {{/@media-figure}}
+
+        {{#>@media-body classname="rhythm--large"}}
+            <div class="rhythm--small">
+                {{#>@heading variant="h4"}}
+                    In the media
+                {{/@heading}}
+
+                {{#>@heading variant="h2"}}
+                    Our fleet & compliance management solutions are making headlines
+                {{/@heading}}
+            </div>
+
+            <p>
+                Read recent Lytx news coverage about driver safety, fleet tracking, compliance and more.
+            </p>
+        {{/@media-body}}
+      {{/@media-object}}
+{{/@full-width-wrapper}}

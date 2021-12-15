@@ -1,0 +1,101 @@
+.rich-text {
+  font-size: 1rem;
+
+  & > * {
+  }
+
+  & strong {
+    font-weight: var(--font-weight--bold);
+  }
+
+  & em {
+    font-style: italic;
+  }
+
+  & sub,
+  & sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    /* Move the superscripted text up */
+    top: -0.5em;
+  }
+
+  sub {
+    /* Move the subscripted text down, but only
+       half as far down as the superscript moved up */
+    bottom: -0.25em;
+  }
+
+
+  /* I couldn't get @extends to work here :( */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-stack--heading);
+    font-range: 320px 1280px; /* viewport widths between which font-size is fluid */
+    font-size: 2em;
+    font-weight: var(--font-weight--bold);
+    line-height: 1.2em;
+  }
+
+  h1 {
+    font-size: responsive 1.5rem 3.571428571428571rem; /* min-size, max-size */
+  }
+
+  h1-lg {
+    font-size: responsive 1.65rem 4.6428571429rem;
+  }
+
+  h2 {
+    font-size: responsive 1.4rem 2.571428571428571rem;
+  }
+
+  h3 {
+    font-size: responsive 1rem 1.714285714285714rem;
+  }
+
+  h4,
+  label {
+    font-size: responsive 0.875rem 1rem;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  ul,
+  ol {
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 1em;
+      padding-left: 1em;
+
+      & > ul, & > ol {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
+
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+}

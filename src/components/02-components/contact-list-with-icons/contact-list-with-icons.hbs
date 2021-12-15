@@ -1,0 +1,25 @@
+<div class="contact-list rhythm--large">
+  {{#>@heading--with-icon text=text icon=icon}}{{/@heading--with-icon}}
+
+  {{#>@list variant="blank" className="rhythm--large"}}
+    {{#each items}}
+      <li>
+        {{#>@heading variant="h5"}}
+          {{default heading "Item Text"}}
+        {{/@heading}}
+        <a href="{{default link 'tel:+18664195861'}}">
+          {{{default linkText "Link Text"}}}
+        </a>
+      </li>
+    {{else}}
+      <li>
+          {{#>@heading variant="h5"}}
+            {{default heading "Item Text"}}
+          {{/@heading}}
+          <a href="{{default link 'tel:+18664195861'}}">
+            {{{default linkText "Link Text"}}}
+          </a>
+        </li>
+    {{/each}}
+  {{/@list}}
+</div>

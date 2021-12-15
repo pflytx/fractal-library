@@ -1,0 +1,8 @@
+/* Safari 11+ Fix for white header curtain */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        .global-header.has-scrolled .global-header__inner {
+            background-color:white;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{{#>@card classname="card--event card--flush card--cs" industry=(default industry 'Trucking')}}
+     <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+     {{#>@card--padding classname="rhythm"}}
+        {{#>@heading variant="h5"}}
+            <a href="#">
+                {{default title "Event Title"}}
+            </a>
+        {{/@heading}}
+
+        {{#>@card--event-details location=(default where "City, State") dates=(default when "Jun 29 - Jun 30, 2019")}} {{/@card--event-details}}
+     {{/@card--padding}}
+{{/@card}}

@@ -1,0 +1,286 @@
+{{#>@full-width-wrapper color="text" rhythm="extra-large" className=" event-pr-tabs" id="event-pr-tabs"}}
+  {{#>@tabs className="tabs--small tabs--theme-dark"}}
+
+    {{#>@tab
+        id="epr-0-control"
+        title="Events"
+        tabName="eprTabs"
+        checked=true
+        className="tab--small"
+      }}
+        {{#>@wrapper className="rhythm"}}
+            <div class="js-cs--filterable rhythm--extra-large">
+                <div class="cs--filterable__head">
+                    <div class="primary rhythm">
+                        <div class="form-wrapper form--inline js-form--filters">
+                            <fieldset class="rhythm--small">
+                                <label for="filter--industry" class="color--white">Filter by Industry</label>
+                                <div class="input--select transparent">
+                                    <select class="transparent bg--text" id="filter--industry" name="industry">
+                                    <option value="All">All</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Trucking">Trucking</option>
+                                    <option value="Waste">Waste</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>  {{!-- .form-wrapper --}}
+                    </div> {{!-- .primary --}}
+
+                    <div class="secondary secondary--center color--white u-ml-auto text--small event-pr-tabs__secondary-head">
+                        <span class="text--bold event-pr-tabs__secondary-head-label">For media inquiries:</span>
+
+                        <a href="mailto:test@test.com" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          {{>@icon-email}}
+                          email
+                        </a>
+
+                        <a href="#" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          {{>@icon-share}}
+                          press kit
+                        </a>
+                    </div>  {{!-- .secondary --}}
+                </div>  {{!-- .cs--filterable__head --}}
+
+                <div class="layout--4up layout--cs-list">
+                    {{#>@card--event
+                        industry="government"
+                        title="2019 NAFA Institute & Expo"
+                        where="Louisville, Kentucky"
+                        when="APR 13 - APR 18, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 National Private Truck Council (NPTC) Annual Conference"
+                        where="Cincinati, Ohio"
+                        when="APR 14 - APR 16, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="construction"
+                        title="2019 NTTC Annual Conference & Exhibits"
+                        where="Las Vegas, Nevada"
+                        when="APR 23 - APR 25, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="government"
+                        title="2019 Field Service Palm Springs"
+                        where="Palm Springs, California"
+                        when="APR 23 - APR 26, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="government"
+                        title="2019 National Postal Forum"
+                        where="Indianapolis, Indiana"
+                        when="MAT 05 - MAY 08, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="waste"
+                        title="2019 WasteExpo"
+                        where="Las Vegas, Nevada"
+                        when="MAY 06 - MAY 09, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="trucking"
+                        title="2019 Pennsylvania Motor Truck Association Safety Conference"
+                        where="State College, Pennsylvania"
+                        when="MAY 16 - MAY 18, 2019"
+                    }}{{/@card--event}}
+
+                    {{#>@card--event
+                        industry="waste"
+                        title="FCCMA 2019 Annual Conference"
+                        where="Orlando, Florida"
+                        when="MAY 29 - JUN 01, 2019"
+                    }}{{/@card--event}}
+                </div>
+
+                <div class="text--align-center">
+                    {{#>@button size="large" className="js-load-more"}}Load More{{/@button}}
+                </div>
+            </div>
+        {{/@wrapper}}
+      {{/@tab}}
+
+    {{#>@tab
+        id="epr-1-control"
+        title="Press Releases"
+        tabName="eprTabs"
+        className="tab--small"
+      }}
+        {{#>@wrapper className="rhythm"}}
+            <div class="js-cs--filterable rhythm--extra-large">
+                <div class="cs--filterable__head">
+                    <div class="primary rhythm">
+                        <div class="form-wrapper form--inline js-form--filters">
+                          <fieldset class="rhythm--small">
+                                <label for="filter--date" class="color--white">Filter by Date</label>
+                                <div class="input--select transparent">
+                                    <select class="transparent bg--text" id="filter--date" name="date">
+                                    <option value="All">All</option>
+                                    <option value="1">Past month</option>
+                                    <option value="2">Past three months</option>
+                                    <option value="3">Past year</option>
+                                    <option value="4">Older than a year</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="rhythm--small">
+                                <label for="filter--industry" class="color--white">Filter by Industry</label>
+                                <div class="input--select transparent">
+                                    <select class="transparent bg--text" id="filter--industry" name="industry">
+                                    <option value="All">All</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Trucking">Trucking</option>
+                                    <option value="Waste">Waste</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>  {{!-- .form-wrapper --}}
+                    </div> {{!-- .primary --}}
+
+                    <div class="secondary secondary--center color--white u-ml-auto text--small event-pr-tabs__secondary-head">
+                        <span class="text--bold event-pr-tabs__secondary-head-label">For media inquiries:</span>
+
+                        <a href="mailto:test@test.com" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          {{>@icon-email}}
+                          email
+                        </a>
+
+                        <a href="#" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          {{>@icon-share}}
+                          press kit
+                        </a>
+                    </div>  {{!-- .secondary --}}
+                </div>
+
+                <div class="layout--4up layout--cs-list">
+                    {{#>@card--press-release
+                        industry="construction"
+                        prDate="Past year"
+                        date="Mar 13, 2018"
+                        title="Lauren Concrete Introduces Lytx Driver Safety Program to Full Fleet via Company-Wide Town Hall Events"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="trucking"
+                        prDate="Past year"
+                        date="Feb 28, 2019"
+                        title="ACCA Welcomes Lytx as Official Driver Safety Partner"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="trucking"
+                        prDate="Past year"
+                        date="Feb 26, 2019"
+                        title="Lytx® Honors Extraordinary Drivers and Coaches with Annual ‘Driver of the Year’ and ‘Coach of the Year’ Awards"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="government"
+                        prDate="Past year"
+                        date="Feb  25, 2019"
+                        title="Lytx Helped Protect More Than 1 Million Drivers in 2018 and Delivered Another Year of Industry Firsts and Strong Results"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="trucking"
+                        prDate="Past month"
+                        date="Feb 20, 2019"
+                        title="Lytx Identifies the Top 10 Roads for Cell Phone Use in the United States"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="waste"
+                        prDate="Older than a year"
+                        date="Feb 14, 2019"
+                        title="Transaid welcomes Lytx on board as corporate members"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="trucking"
+                        prDate="Past month"
+                        date="Jan 22, 2019"
+                        title="The Caillier Group Signs on for Full-Fleet Deployment of Lytx DriveCam to Protect Its Family of Drivers"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="trucking"
+                        prDate="Older than a year"
+                        date="Oct 28, 2019"
+                        title="Nationwide Announces New Tech Partnership to Improve Safety for Long-Haul Truck Drivers"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="government"
+                        prDate="Past year"
+                        date="Jun 29, 2019"
+                        title="Nationwide Announces New Tech Partnership to Improve Safety for Long-Haul Truck Drivers"
+                    }}{{/@card--press-release}}
+
+                    {{#>@card--press-release
+                        industry="waste"
+                        prDate="Past month"
+                        date="May 31, 2019"
+                        title="Nationwide Announces New Tech Partnership to Improve Safety for Long-Haul Truck Drivers"
+                    }}{{/@card--press-release}}
+                </div>
+
+                <div class="text--align-center">
+                    {{#>@button size="large" className="js-load-more"}}Load More{{/@button}}
+                </div>
+            </div>
+        {{/@wrapper}}
+      {{/@tab}}
+  {{/@tabs}}
+{{/@full-width-wrapper}}

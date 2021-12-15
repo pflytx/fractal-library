@@ -1,0 +1,38 @@
+{{#>@modal
+  modalId=(default id 'directors-modal')
+  triggerClass='button--primary'
+  triggerText='Leader!'
+  headingId=(default headId 'directors-modal-heading')
+  contentId=(default conId 'directors-modal-content')
+  className='directors-modal'
+  director='true'
+}}
+
+  {{#>@media-object variant="1-2" align="center" classname="directors-modal__head" noStack="true"}}
+    {{#>@media-body}}
+      {{#>@heading variant="h3"}}
+        Brandon Nixon
+      {{/@heading}}
+      <p>
+        Chairman &amp; CEO
+      </p>
+    {{/@media-body}}
+  {{/@media-object}}
+
+  <div class="directors-modal__bio bg--gray-1 color--white rte rhythm">
+    <p>
+      Brandon has served as Lytx CEO for 11 years, championing the company’s commitment to saving lives and leading the Lytx team to unprecedented success: 65% market share, a best-in-class product portfolio and unrivaled innovation. In 2018, Lytx helped 3,000 clients keep their 850,000 drivers and more than 500,000 vehicles safe and their businesses productive, efficient and profitable.
+    <p>
+
+    <p>
+      Brandon joined Lytx from ViaSat, where he was responsible for the company's commercial business. Prior to ViaSat, he was CEO of Enerdyne Technologies and spent nearly two decades in a variety of executive roles at Hewlett Packard, Texas Instruments, PCSI/Cirrus Logic, SAIC, and private equity firm, Housatonic Partners, where he founded the firm's communications practice.
+    </p>
+
+    <p>
+      Brandon holds a B.S. degree in Computer Engineering from University of California, San Diego and an MBA from the Stanford Graduate School of Business.
+    </p>
+
+    {{>@social-footer--icons-only}}
+  </div>
+
+{{/@modal}}

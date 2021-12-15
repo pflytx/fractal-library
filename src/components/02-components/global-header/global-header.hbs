@@ -1,0 +1,18 @@
+<header {{classlist "fixed global-header" (classname (terinary transparent "global-header--transparent" "has-scrolled"))}}>
+  <div class="global-header__inner">
+
+    <h1 class="brand">
+      <a href="/" class="brand__anchor">
+        <span class="a11y-visually-hidden">Lytx</span>
+        {{> @brand }}
+      </a>
+    </h1>
+
+    {{> @main-nav}}
+
+    {{> @secondary-nav}}
+
+    {{>@nav-toggle}}
+
+  </div>
+</header>

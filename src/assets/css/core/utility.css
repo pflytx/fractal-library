@@ -1,0 +1,94 @@
+.fixed {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: var(--zindex--nav);
+}
+
+.sticky-container {
+  padding: 4rem 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 5rem;
+}
+
+.has-border-bottom {
+  border-bottom: 1px solid var(--color-gray-4);
+  padding-bottom: 1rem;
+}
+
+.has-border-top {
+  border-top: 1px solid var(--color-gray-4);
+  padding-top: 1rem;
+}
+
+.u-lores-only {
+  display: inherit !important;
+
+  &.u-inline {
+    display: inline !important;
+  }
+
+  @media (--medium) {
+    display: none !important;
+  }
+}
+
+.u-medres-up {
+  display: none !important;
+
+  @media (--medium) {
+    display: inherit !important;
+
+    &.u-inline {
+      display: inline !important;
+    }
+  }
+}
+
+.u-hires-only {
+  display: none !important;
+
+  @media (--large) {
+    display: inherit !important;
+
+    &.u-inline {
+      display: inline !important;
+    }
+  }
+}
+
+.u-aspect {
+  &--16by9 {
+    position: relative;
+
+    &::before {
+      display: block;
+      padding-top: 56.25%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+/* helpful for positioning flex items */
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-hidden {
+  display: none !important;
+}

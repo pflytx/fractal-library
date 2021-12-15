@@ -1,0 +1,18 @@
+{{#>@full-width-wrapper color="white" rhythm="large" flushBottom="true"}}
+  {{#>@heading variant="h2" className="text--align-center"}}Lytx is headquartered in San Diego with locations worldwide.{{/@heading}}
+  {{#>@tabs className="tabs--location"}}
+
+    {{#each tabs}}
+    {{#>@tab
+      id=id
+      title=title
+      checked=checked
+      tabName=tabName
+    }}
+      {{#>@photo-gallery}}
+      {{/@photo-gallery}}
+    {{/@tab}}
+    {{/each}}
+
+  {{/@tabs}}
+{{/@full-width-wrapper}}

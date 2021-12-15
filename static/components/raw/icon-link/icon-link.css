@@ -1,0 +1,25 @@
+.link--icon {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  &:--haf {
+    & .link--icon__icon path {
+      fill: var(--color-hover);
+    }
+  }
+
+  &__icon {
+    height: 1.25rem;
+    margin-right: 1ch;
+    position: relative;
+    top: 2px;
+    width: auto;
+
+    & path {
+      fill: var(--color-action);
+    }
+  }
+}

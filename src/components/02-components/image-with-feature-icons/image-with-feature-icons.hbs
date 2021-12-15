@@ -1,0 +1,36 @@
+{{#>@full-width-wrapper
+  color="gray-4"
+  rhythm="extra-large"
+  className="img-with-feature-icons"
+  flushBottom=flushBottom
+}}
+  <div>
+    {{#>@media-object variant="split"}}
+      {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h2"}}
+          Intelligent Dashcams, built to last
+        {{/@heading}}
+
+        <p>
+          Our state-of-the-art SF Series Event Recorders pair Machine Vision with Artificial Intelligence to accurately identify and categorize the moments that matter, allowing you see risk as it occurs and transform your fleet. Our rugged, reliable hardware does it all in a single, integrated device that simplifies installation and eliminates connection issues.
+        </p>
+      {{/@media-body}}
+
+      {{#>@media-figure classname="text--align-left"}}
+        <img srcset="{{path (default logo '/images/event-recorder.png')}}, {{path (default logo-2x '/images/event-recorder@2x.png')}} 2x" src="{{path (default logo '/images/event-recorder.png')}}" alt="event recorder">
+      {{/@media-figure}}
+    {{/@media-object}}
+  </div>
+
+  <div>
+    {{#>@media-object variant="default" justify="space-between" align="top"}}
+        {{#>@image-with-feature-icons--list mediaBody="true"}}{{/@image-with-feature-icons--list}}
+    {{/@media-object}}
+  </div>
+
+  {{#unless noCta}}
+    <div class="text--align-center">
+      {{#>@button size="large" variant="primary" icon="true" href="#"}}Download Specifications PDF{{/@button}}
+    </div>
+  {{/unless}}
+{{/@full-width-wrapper}}

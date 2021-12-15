@@ -1,0 +1,307 @@
+.secondary-nav {
+  display: flex;
+  height: var(--header-height);
+  margin-left: auto;
+	z-index: var(--zindex--nav);
+
+  @media (--medium) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: var(--zindex--nav);
+
+    @media (--medium) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+  }
+
+  &__login {
+    align-items: baseline;
+    border-bottom: 0;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 0;
+    position: relative;
+    z-index: calc(var(--zindex--nav) + 1);
+
+    .subnav-active & {
+      pointer-events: none;
+
+      & .icon--person path {
+        fill: var(--color-white) !important;
+        stroke: var(--color-white) !important;
+      }
+    }
+
+    .nav-active & {
+      & .icon--person path {
+        fill: var(--color-action) !important;
+        stroke: var(--color-action) !important;
+      }
+    }
+
+    & > * {
+      color: var(--color-text);
+      /* ensures the SVG and text aren't vacuuming click event */
+      pointer-events: none;
+    }
+
+    & .icon--person path {
+       fill: var(--color-text);
+        stroke: var(--color-text);
+    }
+
+    .global-header--transparent & {
+      & > * {
+        color: var(--color-white);
+      }
+
+      & .icon--person path {
+        fill: var(--color-white);
+        stroke: var(--color-white);
+      }
+
+      &:--haf {
+        & > * {
+          color: var(--color-action);
+        }
+
+        & .icon--person path {
+          fill: var(--color-action);
+          stroke: var(--color-action);
+        }
+      }
+    }
+
+    .subnav-active .global-header--transparent &,
+    .global-header--transparent.has-scrolled & {
+      & > * {
+        color: var(--color-text);
+      }
+
+      & .icon--person path {
+        fill: var(--color-text);
+        stroke: var(--color-text);
+      }
+
+      &:--haf {
+        & > * {
+          color: var(--color-action);
+        }
+
+        & .icon--person path {
+          fill: var(--color-action);
+          stroke: var(--color-action);
+        }
+      }
+    }
+
+    &.nav__menu-toggle.is-active {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:--haf {
+      background-color: transparent;
+
+      & > * {
+        color: var(--color-action);
+      }
+
+      & .icon--person path {
+        fill: var(--color-action);
+        stroke: var(--color-action);
+      }
+    }
+
+    .nav-active.subnav-active & {
+      & .icon--person {
+        display: none;
+      }
+    }
+
+    .subnav-active & {
+      @media (--medium) {
+        display: flex;
+      }
+    }
+
+    & .icon--person {
+      align-self: center;
+      height: auto;
+      margin-right: 2ch;
+      width: 1rem;
+
+      @media (--medium) {
+        /* to better align with odd baseline of DIN Next */
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+  &__menu {
+    &.global-nav__menu {
+      background-color: color(#000 alpha(0.85));
+      height: 100vh;
+
+      @media (--medium) {
+        height: auto;
+      }
+
+      &.is-active {
+        top: var(--header-height);
+
+        @media (--medium) {
+          border-color: color(var(--color-action) blackness(+10%));
+          border-top: 0;
+          left: auto;
+          right: 0;
+          top: calc(var(--header-height) + 2px);
+          width: 300px;
+        }
+      }
+
+      & .global-nav__menu-inner-wrap,
+      & .global-nav__submenu {
+        display: block;
+      }
+
+      & .global-nav__submenu {
+        padding: 0;
+      }
+
+      & .nav__link {
+        border-bottom: 1px solid var(--color-gray-4);
+        background-color: var(--color-white);
+        color: var(--color-text);
+        font-family: var(--font-stack--heading);
+        font-size: 1rem;
+        font-weight: var(--font-weight--bold);
+        margin-bottom: 0;
+        min-height: 0;
+        padding: 1rem;
+        position: relative;
+        text-transform: uppercase;
+
+        @media (--medium) {
+          /* the calc() on padding-bottom here is to visually center
+          the bizarrely misaligned font we're using */
+          padding: 1rem 2rem calc(1rem - 3px);
+        }
+
+        &:--haf {
+          background-color: var(--color-action);
+          color: var(--color-white);
+
+          & > .subnav__chevron {
+            fill: var(--color-white);
+            stroke: var(--color-white);
+          }
+        }
+
+        &--portal {
+          background-color: var(--color-action);
+          border-color: color(var(--color-action) blackness(+15%));
+          color: var(--color-white);
+
+          &:--haf {
+            background-color: var(--color-white);
+            color: var(--color-action);
+          }
+        }
+
+        & > .subnav__chevron,
+        & > .subnav__icon-person {
+          height: auto;
+          position: absolute;
+          right: 2rem;
+          top: calc(50% - .5rem);
+          width: .5rem;
+        }
+
+        & > .subnav__chevron {
+          fill: var(--color-action);
+          stroke: var(--color-action);
+        }
+
+        & > .subnav__icon-person {
+          width: 1rem;
+
+          path {
+            fill: currentColor;
+            stroke: currentColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-active.subnav-active {
+  .mobileSearchIcon {
+    .icon--search {
+        display: none;
+    }
+  }
+}
+
+.subnav__category {
+  display: inline-block;
+  height: 100%;
+
+  @media (--medium) {
+    height: auto;
+    padding-left: 1rem;
+  }
+
+  @media (--large) {
+    padding-left: 2rem;
+  }
+}
+
+.nav__close {
+  cursor: pointer;
+  height: auto;
+  opacity: 0;
+  padding: 0 !important;
+  pointer-events: none;
+  position: fixed;
+  right: 5rem;
+  top: 1.875rem;
+  width: 1.5rem;
+  z-index: calc(var(--zindex--nav) + 2);
+
+  .subnav-active & {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &:--haf {
+    & > .icon--arrow-left,
+    & > svg path {
+      fill: var(--color-text);
+    }
+  }
+
+  @media (--medium) {
+    display: none;
+  }
+
+  & > .icon--arrow-left,
+  & > svg path {
+    fill: var(--color-action);
+    width: 1.125rem;
+  }
+}

@@ -1,0 +1,123 @@
+.nav__toggle {
+  background-color: var(--color-white);
+  border: 0;
+  cursor: pointer;
+  height: calc(var(--header-height) - 1rem);
+  justify-self: flex-end;
+  padding: 0 1rem 0 2.5rem;
+  position: relative;
+  transition: .2s background-color ease-in-out 0s;
+  z-index: var(--zindex--nav);
+
+  .global-header--transparent & {
+    background-color: transparent;
+  }
+
+  .nav-active .global-header--transparent &,
+  .subnav-active .global-header--transparent & {
+    background-color: var(--color-white);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+
+    & > i {
+      background-color: var(--color-action);
+      pointer-events: none;
+
+      &::after,
+      &::before {
+        background-color: var(--color-action);
+      }
+    }
+  }
+
+  @media (--medium) {
+    display: none;
+  }
+
+  & > i {
+    background-color: var(--color-action);
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 1.5px);
+    transition: all 0.2s ease-in-out;
+    width: 1.125rem;
+
+    &::after,
+    &::before {
+      background-color: var(--color-action);
+      content: '';
+      display: block;
+      left: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      width: 1.5rem;
+    }
+
+    &::after {
+      bottom: 8px;
+    }
+
+    &::before {
+      top: 8px;
+    }
+  }
+}
+
+.nav-toggle--is-active {
+  .subnav-active & {
+    & > i {
+      background-color: var(--color-white);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      & > i {
+        background-color: var(--color-white);
+      }
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    & > span,
+    & > i {
+      opacity: 0.75;
+    }
+
+    & > i {
+      background-color: var(--color-white);
+
+      &::after,
+      &::before {
+        background-color: var(--color-action);
+      }
+    }
+  }
+
+  & > i {
+    background-color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-action);
+      transform: rotate(-45deg);
+      transform-origin: center;
+      top: 0;
+    }
+
+    &::before {
+      background-color: var(--color-action);
+      top: 0;
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+  }
+}

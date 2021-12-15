@@ -1,0 +1,11 @@
+{{#>@full-width-wrapper color="white" className="photo-gallery"}}
+  {{#>@media-object variant="2-1" align="top" flipLarge="true" flipSmall="true"}}
+    {{#>@media-figure}}
+      {{#>@carousel}}{{/@carousel}}
+    {{/@media-figure}}
+
+    {{#>@media-body classname="rhythm"}}
+        {{{ body }}}
+    {{/@media-body}}
+  {{/@media-object}}
+{{/@full-width-wrapper}}

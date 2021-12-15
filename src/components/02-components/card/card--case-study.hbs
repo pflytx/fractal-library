@@ -1,0 +1,41 @@
+{{#>@card
+  classname="card--cs"
+  industry=(default industry 'government')
+  fleetSize=(default fleetSize '50-499')
+  result=(default result 'Improved-Driver-Performance')
+}}
+  <a href="#" class="card--cs__link rhythm">
+    <div class="card--cs__logo">
+      <img srcset="{{path (default logo '/images/liquid-logo.png')}}, {{path (default logo-2x '/images/liquid-logo@2x.png')}} 2x" src="{{path (default logo '/images/liquid-logo.png')}}" alt="NFI logo">
+    </div>
+
+    <div class="card--cs__heading-group rhythm--small">
+      {{#>@heading variant="h4" className="card--cs__subheading"}}
+        {{default subheading "GOVERNMENT"}}
+      {{/@heading}}
+
+      {{#>@heading variant="h5" className="color--action card--cs__title"}}
+        {{default title "Rising to the Top: The Transformational Turnaround of Concho Valley Transit District"}}
+      {{/@heading}}
+    </div>
+
+    {{#>@list variant="blank" className="card--cs__list text--small color--gray-1"}}
+      <li>{{default item1 '58% decrease in collision frequency'}}</li>
+      <li>{{default item2 '62% reduction in traffic violations'}}</li>
+      <li>{{default item3 '26% improvement in respince rate'}}</li>
+    {{/@list}}
+
+    <table class="card--cs__table">
+      <tbody>
+        <tr>
+          <td>Fleet Size:</td>
+          <td>{{default fleetSize "50 - 499"}}</td>
+        </tr>
+        <tr>
+          <td>Result:</td>
+          <td>{{default result "Improved Driver Performance"}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </a>
+{{/@card}}

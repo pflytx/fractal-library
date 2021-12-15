@@ -1,0 +1,21 @@
+.feature {
+  margin: 0 auto;
+  max-width: 460px;
+
+  & > img,
+  & > iframe,
+  & > .video-wrapper {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  & > .video-wrapper {
+    /* to counteract margin collapse */
+    display: inline-block;
+  }
+
+  & > figcaption {
+    font-size: 0.875rem;
+    text-align: left;
+  }
+}

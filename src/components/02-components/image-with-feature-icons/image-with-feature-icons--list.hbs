@@ -1,0 +1,47 @@
+{{#each lists}}
+    {{#if mediaBody}}
+        <div class="media__body media__body--default rhythm">
+            <div class="img-with-feature-icons__inner-wrap {{#if marginLeft}}u-ml-auto{{/if}}">
+                {{#>@list variant="blank" className="has-border--top"}}
+                    {{#each features}}
+                        <li>
+                            {{#>@media-object variant="default" flushed="true" noStack="true" align="top"}}
+                            {{#>@media-figure}}
+                                {{> (whichpartial icon) classname="img-with-feature-icons__feature-icon"}}
+                            {{/@media-figure}}
+
+                            {{#>@media-body classname="img-with-feature-icons__body"}}
+                                {{#>@heading variant="h4" tagName="h4"}}
+                                    {{ heading }}
+                                {{/@heading}}
+                                {{{ body }}}
+                            {{/@media-body}}
+                            {{/@media-object}}
+                        </li>
+                    {{/each}}
+                {{/@list}}
+            </div>
+        </div>
+    {{else}}
+        <div class="img-with-feature-icons__inner-wrap {{#if marginLeft}}u-ml-auto{{/if}}">
+            {{#>@list variant="blank" className="has-border--top"}}
+                {{#each features}}
+                    <li>
+                        {{#>@media-object variant="default" flushed="true" noStack="true" align="top"}}
+                        {{#>@media-figure}}
+                            {{> (whichpartial icon) classname="img-with-feature-icons__feature-icon"}}
+                        {{/@media-figure}}
+
+                        {{#>@media-body classname="img-with-feature-icons__body"}}
+                            {{#>@heading variant="h4" tagName="h3"}}
+                                {{ heading }}
+                            {{/@heading}}
+                            {{{ body }}}
+                        {{/@media-body}}
+                        {{/@media-object}}
+                    </li>
+                {{/each}}
+            {{/@list}}
+        </div>
+    {{/if}}
+{{/each}}

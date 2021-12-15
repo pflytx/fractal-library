@@ -1,0 +1,12 @@
+{{#>@card classname="card--press-release card--flush card--cs" industry=(default industry 'Trucking') prDate=(default date "Jun 29, 2019")}}
+     <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+     {{#>@card--padding classname="rhythm--small"}}
+        <p class="text--small color--gray-1">{{default date "Jun 29, 2019"}}</p>
+        {{#>@heading variant="h5"}}
+            <a href="#">
+                {{default title "Super Very Long, Like Ridiculously Long, Press Release Title"}}
+            </a>
+        {{/@heading}}
+     {{/@card--padding}}
+{{/@card}}

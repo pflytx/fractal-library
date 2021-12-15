@@ -1,0 +1,25 @@
+{{#each spectables}}
+  <table class="table--specs">
+      <tr>
+        <th class="table--specs__heading heading heading--h3" colspan="2">{{ heading }}</th>
+      </tr>
+
+      {{#each specs}}
+        <tr>
+          <td class="table--specs__cell table--specs__label heading heading--h4">{{{ label }}}</td>
+          <td class="table--specs__cell table--specs__detail">{{{ detail }}}</td>
+        </tr>
+      {{else}}
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      {{/each}}
+  </table>
+{{else}}
+  <table class="table--specs">
+      <tr>
+        <th colspan="2">&nbsp;</th>
+      </tr>
+  </table>
+{{/each}}

@@ -1,0 +1,73 @@
+.color {
+  /* grayscale alias */
+
+  &--white {
+    color: var(--color-white);
+  }
+
+  &--gray-0 {
+    color: var(--color-gray-0);
+  }
+
+  &--gray-1 {
+    color: var(--color-gray-1);
+  }
+
+  &--gray-2 {
+    color: var(--color-gray-2);
+  }
+
+  &--gray-3 {
+    color: var(--color-gray-3);
+  }
+
+  &--gray-4 {
+    color: var(--color-gray-4);
+  }
+
+  /* general colors */
+  &--blue {
+    color: var(--color-blue);
+  }
+
+  &--dark-purple {
+    color: var(--color-dark-purple);
+  }
+
+  &--turquoise {
+    color: var(--color-turquoise);
+  }
+
+  &--green {
+    color: var(--color-green);
+  }
+
+  &--terra-cotta {
+    color: var(--color-terra-cotta);
+  }
+
+  &--blue-alt {
+    color: var(--color-blue-alt);
+  }
+
+  &--orange {
+    color: var(--color-orange);
+  }
+
+  &--purple {
+    color: var(--color-purple);
+  }
+
+  /* aliases */
+  &--text {
+    color: var(--color-text);
+  }
+
+  &--action {
+    color: var(--color-action);
+  }
+
+  &--dark {
+    color: var(--color-dark);
+  }
+}

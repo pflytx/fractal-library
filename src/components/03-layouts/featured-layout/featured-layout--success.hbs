@@ -1,0 +1,45 @@
+{{#>@featured-layout classname="featured-layout--success"}}
+  <div class="primary rhythm--large">
+    <div class="rhythm--small">
+      {{#>@heading variant="h4"}}FEATURED CASE STUDY{{/@heading}}
+      {{#>@heading variant="h2" classname="color--light-blue"}}
+        <a href="#">Cargo Transporters Exonerates Drivers and Significantly Reduces False Claims with Lytx</a>
+      {{/@heading}}
+    </div>
+    <p>Like many commercial transportation businesses, Cargo Transporters needed to reduce claims and protect its drivers from wrongful accusations. Since deploying the Lytx Driver Safety Program, the company has exonerated innocent drivers and reduced false claims significantly. With the savings from just two wrongful claims, the program has paid for itself—and continues to protect Cargo Transporters’ fleet daily.</p>
+
+    {{#>@list variant="blank"}}
+      <li><strong>83% decrease in near collisions</strong></li>
+      <li><strong>76% reduction in traffic violations</strong></li>
+      <li><strong>33% drop in unbelted drivers</strong></li>
+    {{/@list}}
+
+    {{#>@button variant="primary"}}Read more{{/@button}}
+  </div>
+
+  <div class="secondary rhythm--large">
+    {{#>@blockquote--pullout}}{{/@blockquote--pullout}}
+
+    {{#>@media-object variant="2-1" flushed=true align="top"}}
+      {{#>@media-body classname="rhythm--small"}}
+        {{#>@heading variant="h4"}}Exclusive Resource{{/@heading}}
+        {{#>@heading variant="h3"}}
+          <a href="#">7 Best Practices For Your Fleet Safety Program</a>
+        {{/@heading}}
+      {{/@media-body}}
+
+      {{#>@media-figure stroked=true}}
+        <a href="#">
+          <img srcset="{{path '/images/7-Best_practices.jpg'}}, {{path '/images/7-Best_practices@2x.jpg'}} 2x" src="{{path '/images/7-Best_practices.jpg'}}" alt="7 Best Practices cover image">
+        </a>
+      {{/@media-figure}}
+    {{/@media-object}}
+  </div>
+
+  <div class="layout--featured__cta">
+    <a href="{{default ctaTarget '#cs--filterable'}}" class="layout--featured__btn js-layout--featured__btn">
+      More case studies
+      {{>@icon-scroll classname="layout--featured__scroll"}}
+    </a>
+  </div>
+{{/@featured-layout}}

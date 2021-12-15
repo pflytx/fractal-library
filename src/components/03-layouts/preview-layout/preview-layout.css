@@ -1,0 +1,14 @@
+.preview-layout {
+
+  /*
+  &--block {
+    & > * + * {
+      margin-top: 1rem;
+
+      @media (--medium) {
+        margin-top: 2rem;
+      }
+    }
+  }
+  */
+}

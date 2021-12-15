@@ -1,0 +1,7 @@
+<div class="page-head page-head--major" style="background-image: url({{default heroImg '/images/page-head--major.jpg'}});">
+  {{#if interiorTemplate}}
+    {{> (whichpartial interiorTemplate) }}
+  {{ else }}
+    {{>@page-head-interior__default}}
+  {{/if}}
+</div>

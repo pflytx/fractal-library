@@ -1,0 +1,15 @@
+.additional-resources {
+  .media__body {
+    margin-bottom: 2rem;
+    order: -10 !important;
+    width: 100%;
+
+    @media (--medium-large) {
+      margin-bottom: 0;
+    }
+  }
+
+  &.heading {
+    display: block;
+  }
+}

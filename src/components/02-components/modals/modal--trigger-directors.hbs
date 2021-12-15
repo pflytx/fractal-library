@@ -1,0 +1,21 @@
+<button data-a11y-dialog-show="{{default modalId 'xyz-modal'}}" class="button modal__trigger modal__trigger--director {{triggerClass}}">
+    <div class="rhythm--large">
+       <div>
+            {{#>@heading variant="h3" className="modal__trigger--director-name"}}
+                {{default name 'Person Longname III'}}
+            {{/@heading}}
+            <p class="modal__trigger--director-title">
+               {{default title 'Magician & Puppy Wrangler'}}
+            </p>
+        </div>
+
+        <div class="modal__trigger--director-body">
+            {{{default body '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla soluta culpa quam accusamus provident fugiat illum impedit sunt ea eius, molestiae reiciendis praesentium atque sequi pariatur. Porro dolores doloremque sed...</p>'}}}
+        </div>
+
+         {{#>@heading variant="h4" className="modal__trigger--director-more"}}
+            {{default moreLink 'read more'}}
+        {{/@heading}}
+
+    </div>
+</button>

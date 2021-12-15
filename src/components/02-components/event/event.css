@@ -1,0 +1,38 @@
+.event {
+  display: block;
+
+  &__heading,
+  &__date,
+  &__location,
+  &__share {
+    border-bottom: 1px solid var(--color-gray-3);
+    padding: 0 0 2rem;
+  }
+
+  &__heading {
+    border-bottom-color: var(--color-action);
+  }
+
+  &__date,
+  &__location,
+  &__share {
+    padding-left: 3rem;
+  }
+
+  &__date {
+    background: url(./images/icon-date.svg) 0 -2px no-repeat;
+  }
+
+  &__location {
+    background: url(./images/icon-location.svg) 0 0 no-repeat;
+  }
+
+  &__share {
+    background: url(./images/icon-share.svg) 1px 3px no-repeat;
+    border-bottom: 0;
+  }
+
+  &__logo {
+    padding-top: 2rem;
+  }
+}

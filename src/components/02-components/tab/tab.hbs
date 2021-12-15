@@ -1,0 +1,35 @@
+<div
+  {{classlist
+    "tab"
+    className
+  }}
+>
+  <input
+    class="tab__input a11y a11y-visually-hidden"
+    type="radio"
+    name="{{tabName}}"
+    id="{{id}}"
+    {{#if checked}}checked{{/if}}
+  >
+
+  <div class="tab__item" aria-labelledby="{{id}}">
+    <label class="tab__label" for="{{id}}">
+      {{#if image}}
+        <img class="tab__image" src="{{image}}" alt="{{title}}">
+      {{/if}}
+      <span class="tab__title">
+        {{title}}
+      </span>
+      {{#if sub-title}}
+        <span class="tab__sub-title">
+          {{sub-title}}
+        </span>
+      {{/if}}
+    </label>
+  </div> <!--/ tab__item -->
+  {{#unless noTabContent }}
+  <div class="tab__content rich-text" role="region" id="panel--{{id}}">
+    {{#>@partial-block}}{{/@partial-block}}
+  </div> <!--/ tab__content.rich-text -->
+  {{/unless}}
+</div> <!--/ tab -->

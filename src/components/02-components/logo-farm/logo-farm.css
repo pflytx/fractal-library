@@ -1,0 +1,201 @@
+:root {
+  --figure-height: 720px;
+  --img-width: 18%;
+  --img-gap: 2%;
+  --row-top: 8rem;
+  --row-center: 40%;
+  --row-bottom: 470px;
+  --col-one: 0;
+  --col-two: 20%;
+  --col-three: 40%;
+  --col-four: 60%;
+  --col-five: 80%;
+  --timing-function: cubic-bezier(0.28, 0.89, 0.355, 1);
+}
+
+@keyframes rotator {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+
+  /* start fading in */
+  4% {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  /* start fading out */
+  13% {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  /* deadspace while others animate */
+  16.666% {
+    margin-top: -3rem;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: -3rem;
+    opacity: 0;
+  }
+}
+
+.logo-farm {
+  margin: 6rem 0;
+  text-align: center;
+
+  @media (--medium) {
+    height: var(--figure-height);
+    position: relative;
+  }
+
+  &__img {
+    margin: 1rem;
+    max-width: 120px;
+
+    @media (--medium) {
+      max-width: var(--img-width);
+      position: absolute;
+    }
+  }
+
+  &__img-gs {
+    border: 2px solid transparent;
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+    filter: grayscale(1) !important;
+    transition: border-color 0.5s ease-in, filter 0.5s ease-in;
+
+    @media (--medium) {
+      z-index: 1;
+    }
+
+    &:--haf {
+      border-color: var(--color-blue);
+      filter: grayscale(0) !important;
+    }
+  }
+
+  &__img-major {
+    @media (--medium) {
+      z-index: 2;
+    }
+  }
+
+  &__rotator {
+    @media (--medium) {
+      height: 7rem;
+      position: relative;
+    }
+
+    .heading {
+      @media (--medium) {
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    .heading--h1 {
+      display: none;
+
+      &.rotator-1 {
+        display: block;
+      }
+
+      @media (--medium) {
+        display: block;
+        opacity: 0;
+        top: 0;
+      }
+    }
+
+    .heading--h3 {
+      @media (--medium) {
+        bottom: 0;
+      }
+    }
+  }
+
+  @media (--medium) {
+    .rotator-1 {
+      animation: rotator 24s var(--timing-function) 0s infinite normal;
+    }
+
+    .rotator-2 {
+      animation: rotator 24s var(--timing-function) 4s infinite normal;
+    }
+
+    .rotator-3 {
+      animation: rotator 24s var(--timing-function) 8s infinite normal;
+    }
+
+    .rotator-4 {
+      animation: rotator 24s var(--timing-function) 12s infinite normal;
+    }
+
+    .rotator-5 {
+      animation: rotator 24s var(--timing-function) 16s infinite normal;
+    }
+
+    .rotator-6 {
+      animation: rotator 24s var(--timing-function) 20s infinite normal;
+    }
+
+    #logo-farm-trigger,
+    #logo-farm-img1,
+    #logo-farm-img2,
+    #logo-farm-img3,
+    #logo-farm-img4,
+    #logo-farm-img5,
+    #logo-farm-img6,
+    #logo-farm-img7 {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-three);
+      top: var(--row-top);
+    }
+
+    #logo-farm-img1.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-four);
+      top: var(--row-center);
+    }
+
+    #logo-farm-img2.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-five);
+      top: var(--row-top);
+    }
+
+    #logo-farm-img3.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-three);
+      top: var(--row-bottom);
+    }
+
+    #logo-farm-img4.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-five);
+      top: var(--row-bottom);
+    }
+
+    #logo-farm-img5.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-one);
+      top: var(--row-top);
+    }
+
+    #logo-farm-img6.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-one);
+      top: var(--row-bottom);
+    }
+
+    #logo-farm-img7.animated {
+      box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+      left: var(--col-two);
+      top: var(--row-center);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{{#>@full-width-wrapper
+  color="white"
+  className="software-with-icons"
+  rhythm="large"
+  id="software-with-icons"
+}}
+
+  {{#>@media-object variant="software-icons" justify="space-evenly" align="bottom" flipLarge="true" flipSmall="true" classname="bg--gradient-action"}}
+    {{#>@media-figure}}
+      <figure>
+        <img srcset="{{path (default image '/images/pointer.jpg')}}, {{path (default image-2x '/images/pointer@2x.jpg')}} 2x" src="{{path '/images/fleet-tracking.png'}}" alt="">
+      </figure>
+    {{/@media-figure}}
+
+    {{#>@media-body classname="rhythm media__body--padded"}}
+       {{#>@heading variant="h3" className="color--white"}}
+        Our mission
+      {{/@heading}}
+      <p class="color--white">Our passion is safety on our roadways. Lytx enhances vehicles with a suite of cloud-connected cameras, sensors, and services that transform fleet safety and operational culture.</p>
+    {{/@media-body}}
+  {{/@media-object}}
+
+  <div class="layout--4up layout--4up-fit layout--4up-padded">
+    {{#>@media-object variant="2-1-flushed" align="top" flipLarge="true" flipSmall="true" classname="media--no-stack"}}
+       {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h3" className="color--blue"}}
+          Hungry
+        {{/@heading}}
+        <p>
+          You’re hungry to advance your career and move the needle every day, and you’re ready and willing to grow with us.
+        </p>
+       {{/@media-body}}
+
+       {{#>@media-figure}}
+        {{#>@icon-jump-driversafety}}{{/@icon-jump-driversafety}}
+      {{/@media-figure}}
+    {{/@media-object}}
+
+    {{#>@media-object variant="2-1-flushed" align="top" flipLarge="true" flipSmall="true" classname="media--no-stack"}}
+      {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h3" className="color--blue"}}
+          Humble
+        {{/@heading}}
+        <p>
+          You’re a superstar, but you prefer sharing the spotlight. You challenge yourself to continuously improve, because when you’re better, we’re all better.
+        </p>
+       {{/@media-body}}
+
+       {{#>@media-figure}}
+        {{#>@icon-jump-driversafety}} {{/@icon-jump-driversafety}}
+      {{/@media-figure}}
+    {{/@media-object}}
+
+     {{#>@media-object variant="2-1-flushed" align="top" flipLarge="true" flipSmall="true" classname="media--no-stack"}}
+      {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h3" className="color--blue"}}
+          Capable
+        {{/@heading}}
+        <p>
+          You’re a superstar, but you prefer sharing the spotlight. You challenge yourself to continuously improve, because when you’re better, we’re all better.
+        </p>
+       {{/@media-body}}
+
+       {{#>@media-figure}}
+        {{#>@icon-jump-driversafety}}{{/@icon-jump-driversafety}}
+      {{/@media-figure}}
+    {{/@media-object}}
+  </div>
+{{/@full-width-wrapper}}

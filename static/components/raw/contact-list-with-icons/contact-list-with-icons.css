@@ -1,0 +1,5 @@
+.contact-list-with-icons {
+    & [class*=layout-] {
+        grid-gap: 6rem 4rem;
+    }
+}

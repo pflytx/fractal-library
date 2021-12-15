@@ -1,0 +1,36 @@
+<div class="social-footer">
+  <div class="social-footer__primary rhythm">
+    {{#>@heading variant="h4"}}Share{{/@heading}}
+    <!--
+      DEVELOPMENT NOTE:
+      Properly encoded article URLs should be dynamically added to these HREFs in the CMS templates
+
+      REFERENCE:
+      https://css-tricks.com/simple-social-sharing-links/
+
+      EXAMPLES:
+      Facebook: https://www.facebook.com/sharer.php?u=https%3A%2F%lytx.com%2Fblog%2Farticle-name-goes-here
+
+      Twitter:  https://twitter.com/intent/tweet?url=https%3A%2F%2Flytx.com%2Fblog%2Farticle-name-goes-here
+
+      LinkedIn: https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.lytx.com%2Fen-us%2Fnews-events%2Fpress-release%2Fpress-release-url
+    -->
+    <div>
+      <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.lytx.com%2Fen-us%2Fnews-events%2Fpress-release%2Fpr-url-goes-here" class="social-footer__share-link"><span class="a11y-visually-hidden">LinkedIn</span>{{>@linkedin-share}}</a>
+
+      <a target="_blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.lytx.com%2Fen-us%2Fnews-events%2Fpress-release%2Fpr-url-goes-here" class="social-footer__share-link"><span class="a11y-visually-hidden">Facebook</span>{{>@facebook-share}}</a>
+
+      <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.lytx.com%2Fen-us%2Fnews-events%2Fpress-release%2Fpr-url-goes-here" class="social-footer__share-link"><span class="a11y-visually-hidden">Twitter</span>{{>@twitter-share}}</a>
+    </div>
+  </div>
+
+  <div class="social-footer__secondary rhythm">
+    {{#>@heading variant="h4"}}Media Inquiries{{/@heading}}
+    <p>
+      <a href="mailto:corpcomm@lytx.com">corpcomm@lytx.com</a>
+    </p>
+  </div>
+  <div class="social-footer__tertiary rhythm">
+    <a href="javascript:history.back()" class="left-arrow">Back to all news</a>
+  </div>
+</div>

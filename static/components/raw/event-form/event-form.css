@@ -1,0 +1,22 @@
+.event-form {
+  padding: 5rem 6rem;
+
+  > * {
+    max-width: 400px;
+  }
+
+  [type="text"] {
+    background-color: var(--color-white);
+    border-color: var(--color-gray-3);
+  }
+
+  label {
+    display: block;
+    font-size: 0.857142857142857rem;
+    margin: 2rem 0 0.5rem;
+  }
+
+  fieldset + fieldset {
+    margin-top: 4rem;
+  }
+}

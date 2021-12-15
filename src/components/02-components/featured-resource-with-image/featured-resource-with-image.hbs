@@ -1,0 +1,31 @@
+{{#>@full-width-wrapper
+  color="white"
+  className="featured-resource bg--gradient-gray is-condensed"
+  rhythm="large"
+  id="featured-resource"
+}}
+
+  {{#>@media-object variant="featured-resource" justify="space-evenly" align="bottom" flipLarge="true"}}
+    {{#>@media-figure}}
+      <figure>
+        <img srcset="{{path (default image '/images/coaching.jpg')}}, {{path (default image-2x '/images/coaching@2x.jpg')}} 2x" src="{{path '/images/coaching.jpg'}}" alt="">
+        <img class="featured-resource__cover" srcset="{{path (default image '/images/analytical-resource.jpg')}}, {{path (default image-2x '/images/analytical-resource@2x.jpg')}} 2x" src="{{path '/images/analytical-resource.jpg'}}" alt="">
+      </figure>
+    {{/@media-figure}}
+
+    {{#>@media-body classname="rhythm media__body--padded"}}
+      <h4 class="heading heading--h4">
+        FEATURED RESOURCE
+      </h4>
+      <h3 class="heading heading--h3">
+        Analytical Insights & Industry News
+      </h3>
+      <p>
+        Best Fleet Forward keeps you informed with the latest innovations from Lytx®, along with sharing how fleets are seeing success with the DriveCam® safety program.
+      </p>
+      <a href="#" class="button button--primary">
+        Get my copy
+      </a>
+    {{/@media-body}}
+  {{/@media-object}}
+{{/@full-width-wrapper}}

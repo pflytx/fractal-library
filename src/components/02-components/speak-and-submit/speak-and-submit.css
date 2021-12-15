@@ -1,0 +1,13 @@
+.speak-and-submit {
+  &__secondary {
+    padding-top: 2rem;
+  }
+
+  &__secondary-cta {
+    align-self: center;
+
+    @media (--medium) {
+      text-align: right;
+    }
+  }
+}

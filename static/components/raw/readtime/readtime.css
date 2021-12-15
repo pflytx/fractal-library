@@ -1,0 +1,11 @@
+.readtime {
+  &::before {
+    content: url(./images/clock.svg);
+    display: inline-block;
+    height: 1rem;
+    margin: 0 1rem 4rem 0;
+    position: relative;
+    top: 4px;
+    width: 1rem;
+  }
+}

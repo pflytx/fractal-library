@@ -1,0 +1,17 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 1rem;
+
+  &--small {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 1rem;
+  }
+
+  &--squeezed {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 1rem;
+  }
+}

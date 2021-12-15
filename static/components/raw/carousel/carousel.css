@@ -1,0 +1,262 @@
+@import 'flickity/css/flickity';
+
+.carousel {
+  margin-right: 0 !important;
+  
+  &__container {
+    width: 100%;
+  }
+
+  &__cell {
+    width: 65%;
+    margin-right: 2rem;
+  }
+
+  &__controls {
+    > * {
+      border: 0;
+      font-family: var(--font-stack--heading);
+      font-size: 1.25rem;
+      font-weight: var(--font-weight--bold);
+      margin-right: 1ch;
+      padding: 0;
+    }
+
+    .carousel__current {
+      color: var(--color-text);
+    }
+
+    .carousel__next,
+    .carousel__seperator {
+      color: var(--color-gray-3);
+    }
+
+    & .is-active > .carousel__icon path {
+      fill: var(--color-action);
+    }
+  }
+
+  &__control-arrow {
+    background-color: transparent;
+    outline: 0;
+    position: relative;
+    top: 1px;
+
+    &.is-active {
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    height: auto;
+    width: 1.25rem;
+
+    & path {
+      fill: var(--color-gray-3);
+    }
+  }
+
+  &--autoplay {
+    margin-bottom: 4rem;
+
+    & .carousel__cell {
+      width: 100%;
+    }
+
+    & blockquote.testimonial,
+    &.blockquote.testimonial {
+      margin: 0 auto;
+
+      & .testimonial__cite {
+        margin-top: 2rem;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--rotator {
+    & .flickity-viewport {
+      overflow-y: visible !important;
+    }
+
+    & .video-wrapper {
+      background-color: transparent;
+      margin: 2rem auto;
+
+      &::after {
+        box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.36);
+        display: block;
+        height: calc(100% - 4rem);
+        left: 0;
+        padding: 2rem 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+
+    & .carousel__cell {
+      margin: auto;
+      width: 100%;
+
+      @media (--medium) {
+        margin: auto 10%;
+        max-width: 80%;
+        width: 980px;
+      }
+    }
+
+    & .carousel__tabs {
+      min-height: 150px;
+      position: relative;
+    }
+
+    & .carousel__tab {
+      border-top: 2px solid var(--color-gray-4);
+      left: 0;
+      margin-top: 0;
+      opacity: 0;
+      padding-top: 2rem;
+      position: absolute;
+      top: 0;
+      transition: z-index 0.2s linear, opacity 0.2s linear;
+      z-index: -1;
+      width: 100%;
+
+      @media (--medium) {
+        margin-top: 2rem;
+        opacity: 1;
+        position: relative;
+        z-index: 0;
+      }
+
+      &::before {
+        background-color: var(--color-action);
+        display: block;
+        height: 2px;
+        left: 0;
+        max-width: 0;
+        position: absolute;
+        top: -1px;
+        transition: max-width 0.75s ease-out;
+        width: 100%;
+      }
+
+      &.active {
+        opacity: 1;
+        transition: z-index 0.2s linear, opacity 0.5s 0.2s linear;
+        z-index: 2;
+
+        &::before {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Generated elements */
+.flickity-viewport {
+  transition: height 0.2s linear;
+}
+
+.flickity-page-dots {
+  bottom: -4rem;
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: transparent;
+    border: 2px solid var(--color-action);
+
+    &.is-selected {
+      background-color: var(--color-action);
+    }
+  }
+}
+
+.flickity-button {
+  background-color:  var(--color-action);
+}
+.flickity-button:hover,
+.flickity-button:focus {
+  background:  var(--color-hover);
+}
+
+.flickity-button:focus {
+  box-shadow: 0 0 2px 4px var(--color-focus);
+}
+
+.flickity-prev-next-button {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  @media (--medium) {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+ &.previous {
+    left: 4px;
+    opacity: 0.5;
+
+    &:active {
+      opacity: 1;
+    }
+
+    @media (--medium) {
+      left: calc(5% - 1.75rem);
+      opacity: 1;
+    }
+  }
+
+  &.next {
+    opacity: 0.5;
+    right: 4px;
+
+    &:active {
+      opacity: 1;
+    }
+
+    @media (--medium) {
+      opacity: 1;
+      right: calc(5% - 1.75rem);
+    }
+  }
+
+& .flickity-button-icon {
+    fill: var(--color-white);
+    height: 1rem;
+    left: calc(50% - 0.5rem);
+    top: calc(50% - 0.5rem);
+    width: 1rem;
+  }
+}
+
+
+.cssgridlegacy {
+  .carousel__tabs {
+    .layout--4up {
+      -ms-grid-columns: 25% 25% 25% 25%;
+      li.carousel__tab {
+        &:nth-child(1) {
+          -ms-grid-column: 1;
+        }
+        &:nth-child(2) {
+          -ms-grid-column: 2;
+        }
+        &:nth-child(3) {
+          -ms-grid-column: 3;
+        }
+        &:nth-child(4) {
+          -ms-grid-column: 4;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<nav class="secondary-nav js-global-nav">
+  <ul class="secondary-nav__list">
+    <li class="u-lores-only">
+      <a href="#" class="nav__close">
+        <span class="a11y-visually-hidden">Back</span>
+        {{>@arrow-left class="icon--arrow-left"}}
+      </a>
+    </li>
+    <li class="nav__category subnav__category">
+      <a class="nav__menu-toggle secondary-nav__login" href="#">
+        {{>@person}}
+        <span class="u-hires-only">Login</span>
+      </a>
+
+      <div class="global-nav__menu secondary-nav__menu" aria-hidden="true">
+        <div class="global-nav__menu-inner-wrap">
+          <ul class="global-nav__submenu">
+            <li>
+              <a class="nav__link nav__link--portal" href="#">
+                Drivecam online
+                {{>@person classname="subnav__icon-person"}}
+              </a>
+            </li>
+            <li>
+              <a class="nav__link nav__link--portal" href="#">
+                RAIR Portal
+                {{>@person classname="subnav__icon-person"}}
+              </a>
+            </li>
+            <li>
+              <a class="nav__link nav__link--portal" href="#">
+                Product Information
+                {{>@person classname="subnav__icon-person"}}
+              </a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">
+                Store
+                {{>@chevron-right class="subnav__chevron"}}
+              </a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">
+                News and Events
+                {{>@chevron-right class="subnav__chevron"}}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li class="subnav__category u-medres-up">
+      {{#>@button variant="primary" href="#"}}Get Started{{/@button}}
+    </li>
+  </ul>
+</nav>

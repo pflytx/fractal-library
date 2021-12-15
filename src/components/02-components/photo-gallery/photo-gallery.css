@@ -1,0 +1,26 @@
+.photo-gallery {
+  & .media__figure {
+    margin-top: 2rem;
+    order: 2 !important;
+    width: 100%;
+
+    @media (--medium-large) {
+      flex: 0 0 60%;
+      margin-right: 0;
+    }
+  }
+}
+
+.InternetExplorer {
+  .carousel__control-arrow {
+    height: 1em;
+  }
+}
+
+.no-flexboxlegacy {
+  .photo-gallery {
+  .media.media--2-1 {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.related-resource {
+  .media__body {
+    margin-bottom: 2rem;
+    order: -10 !important;
+
+    @media (--medium-large) {
+      margin-bottom: 0;
+      order: inherit !important;
+    }
+  }
+}

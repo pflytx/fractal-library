@@ -1,0 +1,104 @@
+{{#>@full-width-wrapper
+  color="text"
+  className="cs--filterable js-cs--filterable"
+  rhythm="large"
+  id="cs--featured"
+}}
+
+  {{#>@media-object variant="2-1" align="top" flipLarge="true" flipSmall="true"}}
+    {{#>@media-figure classname="text--align-left"}}
+      <div class="layout--4up layout--4up-fit layout--cs-list" data-initial-limit="2">
+        {{#>@card--case-study
+          industry="government"
+          fleetSize="50-499"
+          result="Improved Driver Performance"
+          title="Rising to the Top: The Transformational Turnaround of Concho Valley Transit District"
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="government"
+          fleetSize="500+"
+          result="Reduce Costs"
+          title="TriMet reduces collision frequency by more than 50% with Lytx."
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="construction"
+          fleetSize="50-499"
+          result="Improved Driver Performance"
+          title="MedStar Mobile Healthcare dramatically reduces collisions and associated costs with the Lytx DriveCam safety program."
+          subheading="Construction"
+          logo='/images/calark-logo.png'
+          logo-2x='/images/calark-logo@2x.png'
+          subheading="Construction"
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="construction"
+          fleetSize="50-499"
+          result="Improved Driver Performance"
+          title="Orange County, Florida, reduces collisions by 40% with Lytx."
+          subheading="Construction"
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="trucking"
+          fleetSize="10-49"
+          result="Reduce Costs"
+          title="NFI Industries reduces collision frequency by more than 50% with Lytx."
+          logo='/images/calark-logo.png'
+          logo-2x='/images/calark-logo@2x.png'
+          subheading="Trucking"
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="trucking"
+          fleetSize="500+"
+          item1="HELLO"
+          result="Reduce Costs"
+          title="A.D. Transport Express Inc. Cuts Claims Costs and Helps Protect and Retain Drivers with Lytx"
+          subheading="Trucking"
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="waste"
+          fleetSize="10-49"
+          result="Manage Fleet Risk"
+          title="Acme reduces traffic violations, the severity of risky driving events, and more with the Lytx DriveCam safety program."
+          subheading="waste"
+        }}{{/@card--case-study}}
+
+        {{#>@card--case-study
+          industry="waste"
+          fleetSize="500+"
+          result="Manage Fleet Risk"
+          title="LES significantly reduces traffic violations, the severity of risky driving events, and more with the Lytx DriveCam safety program."
+          subheading="waste"
+        }}{{/@card--case-study}}
+      </div>
+    {{/@media-figure}}
+
+     {{#>@media-body classname="rhythm--large"}}
+      {{#>@heading variant="h3" className="color--white"}}
+        We deliver safety, success, and peace of mind for customers just like you.
+      {{/@heading}}
+
+      <p class="color--white">Lytx partners across industries, protecting fleets of all sizes from ten to 500+ vehicles. Learn more about how we’re improving safety in your industry.</p>
+
+       <div class="form-wrapper form--inline js-form--filters">
+         <fieldset class="rhythm--small">
+          <label for="filter--industry" class="color--white">Industry</label>
+          <div class="input--select transparent">
+            <select class="transparent bg--text" id="filter--industry" name="filter--industry">
+              <option selected value="All">All industries</option>
+              <option value="Government">Government</option>
+              <option value="Construction">Construction</option>
+              <option value="Trucking">Trucking</option>
+              <option value="Waste">Waste</option>
+            </select>
+          </div>
+        </fieldset>
+      </div>
+    {{/@media-body}}
+  {{/@media-object}}
+{{/@full-width-wrapper}}

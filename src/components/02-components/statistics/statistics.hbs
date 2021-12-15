@@ -1,0 +1,22 @@
+{{#>@full-width-wrapper
+  color="action"
+  className="statistics"
+  bgImg=(path "/images/logo-dashes.svg")
+  rhythm="small"
+}}
+
+  <div>
+    {{#>@heading variant="h1" className="color--white text--align-center"}}
+      We deliver the results fleets need.
+    {{/@heading}}
+    <p class="color--white text--align-center">Just ask the 99% of our clients that renew each year.</p>
+  </div>
+
+  <div class="layout--stats">
+    {{#>@stat number="50%" desc="Up to 50% reduction in collision frequency"}}{{/@stat}}
+    {{#>@stat number="80%" desc="Up to 80% reduction in
+claims costs"}}{{/@stat}}
+    {{#>@stat number="850k+" desc="Over 850,000 drivers
+protected worldwide"}}{{/@stat}}
+  </div>
+{{/@full-width-wrapper}}

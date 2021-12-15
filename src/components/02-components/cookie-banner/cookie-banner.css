@@ -1,0 +1,26 @@
+.cookie-banner {
+  background-color: color(var(--color-text) alpha(0.95));
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  position: fixed;
+  right: 0;
+  top: auto;
+  z-index: var(--zindex--modal);
+
+  &__wrapper {
+    @media (--large) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__button.button.button--primary {
+    margin-top: 2rem;
+
+    @media (--large) {
+      margin-top: 0;
+    }
+  }
+}

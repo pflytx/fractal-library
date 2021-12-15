@@ -1,0 +1,157 @@
+.card {
+  background-color: var(--color-white);
+  border-radius: 7px;
+  box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.44);
+  cursor: pointer;
+  max-width: 25rem;
+  padding: 1.75rem;
+  transform: scale(1);
+  filter: grayscale(0) !important;
+  transition: 0.2s transform linear;
+
+  &:--haf {
+    transform: scale(1.05);
+  }
+
+  &--flush {
+    padding: 0;
+  }
+
+  &--flat {
+    box-shadow: none;
+    cursor: default;
+
+    &:--haf {
+      transform: scale(1);
+    }
+  }
+
+  &--padding {
+    padding: 1.25rem 1.75rem 1.75rem;
+    width: 100%;
+  }
+
+  &__img {
+    border-radius: 7px 7px 0 0;
+    height: auto;
+    width: 100%;
+  }
+
+  &--cs {
+    &__link {
+      color: var(--color-text);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      &:--haf {
+        color: var(--color-text);
+        text-decoration: none;
+
+        & .card--cs__title {
+          color: var(--color-text);
+        }
+
+        & .card--cs__logo > img {
+          filter: grayscale(0) !important;
+        }
+      }
+    }
+
+    &__logo {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      height: 75px;
+      justify-content: center;
+      text-align: right;
+
+      & > img {
+        max-width: 110px;
+        max-height: 110px;	      
+        filter: grayscale(1) !important;
+        transition: filter 0.125s ease-in;
+	transform: scale(0.95);
+
+        &:--haf {
+          filter: grayscale(0) !important;
+        }
+      }
+    }
+
+    &__subheading {
+      font-size: 0.875rem;
+    }
+
+    &__title {
+      color: var(--color-action);
+      transition: 0.2s color linear;
+    }
+
+    &__table {
+      align-self: flex-end;
+      font-size: 0.75rem;
+      margin-top: 4rem;
+      width: 100%;
+
+      & td {
+        border: 0;
+        border-top: 1px solid var(--color-gray-4);
+        padding: 0.5em 0;
+        text-align: left;
+
+        &:first-child {
+          font-weight: var(--font-weight--bold);
+          width: 33%;
+        }
+      }
+    }
+
+    &__nope {
+      color: var(--color-white);
+      grid-column: 1 / span last;
+    }
+
+    &.filtered--show { display: block; }
+    &.filtered--hide { display: none; }
+  }
+
+  &--news {
+    box-shadow: none;
+    border-radius: 0;
+    cursor: default;
+    padding-top: 0;
+
+    &:--haf {
+      transform: scale(1);
+    }
+  }
+
+  &--event,
+  &--press-release {
+    cursor: default;
+    min-height: 20rem;
+  }
+
+  &--event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card--padding {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 125px;
+      padding-bottom: 0.75rem;
+    }
+
+    .event-details {
+      align-self: flex-end;
+      border-top: 1px solid var(--color-gray-4);
+      padding-top: 1rem;
+      width: 100%;
+    }
+  }
+}

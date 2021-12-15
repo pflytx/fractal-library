@@ -1,0 +1,84 @@
+.connected-drawer {
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 100%;
+
+  &__bg {
+    background-color: var(--color-gray-4);
+    height: 2px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__btn {
+    background-color: var(--color-white);
+    border: 0;
+    cursor: pointer;
+    left: calc(50% - 150px);
+    position: absolute;
+    top: -1.75rem;
+    width: 300px;
+
+    &:--haf {
+      outline: 0;
+
+      .connected-drawer__heading {
+        color: var(--color-action);
+      }
+
+      .connected-drawer__icon-down {
+        path {
+          fill: var(--color-action);
+        }
+      }
+    }
+  }
+
+  &__heading {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__icon-linkedin {
+    circle {
+      fill: #0092d9;
+    }
+    path {
+      fill: var(--color-white);
+    }
+  }
+
+  &__icon-down {
+    height: auto;
+    position: relative;
+    top: -2px;
+    width: 1rem;
+  }
+
+  &__drawer {
+    margin-top: 0;
+    max-height: 0;
+    transition: max-height 0.2s linear;
+    visibility: hidden;
+
+    & > * {
+      opacity: 0;
+      transition: opacity 0.2s 0.2s linear;
+    }
+
+    &.is-active {
+      margin-top: 4rem;
+      max-height: 100rem;
+      padding: 2rem 0;
+      visibility: visible;
+
+      & > * {
+        opacity: 1;
+      }
+    }
+  }
+}

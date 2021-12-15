@@ -1,0 +1,892 @@
+
+
+<!doctype html>
+<html>
+  <head>
+		<title>Turn Component Library</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="apple-mobile-web-app-title" content="" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.96.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+
+      <link rel="stylesheet" href="/styles.wheel.css" />
+
+    
+	</head>
+	<body>
+		  <main id="content" role="main">
+    <div class="preview-layout preview-layout--block">
+      <header  class="fixed global-header has-scrolled">
+  <div class="global-header__inner">
+
+    <h1 class="brand">
+      <a href="/" class="brand__anchor">
+        <span class="a11y-visually-hidden">Lytx</span>
+        <svg class="brand__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path id="a" d="M.024.158h27.057v33.851H.024z"/>
+            <path id="c" d="M0 .106h9.665v40.131H0z"/>
+            <path id="e" d="M.114.129h4.213v4.249H.114z"/>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(10.91 13.714)">
+              <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+              </mask>
+              <path d="M26.587.159h-4.524c-.341 0-.496.22-.59.441-.042.097-7.703 18.264-7.703 18.264-.14.322-.326.32-.462-.004 0 0-7.58-18.029-7.676-18.25-.094-.22-.25-.442-.59-.442H.517C.162.17-.05.412.047.704c0 0 6.9 16.481 10.328 24.603.225.534.214.956-.006 1.483-1.004 2.403-2.742 6.63-2.742 6.63-.133.325.049.59.404.59h4.476c.404 0 .632-.199.76-.481.264-.58 13.79-32.835 13.79-32.835.097-.292-.115-.533-.47-.534" fill="#16135F" mask="url(#b)"/>
+            </g>
+            <g>
+              <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+              </mask>
+              <path d="M9.154 35.308H7.521c-1.481 0-2.145-.542-2.145-2.168V.598c0-.295-.205-.492-.511-.492H.511c-.306 0-.51.197-.51.492v32.837c0 4.584 1.94 6.802 6.741 6.802h2.412c.307 0 .51-.198.51-.493V35.8c0-.295-.203-.493-.51-.493" fill="#16135F" mask="url(#d)"/>
+            </g>
+            <path d="M46.795 17.93a.355.355 0 0 1 .357-.345l6.215.003c.298 0 .497-.195.497-.49v-3.485c0-.294-.199-.49-.497-.49h-6.232a.354.354 0 0 1-.339-.35l-.001-6.798c0-.294-.199-.49-.497-.49h-4.21c-.299 0-.497.196-.497.49V32.17c0 .99.077 1.883.241 2.68.676 3.28 2.822 4.92 7.095 4.921h4.431c.298 0 .496-.196.496-.49V35.33c0-.294-.198-.49-.496-.49h-3.7c-1.041 0-1.78-.213-2.213-.64-.433-.426-.65-1.387-.65-2.882V17.93zM84.467 39.932L65.579 14.148c-.16-.217-.378-.434-.72-.434h-5.286c-.356.002-.499.238-.318.526l8.121 11.043c.164.224.201.713-.033 1.053-.072.103-9.992 13.596-9.992 13.596-.18.287-.038.523.318.525h5.287c.341 0 .56-.217.718-.434l.002-.003c.074-.08 6.798-9.281 6.937-9.47a.404.404 0 0 1 .295-.143c.105 0 .208.049.288.136.387.531 6.884 9.419 6.966 9.505.158.209.371.41.7.41H83.7l.018-.001h.431c.356-.002.499-.238.318-.525" fill="#16135F"/>
+            <path d="M81.428 13.029h-5.219c-.336 0-.552.226-.709.454l-4.513 6.538c-.18.301-.038.549.313.55h5.204c.337 0 .552-.227.71-.454l4.527-6.538c.178-.301.038-.55-.313-.55" fill="#0099D9"/>
+            <g transform="translate(85.227 36.343)">
+              <mask id="f" fill="#fff">
+                <use xlink:href="#e"/>
+              </mask>
+              <path d="M2.364 2.092c.257 0 .386-.11.386-.332 0-.215-.129-.322-.386-.322h-.496c-.03 0-.044.015-.044.045v.565c0 .03.014.044.044.044h.496zm-.883 1.32c-.05 0-.077-.025-.077-.077V1.139c0-.052.026-.078.077-.078h.883c.257 0 .456.061.595.183.14.122.21.294.21.516 0 .163-.04.3-.121.41a.697.697 0 0 1-.342.244l.474.92c.022.053.007.078-.044.078h-.309c-.044 0-.077-.025-.1-.077l-.44-.865h-.42c-.03 0-.043.015-.043.044v.82c0 .053-.026.078-.078.078h-.265zm.74.6c.25 0 .48-.045.689-.134.21-.088.391-.212.546-.371.154-.159.275-.346.364-.56.088-.215.132-.448.132-.7 0-.25-.044-.483-.132-.698-.089-.214-.21-.4-.364-.555A1.69 1.69 0 0 0 2.91.628a1.75 1.75 0 0 0-.69-.133c-.25 0-.48.045-.689.133a1.69 1.69 0 0 0-.546.366c-.154.155-.276.34-.364.555a1.82 1.82 0 0 0-.132.699c0 .251.044.484.132.699.088.214.21.401.364.56.155.159.336.283.546.371.21.09.44.133.69.133zm0 .366A2.059 2.059 0 0 1 .273 3.09a2.188 2.188 0 0 1-.16-.843c0-.296.053-.573.16-.832A2.062 2.062 0 0 1 2.22.129c.302 0 .581.054.839.161.257.107.48.257.667.45.187.192.334.417.441.676.107.259.16.536.16.832 0 .303-.053.584-.16.843a2.112 2.112 0 0 1-.44.676c-.189.193-.411.343-.668.45-.258.107-.537.16-.839.16z" fill="#16135F" mask="url(#f)"/>
+            </g>
+          </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" xmlns:xlink="http://www.w3.org/1999/xlink" class="brand__logo--white">
+          <defs>
+            <path id="a-lw" d="M.024.158h27.057v33.851H.024z"/>
+            <path id="c-lw" d="M0 .106h9.665v40.131H0z"/>
+            <path id="e-lw" d="M.114.129h4.213v4.249H.114z"/>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(10.91 13.714)">
+              <mask id="butt" fill="#fff">
+                <use xlink:href="#a-lw"/>
+              </mask>
+              <path fill="#FFF" d="M26.587.159h-4.524c-.341 0-.496.22-.59.441-.042.097-7.703 18.264-7.703 18.264-.14.322-.326.32-.462-.004 0 0-7.58-18.029-7.676-18.25-.094-.22-.25-.442-.59-.442H.517C.162.17-.05.412.047.704c0 0 6.9 16.481 10.328 24.603.225.534.214.956-.006 1.483-1.004 2.403-2.742 6.63-2.742 6.63-.133.325.049.59.404.59h4.476c.404 0 .632-.199.76-.481.264-.58 13.79-32.835 13.79-32.835.097-.292-.115-.533-.47-.534" mask="url(#butt)"/>
+            </g>
+            <mask id="dutt" fill="#fff">
+              <use xlink:href="#c-lw"/>
+            </mask>
+            <path fill="#FFF" d="M9.154 35.308H7.521c-1.481 0-2.145-.542-2.145-2.168V.598c0-.295-.205-.492-.511-.492H.511c-.306 0-.51.197-.51.492v32.837c0 4.584 1.94 6.802 6.741 6.802h2.412c.307 0 .51-.198.51-.493V35.8c0-.295-.203-.493-.51-.493" mask="url(#dutt)"/>
+            <path fill="#FFF" d="M46.795 17.93a.355.355 0 0 1 .357-.345l6.215.003c.298 0 .497-.195.497-.49v-3.485c0-.294-.199-.49-.497-.49h-6.232a.354.354 0 0 1-.339-.35l-.001-6.798c0-.294-.199-.49-.497-.49h-4.21c-.299 0-.497.196-.497.49V32.17c0 .99.077 1.883.241 2.68.676 3.28 2.822 4.92 7.095 4.921h4.431c.298 0 .496-.196.496-.49V35.33c0-.294-.198-.49-.496-.49h-3.7c-1.041 0-1.78-.213-2.213-.64-.433-.426-.65-1.387-.65-2.882V17.93zm37.672 22.002L65.579 14.148c-.16-.217-.378-.434-.72-.434h-5.286c-.356.002-.499.238-.318.526l8.121 11.043c.164.224.201.713-.033 1.053-.072.103-9.992 13.596-9.992 13.596-.18.287-.038.523.318.525h5.287c.341 0 .56-.217.718-.434l.002-.003c.074-.08 6.798-9.281 6.937-9.47a.404.404 0 0 1 .295-.143c.105 0 .208.049.288.136.387.531 6.884 9.419 6.966 9.505.158.209.371.41.7.41H83.7l.018-.001h.431c.356-.002.499-.238.318-.525"/>
+            <path fill="#009CDE" d="M81.428 13.029h-5.219c-.336 0-.552.226-.709.454l-4.513 6.538c-.18.301-.038.549.313.55h5.204c.337 0 .552-.227.71-.454l4.527-6.538c.178-.301.038-.55-.313-.55"/>
+            <g transform="translate(85.227 36.343)">
+              <mask id="futt" fill="#fff">
+                <use xlink:href="#e-lw"/>
+              </mask>
+              <path fill="#FFF" d="M2.364 2.092c.257 0 .386-.11.386-.332 0-.215-.129-.322-.386-.322h-.496c-.03 0-.044.015-.044.045v.565c0 .03.014.044.044.044h.496zm-.883 1.32c-.05 0-.077-.025-.077-.077V1.139c0-.052.026-.078.077-.078h.883c.257 0 .456.061.595.183.14.122.21.294.21.516 0 .163-.04.3-.121.41a.697.697 0 0 1-.342.244l.474.92c.022.053.007.078-.044.078h-.309c-.044 0-.077-.025-.1-.077l-.44-.865h-.42c-.03 0-.043.015-.043.044v.82c0 .053-.026.078-.078.078h-.265zm.74.6c.25 0 .48-.045.689-.134.21-.088.391-.212.546-.371.154-.159.275-.346.364-.56.088-.215.132-.448.132-.7 0-.25-.044-.483-.132-.698-.089-.214-.21-.4-.364-.555A1.69 1.69 0 0 0 2.91.628a1.75 1.75 0 0 0-.69-.133c-.25 0-.48.045-.689.133a1.69 1.69 0 0 0-.546.366c-.154.155-.276.34-.364.555a1.82 1.82 0 0 0-.132.699c0 .251.044.484.132.699.088.214.21.401.364.56.155.159.336.283.546.371.21.09.44.133.69.133zm0 .366A2.059 2.059 0 0 1 .273 3.09a2.188 2.188 0 0 1-.16-.843c0-.296.053-.573.16-.832A2.062 2.062 0 0 1 2.22.129c.302 0 .581.054.839.161.257.107.48.257.667.45.187.192.334.417.441.676.107.259.16.536.16.832 0 .303-.053.584-.16.843a2.112 2.112 0 0 1-.44.676c-.189.193-.411.343-.668.45-.258.107-.537.16-.839.16z" mask="url(#futt)"/>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </h1>
+
+    <nav class="global-nav js-global-nav">
+      <ul class="nav js-nav">
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#">
+            Solutions
+            <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+              <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#"
+          >About <span class="u-hires-only u-inline">us</span>
+          <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+            <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+          </svg>
+        </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#
+          ">Clients
+          <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+            <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+          </svg>
+        </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#">
+            Resources
+            <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+              <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#">
+            Contact <span class="u-hires-only u-inline">us</span>
+            <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+              <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category u-medres-up">
+          <a class="nav__menu-toggle nav__search" href="/search-results">
+            <span class="a11y-visually-hidden">Search</span>
+            <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="icon--search"><path d="M11.04 10.371l-.264-.254a6.101 6.101 0 001.48-3.989 6.128 6.128 0 10-6.128 6.129 6.101 6.101 0 003.989-1.48l.254.263v.745l4.011 4.003a.994.994 0 001.406-1.406l-4.003-4.01h-.745zM1.886 6.128c0-2.347 1.895-4.242 4.242-4.242s4.243 1.895 4.243 4.242c0 2.348-1.895 4.243-4.243 4.243S1.886 8.476 1.886 6.128z" fill="#415365" fill-rule="evenodd"/></svg>      </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap nav__search-inner-wrap">
+              <div class="form-wrapper theme--primary">
+                <fieldset class="rhythm">
+                  <label for="global-search" class="heading heading--h4 heading--label">What are you searching for?</label>
+                  <div class="input-group--inline">
+                    <div class="input-group__prefix">
+                      <span class="input-group__icon">
+                        <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="icon--search"><path d="M11.04 10.371l-.264-.254a6.101 6.101 0 001.48-3.989 6.128 6.128 0 10-6.128 6.129 6.101 6.101 0 003.989-1.48l.254.263v.745l4.011 4.003a.994.994 0 001.406-1.406l-4.003-4.01h-.745zM1.886 6.128c0-2.347 1.895-4.242 4.242-4.242s4.243 1.895 4.243 4.242c0 2.348-1.895 4.243-4.243 4.243S1.886 8.476 1.886 6.128z" fill="#415365" fill-rule="evenodd"/></svg>                  </span>
+                    </div>
+                    <input type="text" class="" id="global-search">
+                     <div class="input-group__suffix js-search-clear">
+                      <span class="input-group__icon">
+                        <button type="button" class="button--plain"> &times; </button>
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category u-lores-only">
+          <a class="nav__cta" href="#">Get Started</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="secondary-nav js-global-nav">
+      <ul class="secondary-nav__list">
+        <li class="u-lores-only">
+          <a href="#" class="nav__close">
+            <span class="a11y-visually-hidden">Back</span>
+            <svg class="icon--arrow-left" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.705.705c.39.39.39 1.02 0 1.41L3.83 7H15a1 1 0 110 2H3.83l4.876 4.884a.998.998 0 01-1.411 1.411L0 8 7.295.705a.997.997 0 011.41 0z" fill="#009CDE" fill-rule="evenodd"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__category subnav__category">
+          <a class="nav__menu-toggle secondary-nav__login" href="#">
+            <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>        <span class="u-hires-only">Login</span>
+          </a>
+    
+          <div class="global-nav__menu secondary-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li>
+                  <a class="nav__link nav__link--portal" href="#">
+                    Drivecam online
+                    <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person subnav__icon-person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>              </a>
+                </li>
+                <li>
+                  <a class="nav__link nav__link--portal" href="#">
+                    RAIR Portal
+                    <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person subnav__icon-person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>              </a>
+                </li>
+                <li>
+                  <a class="nav__link nav__link--portal" href="#">
+                    Product Information
+                    <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person subnav__icon-person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>              </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#">
+                    Store
+                    <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                      <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#">
+                    News and Events
+                    <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                      <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+    
+        <li class="subnav__category u-medres-up">
+          <a href="#"  class="button button--link button--primary button--size-default" >
+      Get Started
+    </a>
+    
+        </li>
+      </ul>
+    </nav>
+
+    <button class="nav__toggle js-nav-toggle">
+      <span class="a11y-visually-hidden">Menu</span>
+      <i></i>
+    </button>
+
+  </div>
+</header>
+
+<div class="page-head" style="background-image: url(/images/page-head.jpg);">
+  <div class="page-head-interior rhythm--small">
+    <h4  class="heading heading--h4 page-head-interior__subtitle">
+    Lorem Ipsum
+  </h4>
+  
+    <h1  class="heading heading--h1 page-head-interior__title">
+    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </h1>
+  
+    <p class="page-head-interior__tagline">Duis aute, irure dolor, in reprehenderit, in voluptate velit esse cillum.</p>
+  </div>
+</div>
+
+<section
+   class="layout--full-width bg--white"
+  
+  
+>
+  <div  class="wrapper--small rhythm--default">
+      <div class="rich-text rhythm">
+    <h2>Privacy Policy</h2>
+
+    <p>This Privacy Policy is effective as of June 19, 2018.</p>
+
+    <p>This Privacy Policy relates to Lytx, Inc., together with its affiliates (collectively, “Lytx”, “we”, “us” and/or “our”), and describes our policies and practices with respect to your personally identifiable information (“Personal Information”) and other data that you may give us or that we may collect about you when using our website(s) which contain a link to this policy (collectively “Sites”).</p>
+
+    <p>By visiting the Sites and/or submitting any information via a webform with a link to this policy, you expressly consent to our collection, use and disclosure of your information in the manner described in this Privacy Policy. If you do not agree to these terms, please do not access or use this website.</p>
+
+    <p><strong>International transfer of information collected</strong></p>
+
+    <p>Our servers, and service providers, are located in the United States. Accordingly, if you reside outside of the United States, by visiting our website, you agree that your information will be transferred to the United States, and processed and stored in the United States. You also acknowledge and agree that your information may be transferred to facilities of those third parties with whom we share data as described herein.</p>
+
+    <p>Individuals Located in the European Union: Your Personal Information may be processed outside the EEA, and in countries which are not subject to an adequacy decision by the European Commission and which may not provide for the same level of data protection in the EEA. In this event, we will ensure that such recipient offers an adequate level of protection, for instance by entering into standard contractual clauses for the transfer of data as approved by the European Commission (Art. 46 GDPR), or we will ask you for your prior consent to such international data transfers.&nbsp; By submitting any of your Personal Information to the website(s), you consent and agree to the transfer of your Personal Information to Lytx and its affiliates, as well as Lytx’s service providers which include without limitation, SalesForce.com,&nbsp;Marketo, SendGrid, SnapApp and AtEvent.</p>
+
+    <p><strong>A Special Note for Parents Concerning Privacy</strong></p>
+
+    <p>The Lytx websites are not intended for use by children. We do not knowingly accept Personal Information from any person under the age of 18. We ask that children (under the age of 18) do not submit any Personal Information to us.</p>
+
+    <p><strong>Information We Collect</strong></p>
+
+    <p>The Personal Information that Lytx may collect from you may include the following:</p>
+
+    <ul>
+      <li>if you express an interest in obtaining additional information about our services, request customer support, use our "Contact Us" or similar features, register to use our websites, sign up for an event or webinar, or download certain content, we generally require you to provide us with your contact information, such as your name, job title, company name, address, phone number, or email address;</li>
+      <li>if you make purchases via our websites or register for an event, we may also require you to provide us (or our service providers who provide payment processing services) with financial information and billing information, such as billing name and address, credit card number, or bank account information;</li>
+      <li>if you attend an event, we may, upon your consent, scan your attendee badge which will provide us with your name, title and company name, address, country, phone number and email address;</li>
+      <li>if you participate in a survey, which may be conducted by a third party, we may collect information you submit related to your use of our products and services;</li>
+      <li>if you use and interact with our websites, we automatically collect log files and other information about your device and your usage of our websites through cookies, web beacons or similar technologies, such as IP-addresses or other identifiers, which may qualify as Personal Information;</li>
+    </ul>
+
+    <p><strong>Log Files, Cookies and Web Beacons</strong></p>
+
+    <p>Our servers gather certain information automatically via log files. This collected information may include your IP Address, device and application identification numbers, your location, your browser type, your Internet service provider and/or mobile carrier, the pages and files you viewed, your searches, your operating system and system configuration information, and date/time stamps associated with your usage. This information is used to analyze overall trends, to help us provide and improve our websites and to guarantee their security and continued proper functioning.</p>
+
+    <p>Lytx also utilizes cookies in order to gather the information described above and for its server to recognize a return visitor as a unique user. Cookies are small text files placed in the “Cookies” folder (or a similar folder) on a visitor’s hard disk and allow Lytx to remember the visitor. Most web-browsers offer the option to refuse any cookie, but they also usually accept cookies by default. You can change this default in most browsers and cause the browser to stop accepting cookies or to prompt you before accepting a cookie from a website.</p>
+
+    <p>We also use web beacons on our websites. For example, we may place web beacons in marketing emails that notify us when you click on a link in the email that directs you to one of our websites. Such tracking technologies are used to operate and improve our websites and email communications and track the clicking of links or opening of emails.</p>
+
+    <p>While some internet browsers offer a “do not track” or “DNT” option that lets you tell websites that you do not want to have your online activities tracked, these features are not yet uniform and there is no common standard that has been adopted by industry groups, technology companies or regulators. Therefore, we do not currently commit to responding to browsers' DNT signals with respect to our websites.</p>
+
+    <p>Lytx or third parties may place or recognize a unique cookie on your browser when you visit our websites for the purposes of serving you targeted advertising (also referred to as “online behavioral advertising” or “interest-based advertising”). To learn more about targeted advertising, advertising networks and your ability to opt out of collection by certain third parties, please visit the opt-out pages of the Network Advertising Initiative, <a href="https://www.networkadvertising.org/choices/" target="_blank">here</a>, and the Digital Advertising Alliance, <a href="https://www.aboutads.info/choices/" target="_blank">here</a>.</p>
+
+    <p>We collect, process your Personal Information for the purposes and on the legal bases identified in the following:</p>
+
+    <ul>
+      <li>Operating our websites: We will process your Personal Information to the extent necessary for the performance of our contract with you for the use of our websites and to fulfill our obligations under the applicable terms of use/service; where we have not entered into a contract with you, we base the processing of your Personal Information on our legitimate interest to operate and administer our websites and to provide you with content you access and request (e.g., download of certain content from our websites);</li>
+      <li>Promoting security of our websites: We will process your Personal Information by tracking use of our websites, creating aggregated, non-personal data, verifying accounts and activity, investigating suspicious activity, as well as violations of and enforcement of our terms and policies, to the extent this is necessary for the purpose of our legitimate interests in promoting the safety and security of the systems and application used for our websites, and protecting our rights and the rights of others;</li>
+      <li>Handling contact and user support requests: If you fill out a “Contact Us” web form, request user support, or if you contact us by other means, we will process your Personal Information for the performance of our contract with you and to the extent it is necessary for the purpose of our legitimate interests to fulfill your request and communicate with you;</li>
+      <li>Managing event registrations and attendance: We will process your Personal Information to plan and host the event, conference or webinar, including related communication with you;</li>
+      <li>Managing payments: If you have provided financial information, Lytx, or its service provider, will process your respective Personal Information to check the financial qualifications and collect payments to the extent this is necessary for completing transaction with you under the purchase order submitted by you;</li>
+      <li>Developing and improving our websites: We will process your Personal Information to analyze trends, track your usage of our websites and interactions with emails to the extent this is necessary for our legitimate interests to develop and improve our websites and to provide our users with more relevant and interesting content;&nbsp;</li>
+      <li>Displaying personalized advertisements and content: We will process your Personal Information to conduct marketing research, advertise to you, provide personalized information about us on and off our websites, and other personalized content based upon your activities and interests to the extent it is necessary for our legitimate interests to advertise our websites or, where necessary, to the extent you have provided your prior separate consent;</li>
+      <li>Sending marketing communications: We will process your Personal Information to send you marketing information, product recommendations and other non-transactional communications (e.g., marketing newsletters, SMS, or push notifications) about us and our affiliates and partners, including information about our products, promotions or events as necessary for our legitimate interests to conduct direct marketing or to the extent you have provided your prior separate consent; &nbsp;</li>
+      <li>Complying with legal obligations: We will process your Personal Information when cooperating with public and government authorities, courts or regulators in accordance with our legal obligations under applicable laws to the extent this requires the processing or disclosure of Personal Information to protect our rights, and is necessary for our legitimate interests to protect against misuse or abuse of our websites, to protect personal property or safety, to pursue remedies available to us and limit our damages, to comply with a judicial proceedings, court order or legal process, and/or to respond to lawful requests.</li>
+    </ul>
+
+    <p>We may share your Personal Information with the following recipients:</p>
+
+    <ul>
+      <li>Our contracted service providers which provide services such as IT and system administration and hosting, credit card processing, research and analytics, marketing, customer support and data enrichment;</li>
+      <li>If you use our websites to register for an event or webinar, we may share your Personal Information with the entity responsible for organizing and/or managing the event to the extent this is required on the basis of the contract with you to process your registration and ensure your participation in the event;</li>
+      <li>With third–party social networks, advertising networks and websites, which usually act as separate controllers, so that we can market and advertise on third party platforms and websites;</li>
+      <li>In individual cases we may also share Personal Information with professional advisers acting as processors or joint controllers including lawyers, bankers, auditors and insurers based in countries in which we operate who provide consultancy, banking, legal, insurance and accounting services;</li>
+      <li>We may also share your Personal Information with other affiliates to the extent this is necessary to fulfill a request you have submitted via our websites, or for customer support, marketing, technical operations and account management purposes;</li>
+      <li>If we are involved in a merger or reorganization, sell a website or business unit, or if all or a portion of our business, assets or stock are acquired by another company, we may transfer some or all of your Personal Information to such third party.</li>
+      <li>Any Personal Information or other information you choose to submit to public online forums (e.g. forums, blogs, or chat rooms) on our websites may be read, collected, and/or used by others who visit these forums.</li>
+    </ul>
+
+    <p>Lytx will never sell or trade any Personal Information accumulated through one of its websites about website visitors in any manner inconsistent with this Privacy Policy without such visitor’s consent. However, Lytx, its partners, agents, officers and employees may provide specific information collected about you, including Personal Information, to third-parties if required to do so by law or in the good faith belief that such action is required to: (i) protect Lytx against legal liability; (ii) protect and defend the rights or property of Lytx, including without limitation, exchanging information with other companies and organizations for fraud protection or investigation; (iii) comply with a legal obligation; or (iv) act in urgent circumstances to protect the personal safety of visitors or the public.</p>
+
+    <p>Data collected from or about you may be used in an aggregate form, that is, as a statistical measure, and not in a form that would reasonably allow anyone to identify you. Along with using this data in aggregate form ourselves, we may share these statistics with certain strategic relations.</p>
+
+    <p>You may have certain rights regarding your Personal Information, subject to your local data protection laws. These may include the following rights:</p>
+
+    <ul>
+      <li>to access your Personal Information held by us (right to access);</li>
+      <li>to rectify inaccurate Personal Information and ensure it is complete (right to rectification);</li>
+      <li>to erase/delete your Personal Information to the extent permitted by other legal obligations (right to erasure; right to be forgotten);</li>
+      <li>to restrict our processing of your Personal Information (right to restriction of processing);</li>
+      <li>to transfer your Personal Information to another controller to the extent possible (right to data portability);</li>
+      <li>to object to any processing of your Personal Information carried out on the basis of our legitimate interests (right to object). Where we process your Personal Information for direct marketing purposes or share it with third parties for their own direct marketing purposes, you can exercise your right to object at any time to such processing without having to provide any specific reason for such objection;</li>
+      <li>not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects ("Automated Decision-Making"); Automated Decision-Making currently does not take place on our websites;</li>
+      <li>to the extent we base the collection, processing and sharing of your Personal Information on your consent, to withdraw your consent at any time, without affecting the lawfulness of the processing based on such consent before its withdrawal.</li>
+    </ul>
+
+    <p>To exercise your rights, please contact us in accordance with the “Contact” section below. We try to respond to all legitimate requests within one month and will contact you if we need additional information from you in order to honor your request. Occasionally it may take us longer than a month, taking into account the complexity and number of requests we receive. If you are an employee of a Lytx customer, we recommend you contact your company’s system administrator for assistance in correcting or updating your information.</p>
+
+    <p>Lytx may also process Personal Information in the role of a processor on behalf of Lytx clients’ use of Lytx services. If your data has been submitted to us in connection with Lytx’s provision of services to a client, and you wish to exercise any rights you may have under applicable data protection laws, please inquire with the specific client directly. Because we may only access our client’s data upon instruction from the respective client, if you wish to make your request directly to us, please provide the name of the Lytx client who submitted your data when you contact us. We will refer your request to that client, and will support them as needed in responding to your request within a reasonable timeframe.</p>
+
+    <p><strong>Preferences for Marketing Communications</strong></p>
+
+    <p>If we process your Personal Information for the purpose of sending you marketing communications, you may manage your receipt of marketing and non-transactional communications from us by clicking on the “unsubscribe” link located on the bottom of our marketing emails, by replying or texting ‘STOP’ if you receive SMS communications, or by turning off push notifications on our apps on your device. Additionally, you may unsubscribe <a href="https://info.lytx.com/Subscription-Management.html" target="_blank">here</a>&nbsp;or by contacting us using the information in the “Contact" section below. Please note that opting-out of marketing communications does not opt you out of receiving important business communications related to your current relationship with us, such as information about your subscriptions or event registrations, service announcements or security information.</p>
+
+    <p><strong>Security</strong></p>
+
+    <p>Lytx employs appropriate administrative, physical and electronic measures that are intended to protect the information gathered about you from unauthorized access. However, all Internet and electronic transmissions are subject to breach and none are fully secure or error free. Lytx cannot guarantee or warrant the security of your Personal Information. Lytx will make any legally-required disclosures of any breach of the confidentiality or integrity of any unencrypted electronically stored Personal Information gathered about you via electronic mail or conspicuous posting on this website.</p>
+
+    <p><strong>Limitation of Liability</strong></p>
+
+    <p>By providing us with any Personal Information you expressly and unconditionally release and hold harmless Lytx, Inc., and its subsidiaries, affiliates, directors, officers, employees and agents from any and all liability for any injuries, loss or damage of any kind arising from or in connection with the use and/or misuse of your collected Personal Information. In addition, while Lytx takes efforts to ensure the proper and appropriate use of data provided by Lytx to third party companies, promotional partners or vendors, Lytx is not liable for any injuries, loss or damage of any kind arising from or in connection with the use and/or misuse of your collected Personal Information by Lytx or the above-mentioned non-Lytx entities.&nbsp; The foregoing shall not apply where such limitation of liability is prohibited by law.</p>
+
+    <p><strong>Reservation of Rights</strong></p>
+
+    <p>Lytx reserves the right to change this Privacy Policy at any time, for any reason, without prior notice. Your continued use of the website after any changes have taken effect will indicate that you have agreed to the terms of the revised Privacy Policy. We recommend that you check this Privacy Policy regularly for changes and updates.</p>
+
+    <p><strong>External Links</strong></p>
+
+    <p>This Privacy Policy applies only to your use of a Lytx website (or any affiliate sub-domains thereof ). This website contains links to other websites. These other websites are governed by their own privacy statements and policies, and Lytx is not responsible for their operations, including but not limited to their information practices. Lytx is not responsible for their practices. Links to other websites do not imply our endorsement of the materials or policies on those websites. You should read the privacy policies of each website you visit to determine what information that website may be collecting about you.</p>
+
+    <p><strong>Other Legal Information and Terms and Conditions</strong></p>
+
+    <p>Your access and use of this website (or any affiliate sub-domains thereof ) is further subject to the terms and conditions at <a href="https://www.lytx.com/en-us/legal-information" target="_self">https://www.lytx.com/en-us/legal-information</a>.&nbsp;</p>
+
+    <p><strong>Changes in Corporate Structure</strong></p>
+
+    <p>Notwithstanding any of the foregoing, Lytx may sell, share or otherwise transfer some or all of its assets, including information gathered by one of its websites, in connection with a bankruptcy, merger, acquisition, reorganization or sale of substantially all of its assets or substantially all of the assets of a division or other unit of Lytx. You acknowledge that such transfers may occur and that any acquirer may continue to use your Personal Information as set forth in this Privacy Policy.</p>
+
+    <p><strong>Contact</strong></p>
+
+    <p>If you have any questions about this Privacy Policy or the practices of this website, please contact the Lytx Privacy Department directly by e-mail at privacy@lytx.com. If you prefer to contact us by mail, please send any communications to:</p>
+
+    <p>Lytx, Inc.<br>
+    9785 Towne Centre Drive<br>
+    San Diego, California 92121<br>
+    Attn: Chief Privacy Officer</p>
+  </div>
+
+  </div>
+</section>
+
+<div class="global-footer">
+  <div class="global-footer__cta rhythm rhythm--large">
+    <div class="global-footer__cta-intro rhythm rhythm--large">
+      <h2 class="heading heading--h2">Keep up with Lytx</h2>
+      <p class="global-footer__cta-intro">Our Best Fleet Forward newsletter delivers monthly insights on fleet safety.</p>
+    </div>
+    <div class="global-footer__cta-form rhythm rhythm--large">
+      <div action="#" method="post" class="form-wrapper global-footer__cta-form rhythm rhythm--large">
+        <fieldset>
+          <input type="text" class="transparent" id="fname" placeholder="First name">
+          <label for="fname" class="a11y-visually-hidden">First name</label>
+        </fieldset>
+        <fieldset>
+          <input type="text" class="transparent" id="lname" placeholder="Last name">
+          <label for="lname" class="a11y-visually-hidden">Last name</label>
+        </fieldset>
+        <fieldset>
+          <input type="email" class="transparent" id="email" placeholder="Email address">
+          <label for="email" class="a11y-visually-hidden">Email address</label>
+        </fieldset>
+        <fieldset>
+          <a href="#"  class="button button--link button--primary button--size-default" >
+  Submit
+</a>
+
+        </fieldset>
+      </div>
+    </div>
+  </div><!--/ __cta -->
+
+  <div class="global-footer__nav rhythm">
+    <div class="global-footer__nav-heading">
+      <h1 class="heading heading--h2">Get started today.</h1>
+    </div>
+    <div class="global-footer__nav-cta">
+      <a href="#">1-866-419-5861</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Book a Demo</a>
+    </div>
+    <div class="global-footer__nav-links">
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Solutions</h5>
+        <a href="#">Overview</a>
+        <a href="#">In-Cab Demo</a>
+        <a href="#">Driver Safety</a>
+        <a href="#">Fleet Tracking</a>
+        <a href="#">Compliance</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">About Us</h5>
+        <a href="#">Our Story</a>
+        <a href="#">Our Technology</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+        <a href="#">News and Events</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Support</h5>
+        <a href="#">Support</a>
+        <a href="#">DriveCam Online</a>
+        <a href="#">RAIR Compliance</a>
+        <a href="#">Management Portal</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Our Clients</h5>
+        <a href="#">Who We Serve</a>
+        <a href="#">Success Stories</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm rhythm--small">
+        <h5 class="heading">Resources</h5>
+        <a href="#">Webinars</a>
+        <a href="#">Library</a>
+        <a href="#">Blog</a>
+        <a href="#">Tools</a>
+        <a href="#">Videos</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Sites</h5>
+        <a href="#">English (U.S.A.)</a>
+        <a href="#">English (U.K.)</a>
+      </div>
+    </div>
+  </div><!--/ __nav -->
+
+  <div class="global-footer__brand">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <defs>
+    <path id="a-lw" d="M.024.158h27.057v33.851H.024z"/>
+    <path id="c-lw" d="M0 .106h9.665v40.131H0z"/>
+    <path id="e-lw" d="M.114.129h4.213v4.249H.114z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(10.91 13.714)">
+      <mask id="butt" fill="#fff">
+        <use xlink:href="#a-lw"/>
+      </mask>
+      <path fill="#FFF" d="M26.587.159h-4.524c-.341 0-.496.22-.59.441-.042.097-7.703 18.264-7.703 18.264-.14.322-.326.32-.462-.004 0 0-7.58-18.029-7.676-18.25-.094-.22-.25-.442-.59-.442H.517C.162.17-.05.412.047.704c0 0 6.9 16.481 10.328 24.603.225.534.214.956-.006 1.483-1.004 2.403-2.742 6.63-2.742 6.63-.133.325.049.59.404.59h4.476c.404 0 .632-.199.76-.481.264-.58 13.79-32.835 13.79-32.835.097-.292-.115-.533-.47-.534" mask="url(#butt)"/>
+    </g>
+    <mask id="dutt" fill="#fff">
+      <use xlink:href="#c-lw"/>
+    </mask>
+    <path fill="#FFF" d="M9.154 35.308H7.521c-1.481 0-2.145-.542-2.145-2.168V.598c0-.295-.205-.492-.511-.492H.511c-.306 0-.51.197-.51.492v32.837c0 4.584 1.94 6.802 6.741 6.802h2.412c.307 0 .51-.198.51-.493V35.8c0-.295-.203-.493-.51-.493" mask="url(#dutt)"/>
+    <path fill="#FFF" d="M46.795 17.93a.355.355 0 0 1 .357-.345l6.215.003c.298 0 .497-.195.497-.49v-3.485c0-.294-.199-.49-.497-.49h-6.232a.354.354 0 0 1-.339-.35l-.001-6.798c0-.294-.199-.49-.497-.49h-4.21c-.299 0-.497.196-.497.49V32.17c0 .99.077 1.883.241 2.68.676 3.28 2.822 4.92 7.095 4.921h4.431c.298 0 .496-.196.496-.49V35.33c0-.294-.198-.49-.496-.49h-3.7c-1.041 0-1.78-.213-2.213-.64-.433-.426-.65-1.387-.65-2.882V17.93zm37.672 22.002L65.579 14.148c-.16-.217-.378-.434-.72-.434h-5.286c-.356.002-.499.238-.318.526l8.121 11.043c.164.224.201.713-.033 1.053-.072.103-9.992 13.596-9.992 13.596-.18.287-.038.523.318.525h5.287c.341 0 .56-.217.718-.434l.002-.003c.074-.08 6.798-9.281 6.937-9.47a.404.404 0 0 1 .295-.143c.105 0 .208.049.288.136.387.531 6.884 9.419 6.966 9.505.158.209.371.41.7.41H83.7l.018-.001h.431c.356-.002.499-.238.318-.525"/>
+    <path fill="#009CDE" d="M81.428 13.029h-5.219c-.336 0-.552.226-.709.454l-4.513 6.538c-.18.301-.038.549.313.55h5.204c.337 0 .552-.227.71-.454l4.527-6.538c.178-.301.038-.55-.313-.55"/>
+    <g transform="translate(85.227 36.343)">
+      <mask id="futt" fill="#fff">
+        <use xlink:href="#e-lw"/>
+      </mask>
+      <path fill="#FFF" d="M2.364 2.092c.257 0 .386-.11.386-.332 0-.215-.129-.322-.386-.322h-.496c-.03 0-.044.015-.044.045v.565c0 .03.014.044.044.044h.496zm-.883 1.32c-.05 0-.077-.025-.077-.077V1.139c0-.052.026-.078.077-.078h.883c.257 0 .456.061.595.183.14.122.21.294.21.516 0 .163-.04.3-.121.41a.697.697 0 0 1-.342.244l.474.92c.022.053.007.078-.044.078h-.309c-.044 0-.077-.025-.1-.077l-.44-.865h-.42c-.03 0-.043.015-.043.044v.82c0 .053-.026.078-.078.078h-.265zm.74.6c.25 0 .48-.045.689-.134.21-.088.391-.212.546-.371.154-.159.275-.346.364-.56.088-.215.132-.448.132-.7 0-.25-.044-.483-.132-.698-.089-.214-.21-.4-.364-.555A1.69 1.69 0 0 0 2.91.628a1.75 1.75 0 0 0-.69-.133c-.25 0-.48.045-.689.133a1.69 1.69 0 0 0-.546.366c-.154.155-.276.34-.364.555a1.82 1.82 0 0 0-.132.699c0 .251.044.484.132.699.088.214.21.401.364.56.155.159.336.283.546.371.21.09.44.133.69.133zm0 .366A2.059 2.059 0 0 1 .273 3.09a2.188 2.188 0 0 1-.16-.843c0-.296.053-.573.16-.832A2.062 2.062 0 0 1 2.22.129c.302 0 .581.054.839.161.257.107.48.257.667.45.187.192.334.417.441.676.107.259.16.536.16.832 0 .303-.053.584-.16.843a2.112 2.112 0 0 1-.44.676c-.189.193-.411.343-.668.45-.258.107-.537.16-.839.16z" mask="url(#futt)"/>
+    </g>
+  </g>
+</svg>
+
+    </div>
+    <div class="text--align-right">
+      <p>* Subject to available cellular network coverage.</p>
+      <p>&copy; Copyright Lytx, Inc, 2019. All rights reserved.</p>
+    </div>
+  </div><!--/ __brand -->
+
+  <div class="global-footer__meta">
+    <div class="global-footer__meta-links">
+      <a href="#">Site Map</a>
+      <a href="#">Driver Information</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="global-footer__meta-social">
+      <a href="#"><span class="a11y-visually-hidden">LinkedIn</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"  class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M30.706 17.805v2.818h-4.278c-1.02 0-2.332.019-2.332 1.465 0 1.467 1.112 1.69 2.26 1.69h4.35v2.816H21.91v-2.702h1.203v-.039c-.692-.375-1.421-1.296-1.421-2.667 0-2.853 1.821-3.38 4.19-3.38h4.824zm-9.998 11.967c0 .906-.71 1.635-1.585 1.635s-1.586-.73-1.586-1.635c0-.901.71-1.633 1.586-1.633.875 0 1.585.732 1.585 1.633zm9.998 1.412v-2.822H21.91v2.822h8.796zM15 16.4v16.197c0 .773.595 1.402 1.33 1.402h15.772c.734 0 1.33-.629 1.33-1.402V16.4c0-.775-.596-1.405-1.33-1.405H16.329c-.734 0-1.329.63-1.329 1.405z" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">Twitter</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M17.174 12.355c.369.833.618 1.728.73 2.668a4.652 4.652 0 00-2.565-2.043 9.316 9.316 0 011.125 2.95A4.645 4.645 0 0015 19.323a4.641 4.641 0 005.692 4.525 13.2 13.2 0 01-4.843 9.577 4.631 4.631 0 006.19-1.438 4.635 4.635 0 01-.58 2.104h.057a4.641 4.641 0 004.546-3.726 4.662 4.662 0 01.08 2.098 4.65 4.65 0 003.22-4.34 9.335 9.335 0 011.984 5.77c0 .375-.022.745-.065 1.108a13.17 13.17 0 002.083-7.122c0-8.545-7.064-13.218-13.19-13.218-.201 0-.401.004-.6.013a9.432 9.432 0 00-2.4-2.318" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">Facebook</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M15 15.555v16.426c0 .563.455 1.019 1.017 1.019h16.39c.562 0 1.018-.456 1.018-1.019v-8.843H26.29v2.406h-2.781v-2.406h-2.05c-2.38 0-3.676-1.457-3.676-3.584 0-1.02.075-1.895.11-2.15h2.486l.001 1.475c0 1.157.549 1.381 1.354 1.381h1.775V17.5l2.78.36v2.4h7.136v-4.705a1.02 1.02 0 00-1.017-1.02H16.017c-.562 0-1.017.457-1.017 1.02" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">Instagram</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M15 23.518c0 2.575.01 2.898.057 3.91.046 1.008.205 1.698.439 2.3a4.65 4.65 0 001.09 1.68 4.627 4.627 0 001.672 1.094c.6.235 1.287.395 2.293.44 1.007.047 1.328.058 3.893.058 2.565 0 2.887-.01 3.894-.057 1.006-.046 1.692-.206 2.293-.44a4.627 4.627 0 001.673-1.095 4.65 4.65 0 001.09-1.68c.233-.602.392-1.292.438-2.3.046-1.012.057-1.335.057-3.91 0-2.576-.011-2.899-.057-3.91-.046-1.01-.205-1.699-.439-2.302a4.65 4.65 0 00-1.09-1.68 4.628 4.628 0 00-1.672-1.093c-.6-.234-1.287-.395-2.293-.44-1.007-.047-1.329-.058-3.894-.058-2.565 0-2.886.011-3.893.057-1.006.046-1.692.207-2.293.441a4.628 4.628 0 00-1.673 1.094 4.65 4.65 0 00-1.09 1.68c-.233.602-.392 1.292-.438 2.301-.046 1.011-.057 1.334-.057 3.91zm1.702 0c0-2.532.01-2.832.055-3.832.042-.925.196-1.427.325-1.76.171-.443.376-.76.706-1.091a2.94 2.94 0 011.086-.71c.333-.13.833-.284 1.754-.326.996-.046 1.295-.055 3.816-.055 2.522 0 2.82.01 3.817.055.92.042 1.42.197 1.754.327.44.172.755.377 1.085.709.33.332.536.648.707 1.09.13.334.283.836.325 1.76.046 1 .055 1.3.055 3.833 0 2.532-.01 2.832-.055 3.831-.042.925-.196 1.427-.325 1.761a2.939 2.939 0 01-.707 1.09c-.33.332-.645.538-1.085.71-.333.13-.833.284-1.754.326-.996.046-1.295.055-3.817.055-2.521 0-2.82-.01-3.816-.055-.92-.042-1.42-.196-1.754-.326a2.925 2.925 0 01-1.086-.71 2.939 2.939 0 01-.706-1.09c-.13-.334-.283-.836-.325-1.76-.046-1-.055-1.3-.055-3.832zm10.89 0a3.154 3.154 0 01-3.148 3.16 3.154 3.154 0 01-3.148-3.16 3.155 3.155 0 013.148-3.161 3.154 3.154 0 013.149 3.16zm-7.997 0c0 2.689 2.17 4.869 4.85 4.869 2.678 0 4.85-2.18 4.85-4.87 0-2.689-2.172-4.869-4.85-4.869-2.68 0-4.85 2.18-4.85 4.87zm-.192-6.2c-.626 0-1.133.51-1.133 1.138 0 .628.507 1.138 1.133 1.138s1.133-.51 1.133-1.138c0-.629-.507-1.138-1.133-1.138z" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">YouTube</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M27.553 26.478H20.81l3.383-6.484 3.36 6.484zM19.641 12.24s-1.654.235-2.382.954c-.956.913-.96 1.936-1.016 2.404C16 18.957 16 23.995 16 23.995v.01s0 5.038.243 8.396c.056.47.06 1.492 1.016 2.406.728.719 2.382.953 2.382.953s1.943.24 3.884.24h1.822c1.942 0 3.884-.24 3.884-.24s1.653-.234 2.382-.953c.956-.914.926-2.113 1.026-2.647.184-1.92.241-8.16.241-8.16s-.007-5.043-.25-8.402c-.056-.468-.061-1.491-1.017-2.404-.728-.72-2.382-.954-2.382-.954S27.289 12 25.347 12h-1.822c-1.941 0-3.884.24-3.884.24z" fill="#415365"/></g></svg></a>
+    </div>
+  </div><!--/ __meta -->
+
+
+</div>
+
+    </div>
+  </main>
+
+    <script src="../../bundle.js"></script>
+	</body>
+</html>
+

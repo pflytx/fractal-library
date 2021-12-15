@@ -1,0 +1,69 @@
+{{#>@full-width-wrapper
+  color="white"
+  className="software-with-icons"
+  rhythm="large"
+  id="software-with-icons"
+}}
+
+  {{#>@media-object variant="software-icons" justify="space-evenly" align="bottom" flipLarge="true" flipSmall="true" classname="bg--gradient-action"}}
+    {{#>@media-figure}}
+      <figure>
+        <img srcset="{{path (default image '/images/fleet-tracking.png')}}, {{path (default image-2x '/images/fleet-tracking@2x.png')}} 2x" src="{{path '/images/fleet-tracking.png'}}" alt="">
+      </figure>
+    {{/@media-figure}}
+
+    {{#>@media-body classname="rhythm media__body--padded"}}
+       {{#>@heading variant="h3" className="color--white"}}
+        A complete solution for all your fleet management needs
+      {{/@heading}}
+      <p class="color--white">Our services can be combined and customized to create a comprehensive solution that meets the needs of your business.</p>
+    {{/@media-body}}
+  {{/@media-object}}
+
+  <div class="layout--4up layout--4up-fit layout--4up-padded">
+    {{#>@media-object variant="2-1-flushed" align="top" flipLarge="true" flipSmall="true" classname="media--no-stack"}}
+       {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h3" className="color--blue"}}
+          Driver Safety Programs
+        {{/@heading}}
+        <p>
+          Proactively manage your fleet risk with tools to help change behavior, prevent collisions and improve your bottom line.
+        </p>
+       {{/@media-body}}
+
+       {{#>@media-figure}}
+        {{#>@icon-jump-driversafety}}{{/@icon-jump-driversafety}}
+      {{/@media-figure}}
+    {{/@media-object}}
+
+    {{#>@media-object variant="2-1-flushed" align="top" flipLarge="true" flipSmall="true" classname="media--no-stack"}}
+      {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h3" className="color--blue"}}
+          Fleet Tracking
+        {{/@heading}}
+        <p>
+          Get real-time* access to fleet status to help you respond faster, reduce callbacks and optimize productivity.
+        </p>
+       {{/@media-body}}
+
+       {{#>@media-figure}}
+        {{#>@icon-jump-fleettracking}} {{/@icon-jump-fleettracking}}
+      {{/@media-figure}}
+    {{/@media-object}}
+
+     {{#>@media-object variant="2-1-flushed" align="top" flipLarge="true" flipSmall="true" classname="media--no-stack"}}
+      {{#>@media-body classname="rhythm"}}
+        {{#>@heading variant="h3" className="color--blue"}}
+          ELD/Compliance Services
+        {{/@heading}}
+        <p>
+          Use a single, online solution to quickly identify, prioritize and address your fleet’s DOT compliance issues and customize services to meet your evolving needs.
+        </p>
+       {{/@media-body}}
+
+       {{#>@media-figure}}
+        {{#>@icon-jump-eld_compliance}}{{/@icon-jump-eld_compliance}}
+      {{/@media-figure}}
+    {{/@media-object}}
+  </div>
+{{/@full-width-wrapper}}

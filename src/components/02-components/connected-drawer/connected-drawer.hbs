@@ -1,0 +1,22 @@
+{{#>@full-width-wrapper
+  color="white"
+  className="connected-drawer"
+  rhythm="extra-large"
+  id="connected-drawer"
+}}
+  <div class="connected-drawer__bg">
+    <button type="button" class="connected-drawer__btn" data-target-id="connected-drawer__drawer">
+      {{#>@heading variant="h4" className="connected-drawer__heading"}}
+        {{#>@linkedin className="connected-drawer__icon-linkedin"}} {{/@linkedin}}
+        see how you're connected
+        {{#>@arrow-down className="connected-drawer__icon-down"}} {{/@arrow-down}}
+      {{/@heading}}
+    </button>
+  </div>
+
+  <div id="connected-drawer__drawer" class="connected-drawer__drawer rhythm">
+    <h2 class="heading heading--h2">LINKEDIN WIDGET GOES HERE!</h2>
+    <img src="https://bukk.it/janet-thumbs.gif" alt"hello!" >
+  </div>
+
+{{/@full-width-wrapper}}

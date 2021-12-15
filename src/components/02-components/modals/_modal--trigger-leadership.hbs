@@ -1,0 +1,18 @@
+<div class="rhythm--large modal__trigger--wrapper">
+  <button data-a11y-dialog-show="{{modalId}}" class="button modal__trigger modal__trigger--leadership {{triggerClass}}">
+      <div class="text--align-center rhythm--large">
+          <img class="img--round modal__trigger--leadership-img" srcset="//fpoimg.com/210x210, //fpoimg.com/420x420 2x" src="//fpoimg.com/210x210" alt="">
+
+          <div>
+              {{#>@heading variant="h4"}}
+                  {{default name 'Person Longname III'}}
+              {{/@heading}}
+              <p class="modal__trigger--leadership-title">
+                {{default title 'Magician & Puppy Wrangler'}}
+              </p>
+          </div>
+      </div>
+  </button>
+
+  {{>@social-footer--icons-only classname="text--align-center"}}
+</div>

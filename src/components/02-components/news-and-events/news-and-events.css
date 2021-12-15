@@ -1,0 +1,21 @@
+.news-feature-intro {
+  width: 100%;
+
+  .media__body {
+    margin-bottom: 2rem;
+    margin-top: 0;
+    order: -10 !important;
+
+    @media (--medium-large) {
+      margin-bottom: 0;
+    }
+  }
+
+  .layout--2up {
+    grid-template-columns: 1fr;
+
+    @media (--medium-small) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

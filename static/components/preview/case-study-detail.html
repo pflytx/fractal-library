@@ -1,0 +1,874 @@
+
+
+<!doctype html>
+<html>
+  <head>
+		<title>Turn Component Library</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="apple-mobile-web-app-title" content="" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.96.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+
+      <link rel="stylesheet" href="/styles.wheel.css" />
+
+    
+	</head>
+	<body>
+		  <main id="content" role="main">
+    <div class="preview-layout preview-layout--block">
+      <header  class="fixed global-header global-header--transparent">
+  <div class="global-header__inner">
+
+    <h1 class="brand">
+      <a href="/" class="brand__anchor">
+        <span class="a11y-visually-hidden">Lytx</span>
+        <svg class="brand__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path id="a" d="M.024.158h27.057v33.851H.024z"/>
+            <path id="c" d="M0 .106h9.665v40.131H0z"/>
+            <path id="e" d="M.114.129h4.213v4.249H.114z"/>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(10.91 13.714)">
+              <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+              </mask>
+              <path d="M26.587.159h-4.524c-.341 0-.496.22-.59.441-.042.097-7.703 18.264-7.703 18.264-.14.322-.326.32-.462-.004 0 0-7.58-18.029-7.676-18.25-.094-.22-.25-.442-.59-.442H.517C.162.17-.05.412.047.704c0 0 6.9 16.481 10.328 24.603.225.534.214.956-.006 1.483-1.004 2.403-2.742 6.63-2.742 6.63-.133.325.049.59.404.59h4.476c.404 0 .632-.199.76-.481.264-.58 13.79-32.835 13.79-32.835.097-.292-.115-.533-.47-.534" fill="#16135F" mask="url(#b)"/>
+            </g>
+            <g>
+              <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+              </mask>
+              <path d="M9.154 35.308H7.521c-1.481 0-2.145-.542-2.145-2.168V.598c0-.295-.205-.492-.511-.492H.511c-.306 0-.51.197-.51.492v32.837c0 4.584 1.94 6.802 6.741 6.802h2.412c.307 0 .51-.198.51-.493V35.8c0-.295-.203-.493-.51-.493" fill="#16135F" mask="url(#d)"/>
+            </g>
+            <path d="M46.795 17.93a.355.355 0 0 1 .357-.345l6.215.003c.298 0 .497-.195.497-.49v-3.485c0-.294-.199-.49-.497-.49h-6.232a.354.354 0 0 1-.339-.35l-.001-6.798c0-.294-.199-.49-.497-.49h-4.21c-.299 0-.497.196-.497.49V32.17c0 .99.077 1.883.241 2.68.676 3.28 2.822 4.92 7.095 4.921h4.431c.298 0 .496-.196.496-.49V35.33c0-.294-.198-.49-.496-.49h-3.7c-1.041 0-1.78-.213-2.213-.64-.433-.426-.65-1.387-.65-2.882V17.93zM84.467 39.932L65.579 14.148c-.16-.217-.378-.434-.72-.434h-5.286c-.356.002-.499.238-.318.526l8.121 11.043c.164.224.201.713-.033 1.053-.072.103-9.992 13.596-9.992 13.596-.18.287-.038.523.318.525h5.287c.341 0 .56-.217.718-.434l.002-.003c.074-.08 6.798-9.281 6.937-9.47a.404.404 0 0 1 .295-.143c.105 0 .208.049.288.136.387.531 6.884 9.419 6.966 9.505.158.209.371.41.7.41H83.7l.018-.001h.431c.356-.002.499-.238.318-.525" fill="#16135F"/>
+            <path d="M81.428 13.029h-5.219c-.336 0-.552.226-.709.454l-4.513 6.538c-.18.301-.038.549.313.55h5.204c.337 0 .552-.227.71-.454l4.527-6.538c.178-.301.038-.55-.313-.55" fill="#0099D9"/>
+            <g transform="translate(85.227 36.343)">
+              <mask id="f" fill="#fff">
+                <use xlink:href="#e"/>
+              </mask>
+              <path d="M2.364 2.092c.257 0 .386-.11.386-.332 0-.215-.129-.322-.386-.322h-.496c-.03 0-.044.015-.044.045v.565c0 .03.014.044.044.044h.496zm-.883 1.32c-.05 0-.077-.025-.077-.077V1.139c0-.052.026-.078.077-.078h.883c.257 0 .456.061.595.183.14.122.21.294.21.516 0 .163-.04.3-.121.41a.697.697 0 0 1-.342.244l.474.92c.022.053.007.078-.044.078h-.309c-.044 0-.077-.025-.1-.077l-.44-.865h-.42c-.03 0-.043.015-.043.044v.82c0 .053-.026.078-.078.078h-.265zm.74.6c.25 0 .48-.045.689-.134.21-.088.391-.212.546-.371.154-.159.275-.346.364-.56.088-.215.132-.448.132-.7 0-.25-.044-.483-.132-.698-.089-.214-.21-.4-.364-.555A1.69 1.69 0 0 0 2.91.628a1.75 1.75 0 0 0-.69-.133c-.25 0-.48.045-.689.133a1.69 1.69 0 0 0-.546.366c-.154.155-.276.34-.364.555a1.82 1.82 0 0 0-.132.699c0 .251.044.484.132.699.088.214.21.401.364.56.155.159.336.283.546.371.21.09.44.133.69.133zm0 .366A2.059 2.059 0 0 1 .273 3.09a2.188 2.188 0 0 1-.16-.843c0-.296.053-.573.16-.832A2.062 2.062 0 0 1 2.22.129c.302 0 .581.054.839.161.257.107.48.257.667.45.187.192.334.417.441.676.107.259.16.536.16.832 0 .303-.053.584-.16.843a2.112 2.112 0 0 1-.44.676c-.189.193-.411.343-.668.45-.258.107-.537.16-.839.16z" fill="#16135F" mask="url(#f)"/>
+            </g>
+          </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" xmlns:xlink="http://www.w3.org/1999/xlink" class="brand__logo--white">
+          <defs>
+            <path id="a-lw" d="M.024.158h27.057v33.851H.024z"/>
+            <path id="c-lw" d="M0 .106h9.665v40.131H0z"/>
+            <path id="e-lw" d="M.114.129h4.213v4.249H.114z"/>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(10.91 13.714)">
+              <mask id="butt" fill="#fff">
+                <use xlink:href="#a-lw"/>
+              </mask>
+              <path fill="#FFF" d="M26.587.159h-4.524c-.341 0-.496.22-.59.441-.042.097-7.703 18.264-7.703 18.264-.14.322-.326.32-.462-.004 0 0-7.58-18.029-7.676-18.25-.094-.22-.25-.442-.59-.442H.517C.162.17-.05.412.047.704c0 0 6.9 16.481 10.328 24.603.225.534.214.956-.006 1.483-1.004 2.403-2.742 6.63-2.742 6.63-.133.325.049.59.404.59h4.476c.404 0 .632-.199.76-.481.264-.58 13.79-32.835 13.79-32.835.097-.292-.115-.533-.47-.534" mask="url(#butt)"/>
+            </g>
+            <mask id="dutt" fill="#fff">
+              <use xlink:href="#c-lw"/>
+            </mask>
+            <path fill="#FFF" d="M9.154 35.308H7.521c-1.481 0-2.145-.542-2.145-2.168V.598c0-.295-.205-.492-.511-.492H.511c-.306 0-.51.197-.51.492v32.837c0 4.584 1.94 6.802 6.741 6.802h2.412c.307 0 .51-.198.51-.493V35.8c0-.295-.203-.493-.51-.493" mask="url(#dutt)"/>
+            <path fill="#FFF" d="M46.795 17.93a.355.355 0 0 1 .357-.345l6.215.003c.298 0 .497-.195.497-.49v-3.485c0-.294-.199-.49-.497-.49h-6.232a.354.354 0 0 1-.339-.35l-.001-6.798c0-.294-.199-.49-.497-.49h-4.21c-.299 0-.497.196-.497.49V32.17c0 .99.077 1.883.241 2.68.676 3.28 2.822 4.92 7.095 4.921h4.431c.298 0 .496-.196.496-.49V35.33c0-.294-.198-.49-.496-.49h-3.7c-1.041 0-1.78-.213-2.213-.64-.433-.426-.65-1.387-.65-2.882V17.93zm37.672 22.002L65.579 14.148c-.16-.217-.378-.434-.72-.434h-5.286c-.356.002-.499.238-.318.526l8.121 11.043c.164.224.201.713-.033 1.053-.072.103-9.992 13.596-9.992 13.596-.18.287-.038.523.318.525h5.287c.341 0 .56-.217.718-.434l.002-.003c.074-.08 6.798-9.281 6.937-9.47a.404.404 0 0 1 .295-.143c.105 0 .208.049.288.136.387.531 6.884 9.419 6.966 9.505.158.209.371.41.7.41H83.7l.018-.001h.431c.356-.002.499-.238.318-.525"/>
+            <path fill="#009CDE" d="M81.428 13.029h-5.219c-.336 0-.552.226-.709.454l-4.513 6.538c-.18.301-.038.549.313.55h5.204c.337 0 .552-.227.71-.454l4.527-6.538c.178-.301.038-.55-.313-.55"/>
+            <g transform="translate(85.227 36.343)">
+              <mask id="futt" fill="#fff">
+                <use xlink:href="#e-lw"/>
+              </mask>
+              <path fill="#FFF" d="M2.364 2.092c.257 0 .386-.11.386-.332 0-.215-.129-.322-.386-.322h-.496c-.03 0-.044.015-.044.045v.565c0 .03.014.044.044.044h.496zm-.883 1.32c-.05 0-.077-.025-.077-.077V1.139c0-.052.026-.078.077-.078h.883c.257 0 .456.061.595.183.14.122.21.294.21.516 0 .163-.04.3-.121.41a.697.697 0 0 1-.342.244l.474.92c.022.053.007.078-.044.078h-.309c-.044 0-.077-.025-.1-.077l-.44-.865h-.42c-.03 0-.043.015-.043.044v.82c0 .053-.026.078-.078.078h-.265zm.74.6c.25 0 .48-.045.689-.134.21-.088.391-.212.546-.371.154-.159.275-.346.364-.56.088-.215.132-.448.132-.7 0-.25-.044-.483-.132-.698-.089-.214-.21-.4-.364-.555A1.69 1.69 0 0 0 2.91.628a1.75 1.75 0 0 0-.69-.133c-.25 0-.48.045-.689.133a1.69 1.69 0 0 0-.546.366c-.154.155-.276.34-.364.555a1.82 1.82 0 0 0-.132.699c0 .251.044.484.132.699.088.214.21.401.364.56.155.159.336.283.546.371.21.09.44.133.69.133zm0 .366A2.059 2.059 0 0 1 .273 3.09a2.188 2.188 0 0 1-.16-.843c0-.296.053-.573.16-.832A2.062 2.062 0 0 1 2.22.129c.302 0 .581.054.839.161.257.107.48.257.667.45.187.192.334.417.441.676.107.259.16.536.16.832 0 .303-.053.584-.16.843a2.112 2.112 0 0 1-.44.676c-.189.193-.411.343-.668.45-.258.107-.537.16-.839.16z" mask="url(#futt)"/>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </h1>
+
+    <nav class="global-nav js-global-nav">
+      <ul class="nav js-nav">
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#">
+            Solutions
+            <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+              <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#"
+          >About <span class="u-hires-only u-inline">us</span>
+          <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+            <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+          </svg>
+        </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#
+          ">Clients
+          <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+            <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+          </svg>
+        </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#">
+            Resources
+            <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+              <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category">
+          <a class="nav__menu-toggle" href="#">
+            Contact <span class="u-hires-only u-inline">us</span>
+            <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="nav__chevron">
+              <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li class="nav__card rhythm">
+                  <h3 class="heading heading--h3">Solutions designed to meet your needs</h3>
+                  <div class="nav-card__body">
+                    <p>Lorem ipsum dolor sit amet consectetur. Adipisicing elit. Eveniet voluptas animi corrupti sequi deleniti iure similique.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link rhythm" href="#">
+                    <span class="link__head">
+                      Sub Page
+                      <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                        <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                      </svg>
+                    </span>
+                    <p class="link__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut dignissimos, neque facere cumque.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category u-medres-up">
+          <a class="nav__menu-toggle nav__search" href="/search-results">
+            <span class="a11y-visually-hidden">Search</span>
+            <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="icon--search"><path d="M11.04 10.371l-.264-.254a6.101 6.101 0 001.48-3.989 6.128 6.128 0 10-6.128 6.129 6.101 6.101 0 003.989-1.48l.254.263v.745l4.011 4.003a.994.994 0 001.406-1.406l-4.003-4.01h-.745zM1.886 6.128c0-2.347 1.895-4.242 4.242-4.242s4.243 1.895 4.243 4.242c0 2.348-1.895 4.243-4.243 4.243S1.886 8.476 1.886 6.128z" fill="#415365" fill-rule="evenodd"/></svg>      </a>
+    
+          <div class="global-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap nav__search-inner-wrap">
+              <div class="form-wrapper theme--primary">
+                <fieldset class="rhythm">
+                  <label for="global-search" class="heading heading--h4 heading--label">What are you searching for?</label>
+                  <div class="input-group--inline">
+                    <div class="input-group__prefix">
+                      <span class="input-group__icon">
+                        <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="icon--search"><path d="M11.04 10.371l-.264-.254a6.101 6.101 0 001.48-3.989 6.128 6.128 0 10-6.128 6.129 6.101 6.101 0 003.989-1.48l.254.263v.745l4.011 4.003a.994.994 0 001.406-1.406l-4.003-4.01h-.745zM1.886 6.128c0-2.347 1.895-4.242 4.242-4.242s4.243 1.895 4.243 4.242c0 2.348-1.895 4.243-4.243 4.243S1.886 8.476 1.886 6.128z" fill="#415365" fill-rule="evenodd"/></svg>                  </span>
+                    </div>
+                    <input type="text" class="" id="global-search">
+                     <div class="input-group__suffix js-search-clear">
+                      <span class="input-group__icon">
+                        <button type="button" class="button--plain"> &times; </button>
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__category u-lores-only">
+          <a class="nav__cta" href="#">Get Started</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="secondary-nav js-global-nav">
+      <ul class="secondary-nav__list">
+        <li class="u-lores-only">
+          <a href="#" class="nav__close">
+            <span class="a11y-visually-hidden">Back</span>
+            <svg class="icon--arrow-left" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.705.705c.39.39.39 1.02 0 1.41L3.83 7H15a1 1 0 110 2H3.83l4.876 4.884a.998.998 0 01-1.411 1.411L0 8 7.295.705a.997.997 0 011.41 0z" fill="#009CDE" fill-rule="evenodd"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__category subnav__category">
+          <a class="nav__menu-toggle secondary-nav__login" href="#">
+            <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>        <span class="u-hires-only">Login</span>
+          </a>
+    
+          <div class="global-nav__menu secondary-nav__menu" aria-hidden="true">
+            <div class="global-nav__menu-inner-wrap">
+              <ul class="global-nav__submenu">
+                <li>
+                  <a class="nav__link nav__link--portal" href="#">
+                    Drivecam online
+                    <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person subnav__icon-person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>              </a>
+                </li>
+                <li>
+                  <a class="nav__link nav__link--portal" href="#">
+                    RAIR Portal
+                    <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person subnav__icon-person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>              </a>
+                </li>
+                <li>
+                  <a class="nav__link nav__link--portal" href="#">
+                    Product Information
+                    <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  class="icon--person subnav__icon-person"><path d="M2.333 12.333v1.334a.667.667 0 01-1.333 0v-1.334C1 10.29 4.22 9 7 9s6 1.29 6 3.333v1.334a.667.667 0 01-1.333 0v-1.334c0-.973-2.563-2-4.667-2-2.104 0-4.667 1.027-4.667 2zm8-8a3.333 3.333 0 11-6.666 0 3.333 3.333 0 116.666 0zM9 4.333a2 2 0 10-3.999-.001A2 2 0 009 4.333z" fill="#009CDE" stroke="#009CDE" stroke-width=".5"/></svg>              </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#">
+                    Store
+                    <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                      <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#">
+                    News and Events
+                    <svg viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg" class="subnav__chevron">
+                      <path d="M1.42 1.42a.594.594 0 000 .84l2.306 2.31-2.307 2.313a.594.594 0 00.84.84L5.41 4.57 2.259 1.42a.593.593 0 00-.84 0z" fill-rule="evenodd"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+    
+        <li class="subnav__category u-medres-up">
+          <a href="#"  class="button button--link button--primary button--size-default" >
+      Get Started
+    </a>
+    
+        </li>
+      </ul>
+    </nav>
+
+    <button class="nav__toggle js-nav-toggle">
+      <span class="a11y-visually-hidden">Menu</span>
+      <i></i>
+    </button>
+
+  </div>
+</header>
+<div class="page-head page-head--major" style="background-image: url(/images/page-head--case-study.jpg);">
+  <div class="wrapper page-head-interior page-head-interior--case-study">
+    <div class="layout layout--case-study">
+      <div class="case-study-heading">
+        <h4  class="heading heading--h4 page-head-interior__subtitle">
+    Lorem Ipsum
+  </h4>
+  
+        <h1  class="heading heading--h1 page-head-interior__title">
+    Cargo Transporters reduces fraudulant claims costs with the Lytx Driver Safety Program.
+  </h1>
+  
+      </div><!--/ case-study-heading -->
+      <div class="case-study-stats">
+        <div class="case-study-stats__stat">
+          <h1  class="heading heading--h1">
+    83%
+  </h1>
+  
+          <strong>Decrease in near collisions</strong>
+        </div>
+        <div class="case-study-stats__stat">
+          <h1  class="heading heading--h1">
+    26%
+  </h1>
+  
+          <strong>Improvement in safe following distances</strong>
+        </div>
+        <div class="case-study-stats__stat">
+          <h1  class="heading heading--h1">
+    33%
+  </h1>
+  
+          <strong>Drop in unbelted drivers</strong>
+        </div>
+      </div><!--/ case-study-stats -->
+    </div><!--/ __ layout -->
+  </div><!--/ --case-study -->
+</div>
+<div class="wrapper">
+  <div class="layout layout--case-study">
+    <div class="layout--case-study__major">
+      <!-- `/rich-text` assumes free flowing RTE content by author and no class names are to be associated with elements -->
+      <div class="rich-text rhythm rhythm--large case-study-detail">
+        <h2>The DriveCam Difference</h2>
+        <p>Cargo Transporters, Inc., located in North Carolina, is a transportation operation that delivers truckload and dry van service in the forty-eight continental United States.</p>
+        <p>Named as a Top 100 Carrier by Inbound Logistics Magazine, the company is known for its innovative solutions and cost-saving strategies that help shippers gain a competitive advantage. And it applies the same proactive approach in continually improving its own operations, especially where risk mitigation and safety are concerned.</p>
+        <p>“There is nothing that is more important to us than the safety of our drivers and the safety of the motoring public,” says Cargo Transporters Chairman John Pope.</p>
+        <p>However, like many commercial transportation businesses, the company was facing its share of safety challenges—experiencing accidents and needing to find ways to reduce fraudulent claims and exonerate drivers from wrongful accusations.</p>
+        <p>Knowing that a change was needed to take its safety program to the next level, the company launched the Lytx Driver Safety Program, including outfitting its entire fleet of tractor-trailer trucks with DriveCam® event recorders. As Pope said, “[Lytx] was our next step to really step up our safety program.”</p>
+
+        <h3>The Power of Video and Driver Coaching</h3>
+        <p>Since installing DriveCam event recorders across its fleet, Cargo Transporters has seen a significant reduction in fraudulent claims and litigation costs. In fact, with the savings from just two wrongful claims, Lytx has already paid for itself.</p>
+        <p>In both claims, when Cargo Transporters showed the opposing attorneys the videos, they immediately dropped their cases. “Primarily, we wanted to prove that our drivers were safety conscious and were not the cause of these incidents,” said Pope. As a result, the company saved between $50,000 and $100,000 in simple litigation costs in each of the two claims.></p>
+        <p>In addition, driver behavior has markedly improved— especially in areas of following too close and rear-end collisions.</p>
+        <p>“With the DriveCam [event recorder] footage, we get a first-hand view to see what the drivers are seeing. We see how traffic is interacting with our vehicle, and how our drivers are interacting with other traffic,” said Vice President of Operations, Jerry Sigmon, Jr. By combining Lytx video input and professional analysis with driver coaching, drivers’ behaviors on the road are continually becoming safer.</p>
+
+        <img src="//fpoimg.com/1600x900?text=accomodates any size" alt="lorem ipsum">
+
+        <p>“The primary thing that sold us on the [Driver Safety] Program was the fact that it’s a turnkey solution,” said Pope. “The event gets recorded, it gets transmitted to the [Lytx] server, and a professional then reviews that data, scores it, and analyzes it for our operations to then act upon.”</p>
+        <p>With its simplicity, ease of use, and all-inclusive nature, Pope felt confident that the Driver Safety Program would address the company’s need for documented video evidence to prove fault in collisions and refute fraudulent claims, as well as to improve driver behaviors.</p>
+        <p>Of course, implementation of a video-based driver risk management program can be a sensitive topic and, indeed, a delicate process for drivers, as was the case for Cargo Transporters.</p>
+        <p>“We knew there was potential for drivers to feel as if their privacy was being invaded, and we felt it was extremely important for them to understand what the system does and how it functions,” said Pope.</p>
+        <p>As part of ongoing efforts to educate drivers about the Driver Safety Program, Cargo Transporters makes sure to highlight the benefits drivers can expect.</p>
+
+        <blockquote>
+          “From the time our drivers open the door to get into the truck they’re at risk, and I see [Lytx] as a tool to help manage that risk,” said Cargo Transporters President Dennis Dellinger. “We show clips that have exonerated drivers, and once we do that, we actually have drivers who step up and say, ‘Put a video recorder in my vehicle’.”
+        </blockquote>
+
+        <h2>Conclusion</h2>
+
+        <p>As a result of using the DriveCam video event recorders and driver risk management program, Cargo Transporters has improved driver behaviors across its fleet, reduced fraudulent claims, exonerated drivers, and decreased litigation costs significantly.</p>
+        <p>Pope concludes, “To us, the biggest value is having an eye and an ear out there with the driver, to know what the driver has encountered. What a carrier can get from the [Driver Safety] Program is tremendous and in our opinion, pays for itself.”</p>
+
+        <blockquote>
+          Dellinger concurs. “My suggestion to someone looking to purchase? <strong>I can sum it up in one word: Priceless.</strong>”
+        </blockquote>
+
+      </div><!--/ rich-text -->
+    </div><!--/ __major -->
+
+    <div class="layout--case-study__first case-study-detail-right-rail">
+      <div class="vertical-offset rich-text rhythm rhythm--large case-study-detail">
+        <!-- <img src="//fpoimg.com/456x258"> -->
+        <div class="video-wrapper wistia_embed wistia_async_8r07a4ameg popover=true popoverAnimateThumbnail=false">&nbsp;</div>
+        <script src="https://fast.wistia.com/embed/medias/8r07a4ameg.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <h3>Problem</h3>
+        <ul>
+          <li>Too many fraudulent claims and wrongful accusations of drivers</li>
+          <li>Safety department spending too much time reacting after collisions</li>
+          <li>Litigation costs negatively impacting the company’s bottom line</li>
+        </ul>
+        <h3>Results</h3>
+        <ul>
+          <li>Significant reduction in fraudulent claims and litigation costs</li>
+          <li>Improved driver behavior, especially by increasing following distance which helped reduce rear-end collisions</li>
+          <li>Savings from two wrongful claims case exonerations paid for the entire program</li>
+        </ul>
+        <h3>Solution</h3>
+        <ul>
+          <li>Too many fraudulent claims and wrongful accusations of drivers</li>
+          <li>Safety department spending too much time reacting after collisions</li>
+          <li>Litigation costs negatively impacting the company’s bottom line</li>
+        </ul>
+      </div><!--/ vertical offset -->
+    </div><!--/ first -->
+
+    <div class="layout--case-study__second case-study-detail-right-rail">
+      
+      <div class="rich-text rhythm rhythm--large case-study-detail case-study-detail-right-rail">
+        <h2>We deliver the results fleets need.</h2>
+        <p>Just ask the 99% of our clients that renew each year.</p>
+      </div><!--/ rich-text -->
+
+      <div class="case-study-client-list">
+        <a href="#" class="case-study-client-list__item">
+          <figure class="case-study-client-list__figure">
+            <img src="//fpoimg.com/163x118">
+            <figcaption>NFI Industries reduces collision frequency by more than 50% with Lytx.</ficaption>
+          </figure>
+        </a>
+        <a href="#" class="case-study-client-list__item">
+          <figure class="case-study-client-list__figure">
+            <img src="//fpoimg.com/163x118">
+            <figcaption>CalArk Reduces CSA Scores and Compliance Issues with Lytx RAIR Services.</ficaption>
+          </figure>
+        </a>
+      </div>
+      <div class="case-study-client-list__cta">
+        <a class="button button--primary">See all clients</a>
+      </div>
+    </div><!--/ __second -->
+  </div><!--/ layout__case-study -->
+</div><!--/ wrapper --><div class="global-footer">
+  <div class="global-footer__cta rhythm rhythm--large">
+    <div class="global-footer__cta-intro rhythm rhythm--large">
+      <h2 class="heading heading--h2">Keep up with Lytx</h2>
+      <p class="global-footer__cta-intro">Our Best Fleet Forward newsletter delivers monthly insights on fleet safety.</p>
+    </div>
+    <div class="global-footer__cta-form rhythm rhythm--large">
+      <div action="#" method="post" class="form-wrapper global-footer__cta-form rhythm rhythm--large">
+        <fieldset>
+          <input type="text" class="transparent" id="fname" placeholder="First name">
+          <label for="fname" class="a11y-visually-hidden">First name</label>
+        </fieldset>
+        <fieldset>
+          <input type="text" class="transparent" id="lname" placeholder="Last name">
+          <label for="lname" class="a11y-visually-hidden">Last name</label>
+        </fieldset>
+        <fieldset>
+          <input type="email" class="transparent" id="email" placeholder="Email address">
+          <label for="email" class="a11y-visually-hidden">Email address</label>
+        </fieldset>
+        <fieldset>
+          <a href="#"  class="button button--link button--primary button--size-default" >
+  Submit
+</a>
+
+        </fieldset>
+      </div>
+    </div>
+  </div><!--/ __cta -->
+
+  <div class="global-footer__nav rhythm">
+    <div class="global-footer__nav-heading">
+      <h1 class="heading heading--h2">Get started today.</h1>
+    </div>
+    <div class="global-footer__nav-cta">
+      <a href="#">1-866-419-5861</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Book a Demo</a>
+    </div>
+    <div class="global-footer__nav-links">
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Solutions</h5>
+        <a href="#">Overview</a>
+        <a href="#">In-Cab Demo</a>
+        <a href="#">Driver Safety</a>
+        <a href="#">Fleet Tracking</a>
+        <a href="#">Compliance</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">About Us</h5>
+        <a href="#">Our Story</a>
+        <a href="#">Our Technology</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+        <a href="#">News and Events</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Support</h5>
+        <a href="#">Support</a>
+        <a href="#">DriveCam Online</a>
+        <a href="#">RAIR Compliance</a>
+        <a href="#">Management Portal</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Our Clients</h5>
+        <a href="#">Who We Serve</a>
+        <a href="#">Success Stories</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm rhythm--small">
+        <h5 class="heading">Resources</h5>
+        <a href="#">Webinars</a>
+        <a href="#">Library</a>
+        <a href="#">Blog</a>
+        <a href="#">Tools</a>
+        <a href="#">Videos</a>
+      </div>
+      <div class="global-footer__nav_link-list rhythm--small">
+        <h5 class="heading">Sites</h5>
+        <a href="#">English (U.S.A.)</a>
+        <a href="#">English (U.K.)</a>
+      </div>
+    </div>
+  </div><!--/ __nav -->
+
+  <div class="global-footer__brand">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <defs>
+    <path id="a-lw" d="M.024.158h27.057v33.851H.024z"/>
+    <path id="c-lw" d="M0 .106h9.665v40.131H0z"/>
+    <path id="e-lw" d="M.114.129h4.213v4.249H.114z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(10.91 13.714)">
+      <mask id="butt" fill="#fff">
+        <use xlink:href="#a-lw"/>
+      </mask>
+      <path fill="#FFF" d="M26.587.159h-4.524c-.341 0-.496.22-.59.441-.042.097-7.703 18.264-7.703 18.264-.14.322-.326.32-.462-.004 0 0-7.58-18.029-7.676-18.25-.094-.22-.25-.442-.59-.442H.517C.162.17-.05.412.047.704c0 0 6.9 16.481 10.328 24.603.225.534.214.956-.006 1.483-1.004 2.403-2.742 6.63-2.742 6.63-.133.325.049.59.404.59h4.476c.404 0 .632-.199.76-.481.264-.58 13.79-32.835 13.79-32.835.097-.292-.115-.533-.47-.534" mask="url(#butt)"/>
+    </g>
+    <mask id="dutt" fill="#fff">
+      <use xlink:href="#c-lw"/>
+    </mask>
+    <path fill="#FFF" d="M9.154 35.308H7.521c-1.481 0-2.145-.542-2.145-2.168V.598c0-.295-.205-.492-.511-.492H.511c-.306 0-.51.197-.51.492v32.837c0 4.584 1.94 6.802 6.741 6.802h2.412c.307 0 .51-.198.51-.493V35.8c0-.295-.203-.493-.51-.493" mask="url(#dutt)"/>
+    <path fill="#FFF" d="M46.795 17.93a.355.355 0 0 1 .357-.345l6.215.003c.298 0 .497-.195.497-.49v-3.485c0-.294-.199-.49-.497-.49h-6.232a.354.354 0 0 1-.339-.35l-.001-6.798c0-.294-.199-.49-.497-.49h-4.21c-.299 0-.497.196-.497.49V32.17c0 .99.077 1.883.241 2.68.676 3.28 2.822 4.92 7.095 4.921h4.431c.298 0 .496-.196.496-.49V35.33c0-.294-.198-.49-.496-.49h-3.7c-1.041 0-1.78-.213-2.213-.64-.433-.426-.65-1.387-.65-2.882V17.93zm37.672 22.002L65.579 14.148c-.16-.217-.378-.434-.72-.434h-5.286c-.356.002-.499.238-.318.526l8.121 11.043c.164.224.201.713-.033 1.053-.072.103-9.992 13.596-9.992 13.596-.18.287-.038.523.318.525h5.287c.341 0 .56-.217.718-.434l.002-.003c.074-.08 6.798-9.281 6.937-9.47a.404.404 0 0 1 .295-.143c.105 0 .208.049.288.136.387.531 6.884 9.419 6.966 9.505.158.209.371.41.7.41H83.7l.018-.001h.431c.356-.002.499-.238.318-.525"/>
+    <path fill="#009CDE" d="M81.428 13.029h-5.219c-.336 0-.552.226-.709.454l-4.513 6.538c-.18.301-.038.549.313.55h5.204c.337 0 .552-.227.71-.454l4.527-6.538c.178-.301.038-.55-.313-.55"/>
+    <g transform="translate(85.227 36.343)">
+      <mask id="futt" fill="#fff">
+        <use xlink:href="#e-lw"/>
+      </mask>
+      <path fill="#FFF" d="M2.364 2.092c.257 0 .386-.11.386-.332 0-.215-.129-.322-.386-.322h-.496c-.03 0-.044.015-.044.045v.565c0 .03.014.044.044.044h.496zm-.883 1.32c-.05 0-.077-.025-.077-.077V1.139c0-.052.026-.078.077-.078h.883c.257 0 .456.061.595.183.14.122.21.294.21.516 0 .163-.04.3-.121.41a.697.697 0 0 1-.342.244l.474.92c.022.053.007.078-.044.078h-.309c-.044 0-.077-.025-.1-.077l-.44-.865h-.42c-.03 0-.043.015-.043.044v.82c0 .053-.026.078-.078.078h-.265zm.74.6c.25 0 .48-.045.689-.134.21-.088.391-.212.546-.371.154-.159.275-.346.364-.56.088-.215.132-.448.132-.7 0-.25-.044-.483-.132-.698-.089-.214-.21-.4-.364-.555A1.69 1.69 0 0 0 2.91.628a1.75 1.75 0 0 0-.69-.133c-.25 0-.48.045-.689.133a1.69 1.69 0 0 0-.546.366c-.154.155-.276.34-.364.555a1.82 1.82 0 0 0-.132.699c0 .251.044.484.132.699.088.214.21.401.364.56.155.159.336.283.546.371.21.09.44.133.69.133zm0 .366A2.059 2.059 0 0 1 .273 3.09a2.188 2.188 0 0 1-.16-.843c0-.296.053-.573.16-.832A2.062 2.062 0 0 1 2.22.129c.302 0 .581.054.839.161.257.107.48.257.667.45.187.192.334.417.441.676.107.259.16.536.16.832 0 .303-.053.584-.16.843a2.112 2.112 0 0 1-.44.676c-.189.193-.411.343-.668.45-.258.107-.537.16-.839.16z" mask="url(#futt)"/>
+    </g>
+  </g>
+</svg>
+
+    </div>
+    <div class="text--align-right">
+      <p>* Subject to available cellular network coverage.</p>
+      <p>&copy; Copyright Lytx, Inc, 2019. All rights reserved.</p>
+    </div>
+  </div><!--/ __brand -->
+
+  <div class="global-footer__meta">
+    <div class="global-footer__meta-links">
+      <a href="#">Site Map</a>
+      <a href="#">Driver Information</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="global-footer__meta-social">
+      <a href="#"><span class="a11y-visually-hidden">LinkedIn</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"  class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M30.706 17.805v2.818h-4.278c-1.02 0-2.332.019-2.332 1.465 0 1.467 1.112 1.69 2.26 1.69h4.35v2.816H21.91v-2.702h1.203v-.039c-.692-.375-1.421-1.296-1.421-2.667 0-2.853 1.821-3.38 4.19-3.38h4.824zm-9.998 11.967c0 .906-.71 1.635-1.585 1.635s-1.586-.73-1.586-1.635c0-.901.71-1.633 1.586-1.633.875 0 1.585.732 1.585 1.633zm9.998 1.412v-2.822H21.91v2.822h8.796zM15 16.4v16.197c0 .773.595 1.402 1.33 1.402h15.772c.734 0 1.33-.629 1.33-1.402V16.4c0-.775-.596-1.405-1.33-1.405H16.329c-.734 0-1.329.63-1.329 1.405z" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">Twitter</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M17.174 12.355c.369.833.618 1.728.73 2.668a4.652 4.652 0 00-2.565-2.043 9.316 9.316 0 011.125 2.95A4.645 4.645 0 0015 19.323a4.641 4.641 0 005.692 4.525 13.2 13.2 0 01-4.843 9.577 4.631 4.631 0 006.19-1.438 4.635 4.635 0 01-.58 2.104h.057a4.641 4.641 0 004.546-3.726 4.662 4.662 0 01.08 2.098 4.65 4.65 0 003.22-4.34 9.335 9.335 0 011.984 5.77c0 .375-.022.745-.065 1.108a13.17 13.17 0 002.083-7.122c0-8.545-7.064-13.218-13.19-13.218-.201 0-.401.004-.6.013a9.432 9.432 0 00-2.4-2.318" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">Facebook</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M15 15.555v16.426c0 .563.455 1.019 1.017 1.019h16.39c.562 0 1.018-.456 1.018-1.019v-8.843H26.29v2.406h-2.781v-2.406h-2.05c-2.38 0-3.676-1.457-3.676-3.584 0-1.02.075-1.895.11-2.15h2.486l.001 1.475c0 1.157.549 1.381 1.354 1.381h1.775V17.5l2.78.36v2.4h7.136v-4.705a1.02 1.02 0 00-1.017-1.02H16.017c-.562 0-1.017.457-1.017 1.02" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">Instagram</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M15 23.518c0 2.575.01 2.898.057 3.91.046 1.008.205 1.698.439 2.3a4.65 4.65 0 001.09 1.68 4.627 4.627 0 001.672 1.094c.6.235 1.287.395 2.293.44 1.007.047 1.328.058 3.893.058 2.565 0 2.887-.01 3.894-.057 1.006-.046 1.692-.206 2.293-.44a4.627 4.627 0 001.673-1.095 4.65 4.65 0 001.09-1.68c.233-.602.392-1.292.438-2.3.046-1.012.057-1.335.057-3.91 0-2.576-.011-2.899-.057-3.91-.046-1.01-.205-1.699-.439-2.302a4.65 4.65 0 00-1.09-1.68 4.628 4.628 0 00-1.672-1.093c-.6-.234-1.287-.395-2.293-.44-1.007-.047-1.329-.058-3.894-.058-2.565 0-2.886.011-3.893.057-1.006.046-1.692.207-2.293.441a4.628 4.628 0 00-1.673 1.094 4.65 4.65 0 00-1.09 1.68c-.233.602-.392 1.292-.438 2.301-.046 1.011-.057 1.334-.057 3.91zm1.702 0c0-2.532.01-2.832.055-3.832.042-.925.196-1.427.325-1.76.171-.443.376-.76.706-1.091a2.94 2.94 0 011.086-.71c.333-.13.833-.284 1.754-.326.996-.046 1.295-.055 3.816-.055 2.522 0 2.82.01 3.817.055.92.042 1.42.197 1.754.327.44.172.755.377 1.085.709.33.332.536.648.707 1.09.13.334.283.836.325 1.76.046 1 .055 1.3.055 3.833 0 2.532-.01 2.832-.055 3.831-.042.925-.196 1.427-.325 1.761a2.939 2.939 0 01-.707 1.09c-.33.332-.645.538-1.085.71-.333.13-.833.284-1.754.326-.996.046-1.295.055-3.817.055-2.521 0-2.82-.01-3.816-.055-.92-.042-1.42-.196-1.754-.326a2.925 2.925 0 01-1.086-.71 2.939 2.939 0 01-.706-1.09c-.13-.334-.283-.836-.325-1.76-.046-1-.055-1.3-.055-3.832zm10.89 0a3.154 3.154 0 01-3.148 3.16 3.154 3.154 0 01-3.148-3.16 3.155 3.155 0 013.148-3.161 3.154 3.154 0 013.149 3.16zm-7.997 0c0 2.689 2.17 4.869 4.85 4.869 2.678 0 4.85-2.18 4.85-4.87 0-2.689-2.172-4.869-4.85-4.869-2.68 0-4.85 2.18-4.85 4.87zm-.192-6.2c-.626 0-1.133.51-1.133 1.138 0 .628.507 1.138 1.133 1.138s1.133-.51 1.133-1.138c0-.629-.507-1.138-1.133-1.138z" fill="#415365"/></g></svg></a>
+      <a href="#"><span class="a11y-visually-hidden">YouTube</span><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="social-icon"><g transform="rotate(90 24 25)" fill="none" fill-rule="evenodd"><circle stroke="#E8E9EB" fill="#F7F8F8" cx="24" cy="24" r="24"/><path d="M27.553 26.478H20.81l3.383-6.484 3.36 6.484zM19.641 12.24s-1.654.235-2.382.954c-.956.913-.96 1.936-1.016 2.404C16 18.957 16 23.995 16 23.995v.01s0 5.038.243 8.396c.056.47.06 1.492 1.016 2.406.728.719 2.382.953 2.382.953s1.943.24 3.884.24h1.822c1.942 0 3.884-.24 3.884-.24s1.653-.234 2.382-.953c.956-.914.926-2.113 1.026-2.647.184-1.92.241-8.16.241-8.16s-.007-5.043-.25-8.402c-.056-.468-.061-1.491-1.017-2.404-.728-.72-2.382-.954-2.382-.954S27.289 12 25.347 12h-1.822c-1.941 0-3.884.24-3.884.24z" fill="#415365"/></g></svg></a>
+    </div>
+  </div><!--/ __meta -->
+
+
+</div>
+
+    </div>
+  </main>
+
+    <script src="../../bundle.js"></script>
+	</body>
+</html>
+

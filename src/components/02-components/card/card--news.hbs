@@ -1,0 +1,27 @@
+{{#>@card classname="card--news card--flush rhythm--large"}}
+  {{#>@logo-box
+    logo=(default logo "/images/logo-techcrunch.png")
+    logo-2x=(default logo-2x "/images/logo-techcrunch@2x.png")
+    altText=(default altText "Techcrunch logo")
+  }}{{/@logo-box}}
+
+  <div class="rhythm">
+    <div>
+      {{#>@heading variant="h4"}}
+        {{default source "Tech Crunch"}}
+      {{/@heading}}
+
+      <p>{{default date 'April 11, 2019'}}</p>
+    </div>
+
+    {{#>@heading variant="h3"}}
+      <a href="#">
+        {{default title "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}}
+      </a>
+    {{/@heading}}
+
+    <p>
+      {{default excerpt "Fusce pharetra libero a tortor convallis, a pharetra urna convallis. Vestibulum odio erat, ultrices ac malesuada et, semper ac mauris."}}
+    </p>
+    </div>
+{{/@card}}

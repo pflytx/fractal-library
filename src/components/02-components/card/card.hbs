@@ -1,0 +1,9 @@
+<div
+  {{classlist "card" classname}}
+  {{#if industry}}data-cs-industry="{{industry}}"{{/if}}
+  {{#if fleetSize}}data-cs-fleetSize="{{fleetSize}}"{{/if}}
+  {{#if result}}data-cs-result="{{result}}"{{/if}}
+  {{#if prDate}}data-cs-date="{{prDate}}"{{/if}}
+>
+  {{#>@partial-block}}{{/@partial-block}}
+</div>

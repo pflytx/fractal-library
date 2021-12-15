@@ -1,0 +1,13 @@
+{{#>@card classname=(terinary flat "card--icon-tile card--flush card--flat" "card--icon-tile card--flush")}}
+    {{#>@card--padding classname="rhythm text--align-center"}}
+      <a href="#" class="rhythm text--align-center">
+        {{> (whichpartial (default icon "icon-account")) className="card--icon-tile__icon"}}
+
+        <{{default linkTextTag variant "span"}} {{classlist "card--icon-tile__link-text" className}}>{{default linkText "Lytx account login"}}</{{default linkTextTag variant "span"}}>
+      </a>
+
+      <p class="text--align-center">
+        {{default bodyText "Access your fleet management program data"}}
+      </p>
+    {{/@card--padding}}
+{{/@card}}

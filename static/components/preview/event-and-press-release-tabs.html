@@ -1,0 +1,874 @@
+
+
+<!doctype html>
+<html>
+  <head>
+		<title>Turn Component Library</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="apple-mobile-web-app-title" content="" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.96.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+
+      <link rel="stylesheet" href="/styles.wheel.css" />
+
+    
+	</head>
+	<body>
+		  <main id="content" role="main">
+    <div class="preview-layout preview-layout--block">
+      <section
+   class="layout--full-width bg--text  event-pr-tabs"
+  
+  id="event-pr-tabs"
+>
+  <div  class="wrapper rhythm--extra-large">
+    <div
+   class="tabs tabs--small tabs--theme-dark"
+  role="tabslist"
+>
+  
+<div
+   class="tab tab--small"
+>
+  <input
+    class="tab__input a11y a11y-visually-hidden"
+    type="radio"
+    name="eprTabs"
+    id="epr-0-control"
+    checked
+  >
+
+  <div class="tab__item" aria-labelledby="epr-0-control">
+    <label class="tab__label" for="epr-0-control">
+      <span class="tab__title">
+        Events
+      </span>
+    </label>
+  </div> <!--/ tab__item -->
+  <div class="tab__content rich-text" role="region" id="panel--epr-0-control">
+                <div class="js-cs--filterable rhythm--extra-large">
+                <div class="cs--filterable__head">
+                    <div class="primary rhythm">
+                        <div class="form-wrapper form--inline js-form--filters">
+                            <fieldset class="rhythm--small">
+                                <label for="filter--industry" class="color--white">Filter by Industry</label>
+                                <div class="input--select transparent">
+                                    <select class="transparent bg--text" id="filter--industry" name="industry">
+                                    <option value="All">All</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Trucking">Trucking</option>
+                                    <option value="Waste">Waste</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>  
+                    </div> 
+
+                    <div class="secondary secondary--center color--white u-ml-auto text--small event-pr-tabs__secondary-head">
+                        <span class="text--bold event-pr-tabs__secondary-head-label">For media inquiries:</span>
+
+                        <a href="mailto:test@test.com" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15"  class="icon--email rhythm"><path d="M8.976 6.311l4.652-2.854a.81.81 0 01.01-.007.816.816 0 011.119.287.846.846 0 01-.284 1.15L9.008 8.265l-.005.009-5.328-3.27a.843.843 0 01-.285-1.148.816.816 0 011.13-.28l4.456 2.735zM2.455 0h13.09C16.897 0 18 1.123 18 2.5v10c0 1.377-1.103 2.5-2.455 2.5H2.455C1.103 15 0 13.877 0 12.5l.008-10C.008 1.123 1.103 0 2.455 0zm0 1.667a.824.824 0 00-.81.834L1.636 12.5c0 .456.37.833.819.833h13.09a.83.83 0 00.819-.833v-10a.83.83 0 00-.819-.833H2.455z" fill="#009CDE" fill-rule="nonzero"/></svg>                          email
+                        </a>
+
+                        <a href="#" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"  class="icon--share rhythm"><g fill="#415365" fill-rule="nonzero"><path d="M15.232 0a.66.66 0 00-.068.006h-4.798a.61.61 0 100 1.22h3.406L6.277 8.721a.609.609 0 10.861.863l7.496-7.495v3.406a.61.61 0 101.22 0V.693A.61.61 0 0015.232 0z"/><path d="M6.707 2.445c-1.522 0-2.672-.002-3.588.102-.916.103-1.65.321-2.175.847C.42 3.919.204 4.65.101 5.567-.002 6.484 0 7.633 0 9.154s-.002 2.67.104 3.587c.105.916.325 1.648.851 2.173.526.525 1.258.743 2.174.846.915.103 2.062.101 3.578.101 1.517 0 2.663 0 3.579-.104.915-.104 1.65-.323 2.175-.847.526-.525.743-1.258.849-2.174.105-.916.105-2.065.105-3.582v-.001a.612.612 0 00-.61-.618.613.613 0 00-.61.618c0 1.517-.005 2.648-.096 3.444-.092.797-.26 1.21-.5 1.45-.241.24-.654.408-1.45.5-.797.09-1.927.094-3.442.094-1.516 0-2.646-.003-3.442-.093-.797-.09-1.21-.257-1.45-.497-.241-.24-.41-.653-.5-1.45-.092-.797-.097-1.928-.097-3.447 0-1.52.003-2.652.093-3.45.09-.797.257-1.208.495-1.448.24-.239.651-.406 1.449-.496.797-.09 1.93-.094 3.451-.094l.001-.001a.61.61 0 100-1.22z"/></g></svg>                          press kit
+                        </a>
+                    </div>  
+                </div>  
+
+                <div class="layout--4up layout--cs-list">
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="government"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 NAFA Institute &amp; Expo
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Louisville, Kentucky</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 13 - APR 18, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Private Truck Council (NPTC) Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Cincinati, Ohio</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 14 - APR 16, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="construction"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 NTTC Annual Conference &amp; Exhibits
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Las Vegas, Nevada</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 23 - APR 25, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="government"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 Field Service Palm Springs
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Palm Springs, California</p>
+
+<h4  class="heading heading--h4 rhythm">
+          APR 23 - APR 26, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="government"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 National Postal Forum
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Indianapolis, Indiana</p>
+
+<h4  class="heading heading--h4 rhythm">
+          MAT 05 - MAY 08, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="waste"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 WasteExpo
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Las Vegas, Nevada</p>
+
+<h4  class="heading heading--h4 rhythm">
+          MAY 06 - MAY 09, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                2019 Pennsylvania Motor Truck Association Safety Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">State College, Pennsylvania</p>
+
+<h4  class="heading heading--h4 rhythm">
+          MAY 16 - MAY 18, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--event card--flush card--cs"
+  data-cs-industry="waste"
+  
+  
+  
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm">
+     <h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                FCCMA 2019 Annual Conference
+            </a>
+
+</h5>
+
+        <div  class="event-details rhythm--small rhythm">
+    <p class="text--small color--gray-1">Orlando, Florida</p>
+
+<h4  class="heading heading--h4 rhythm">
+          MAY 29 - JUN 01, 2019
+
+</h4>
+</div>
+
+
+</div>
+
+</div>
+
+                </div>
+
+                <div class="text--align-center">
+                    <button  class="button button--primary button--size-large js-load-more" >
+  Load More
+</button>
+
+                </div>
+            </div>
+
+  </div> <!--/ tab__content.rich-text -->
+</div> <!--/ tab -->
+
+<div
+   class="tab tab--small"
+>
+  <input
+    class="tab__input a11y a11y-visually-hidden"
+    type="radio"
+    name="eprTabs"
+    id="epr-1-control"
+    
+  >
+
+  <div class="tab__item" aria-labelledby="epr-1-control">
+    <label class="tab__label" for="epr-1-control">
+      <span class="tab__title">
+        Press Releases
+      </span>
+    </label>
+  </div> <!--/ tab__item -->
+  <div class="tab__content rich-text" role="region" id="panel--epr-1-control">
+                <div class="js-cs--filterable rhythm--extra-large">
+                <div class="cs--filterable__head">
+                    <div class="primary rhythm">
+                        <div class="form-wrapper form--inline js-form--filters">
+                          <fieldset class="rhythm--small">
+                                <label for="filter--date" class="color--white">Filter by Date</label>
+                                <div class="input--select transparent">
+                                    <select class="transparent bg--text" id="filter--date" name="date">
+                                    <option value="All">All</option>
+                                    <option value="1">Past month</option>
+                                    <option value="2">Past three months</option>
+                                    <option value="3">Past year</option>
+                                    <option value="4">Older than a year</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="rhythm--small">
+                                <label for="filter--industry" class="color--white">Filter by Industry</label>
+                                <div class="input--select transparent">
+                                    <select class="transparent bg--text" id="filter--industry" name="industry">
+                                    <option value="All">All</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Trucking">Trucking</option>
+                                    <option value="Waste">Waste</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>  
+                    </div> 
+
+                    <div class="secondary secondary--center color--white u-ml-auto text--small event-pr-tabs__secondary-head">
+                        <span class="text--bold event-pr-tabs__secondary-head-label">For media inquiries:</span>
+
+                        <a href="mailto:test@test.com" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15"  class="icon--email rhythm"><path d="M8.976 6.311l4.652-2.854a.81.81 0 01.01-.007.816.816 0 011.119.287.846.846 0 01-.284 1.15L9.008 8.265l-.005.009-5.328-3.27a.843.843 0 01-.285-1.148.816.816 0 011.13-.28l4.456 2.735zM2.455 0h13.09C16.897 0 18 1.123 18 2.5v10c0 1.377-1.103 2.5-2.455 2.5H2.455C1.103 15 0 13.877 0 12.5l.008-10C.008 1.123 1.103 0 2.455 0zm0 1.667a.824.824 0 00-.81.834L1.636 12.5c0 .456.37.833.819.833h13.09a.83.83 0 00.819-.833v-10a.83.83 0 00-.819-.833H2.455z" fill="#009CDE" fill-rule="nonzero"/></svg>                          email
+                        </a>
+
+                        <a href="#" class="heading heading--h4 color--action event-pr-tabs__secondary-head-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"  class="icon--share rhythm"><g fill="#415365" fill-rule="nonzero"><path d="M15.232 0a.66.66 0 00-.068.006h-4.798a.61.61 0 100 1.22h3.406L6.277 8.721a.609.609 0 10.861.863l7.496-7.495v3.406a.61.61 0 101.22 0V.693A.61.61 0 0015.232 0z"/><path d="M6.707 2.445c-1.522 0-2.672-.002-3.588.102-.916.103-1.65.321-2.175.847C.42 3.919.204 4.65.101 5.567-.002 6.484 0 7.633 0 9.154s-.002 2.67.104 3.587c.105.916.325 1.648.851 2.173.526.525 1.258.743 2.174.846.915.103 2.062.101 3.578.101 1.517 0 2.663 0 3.579-.104.915-.104 1.65-.323 2.175-.847.526-.525.743-1.258.849-2.174.105-.916.105-2.065.105-3.582v-.001a.612.612 0 00-.61-.618.613.613 0 00-.61.618c0 1.517-.005 2.648-.096 3.444-.092.797-.26 1.21-.5 1.45-.241.24-.654.408-1.45.5-.797.09-1.927.094-3.442.094-1.516 0-2.646-.003-3.442-.093-.797-.09-1.21-.257-1.45-.497-.241-.24-.41-.653-.5-1.45-.092-.797-.097-1.928-.097-3.447 0-1.52.003-2.652.093-3.45.09-.797.257-1.208.495-1.448.24-.239.651-.406 1.449-.496.797-.09 1.93-.094 3.451-.094l.001-.001a.61.61 0 100-1.22z"/></g></svg>                          press kit
+                        </a>
+                    </div>  
+                </div>
+
+                <div class="layout--4up layout--cs-list">
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="construction"
+  
+  
+  data-cs-date="Mar 13, 2018"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Mar 13, 2018</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Lauren Concrete Introduces Lytx Driver Safety Program to Full Fleet via Company-Wide Town Hall Events
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  data-cs-date="Feb 28, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Feb 28, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                ACCA Welcomes Lytx as Official Driver Safety Partner
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  data-cs-date="Feb 26, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Feb 26, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Lytx® Honors Extraordinary Drivers and Coaches with Annual ‘Driver of the Year’ and ‘Coach of the Year’ Awards
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="government"
+  
+  
+  data-cs-date="Feb  25, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Feb  25, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Lytx Helped Protect More Than 1 Million Drivers in 2018 and Delivered Another Year of Industry Firsts and Strong Results
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  data-cs-date="Feb 20, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Feb 20, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Lytx Identifies the Top 10 Roads for Cell Phone Use in the United States
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="waste"
+  
+  
+  data-cs-date="Feb 14, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Feb 14, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Transaid welcomes Lytx on board as corporate members
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  data-cs-date="Jan 22, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Jan 22, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                The Caillier Group Signs on for Full-Fleet Deployment of Lytx DriveCam to Protect Its Family of Drivers
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="trucking"
+  
+  
+  data-cs-date="Oct 28, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Oct 28, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Nationwide Announces New Tech Partnership to Improve Safety for Long-Haul Truck Drivers
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="government"
+  
+  
+  data-cs-date="Jun 29, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">Jun 29, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Nationwide Announces New Tech Partnership to Improve Safety for Long-Haul Truck Drivers
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+
+                    <div
+   class="card card--press-release card--flush card--cs"
+  data-cs-industry="waste"
+  
+  
+  data-cs-date="May 31, 2019"
+>
+       <img class="card__img" srcset="//fpoimg.com/340x175, //fpoimg.com/680x350 2x" src="//fpoimg.com/340x175" alt="lorem ipsum">
+
+<div  class="card--padding rhythm--small">
+             <p class="text--small color--gray-1">May 31, 2019</p>
+<h5  class="heading heading--h5 rhythm">
+              <a href="#">
+                Nationwide Announces New Tech Partnership to Improve Safety for Long-Haul Truck Drivers
+            </a>
+
+</h5>
+
+</div>
+
+</div>
+
+                </div>
+
+                <div class="text--align-center">
+                    <button  class="button button--primary button--size-large js-load-more" >
+  Load More
+</button>
+
+                </div>
+            </div>
+
+  </div> <!--/ tab__content.rich-text -->
+</div> <!--/ tab -->
+
+</div><!--/ tab -->
+
+  </div>
+</section>
+
+    </div>
+  </main>
+
+    <script src="../../bundle.js"></script>
+	</body>
+</html>
+

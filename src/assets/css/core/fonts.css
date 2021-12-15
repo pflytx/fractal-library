@@ -1,0 +1,11 @@
+/* DIN NEXT BOLD */
+@font-face {
+  font-family: 'DINNextLTPro-Bold';
+  src: url('var(--font-directory)/DINNextLTPro-Bold.woff2') format('woff2'), url('var(--font-directory)/DINNextLTPro-Bold.woff') format('woff'), url('var(--font-directory)/DINNextLTPro-Bold.ttf') format('truetype');
+}
+
+/* DIN NEXT MEDIUM */
+@font-face {
+  font-family: 'DINNextLTPro-Medium';
+  src: url('var(--font-directory)/DINNextLTPro-Medium.ttf') format('truetype');
+}
