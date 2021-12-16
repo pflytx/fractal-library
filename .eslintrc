@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb-base"],
+  "parser": "babel-eslint",
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "comma-dangle": ["error", "never"],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+	"linebreak-style": 0
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "location": true,
+    "XMLHttpRequest": true,
+    "XDomainRequest": true
+  }
+}
