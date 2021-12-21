@@ -6,4 +6,4 @@ title: Lytx Pattern Library
 
 Lytx's local version of the Library - edits incoming
 
-Last deployed: Dec 20, 2021
+Last update: npm update to latest version of Fractal, added Info to sidebar

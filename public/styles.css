@@ -150,7 +150,6 @@ sub {
   padding: 4rem 0;
 }
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 80px;
   top: 5rem;
@@ -2189,7 +2188,7 @@ blockquote.testimonial .testimonial__cite::before, .blockquote.testimonial .test
       padding-top: 1rem;
       width: 100%;
     }
-/*! Flickity v2.2.1
+/*! Flickity v2.3.0
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 .flickity-enabled {
