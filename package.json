@@ -25,7 +25,7 @@
     "js:prod": "babel src/assets/js -o public/scripts.js --compact=true --minified=true",
     "lint:css": "stylelint src/assets/css/**/*.css || true",
     "lint:js": "eslint src/assets/js || true",
-    "build:webpack": "webpack -p --env prod",
+    "build:webpack": "webpack --mode production --env prod",
     "build:webpack:dev": "webpack --env dev --watch"
   },
   "engines": {
