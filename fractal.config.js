@@ -6,7 +6,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /* Customize the default theme */
 const mandelbrot = require('@frctl/mandelbrot');
 const turnTheme = mandelbrot({
-    skin: 'black'
+  skin: 'black'
 });
 
 /* Custom handlebars helpers */
