@@ -8,8 +8,8 @@ const controller = new ScrollMagic.Controller();
 
 const scrolls = (i) => {
   const media = select('.animate', i);
-  if (!media) { 
-    return 
+  if (!media) {
+    return
   }
   const tween = TweenMax.to(media, 1, { className: '+=animated' });
   const scene = new ScrollMagic.Scene({
@@ -17,8 +17,8 @@ const scrolls = (i) => {
     duration: 900,
     offset: -300
   })
-  .setTween(tween)
-  .addTo(controller)
+    .setTween(tween)
+    .addTo(controller)
   // .addIndicators()
   ;
 }

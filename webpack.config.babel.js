@@ -15,6 +15,7 @@ module.exports = (env) => {
       pathinfo: ifNotProd()
     },
     resolve: {
+      modules: ['node_modules'],
       alias: {
         TweenLite: 'gsap/src/minified/TweenLite.min.js',
         TweenMax: 'gsap/src/minified/TweenMax.min.js',
