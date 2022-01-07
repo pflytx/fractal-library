@@ -1,5 +1,5 @@
 import select from 'dom-select';
-import TweenMax from 'TweenMax';
+// import TweenMax from 'TweenMax';
 import ScrollMagic from 'ScrollMagic';
 import 'animation.gsap';
 // import 'debug.addIndicators';
